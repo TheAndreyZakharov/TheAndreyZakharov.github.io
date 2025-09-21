@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% высоты экрана */
+  background-color: #0d1117; /* тёмный фон (как GitHub) */
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  font-family: Arial, sans-serif;
+}
