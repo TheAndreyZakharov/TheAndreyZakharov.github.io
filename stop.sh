@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "🛑 Останавливаю проект..."
+echo "Stopping..."
 PID=$(lsof -ti:5173)
 if [ -n "$PID" ]; then
   kill -9 $PID
-  echo "✅ Сервер на порту 5173 остановлен."
+  echo "Server at 5173 stopped."
 else
-  echo "⚠️ Сервер не найден на порту 5173."
+  echo "Server at 5173 not found"
 fi

@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "🚀 Запускаю проект..."
+echo "starting..."
 npm run dev
