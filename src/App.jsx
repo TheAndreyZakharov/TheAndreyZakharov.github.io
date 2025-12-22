@@ -765,7 +765,7 @@ function App() {
                   : " scroll-top-button--fast")
               }
               onClick={handleScrollToTop}
-              aria-label="Прокрутить страницу наверх"
+              aria-label="Scroll to top"
             >
               <span className="scroll-top-icon">↑</span>
             </button>
@@ -2557,7 +2557,7 @@ function CertificatesPage({ onBack }) {
               {activeCert.images.length > 1 && (
                 <div className="certificate-modal-nav">
                   <div className="certificate-modal-counter">
-                    Page {modalCurrentIndex + 1} из{" "}
+                    Page {modalCurrentIndex + 1} of{" "}
                     {activeCert.images.length}
                   </div>
                   <div className="certificate-modal-nav-buttons">
