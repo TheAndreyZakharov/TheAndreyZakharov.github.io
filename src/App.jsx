@@ -16,7 +16,7 @@ const links = [
   { name: "Pinterest", url: "https://ru.pinterest.com/The_Andrey_Zakharov" },
   { name: "VK", url: "https://vk.com/TheAndreyZakharov" },
   { name: "LeetCode", url: "https://leetcode.com/u/TheAndreyZakharov" },
-  { name: "Chess.com", url: "https://www.chess.com/member/TheAndreyZakharov" },
+  { name: "Chess", url: "https://www.chess.com/member/TheAndreyZakharov" },
 ];
 
 const achievementsUrl = "https://github.com/TheAndreyZakharov/Certificates-and-Diplomas";
