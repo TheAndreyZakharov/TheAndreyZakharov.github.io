@@ -46,6 +46,10 @@ async function preloadCertificateThumbnails(sources) {
   return dimensions;
 }
 
+function resumePreviewSource(file) {
+  return file.replace("/resumes/", "/resume-previews/").replace(/\.pdf$/i, ".png");
+}
+
 const links = [
   { name: "GitHub", handle: "TheAndreyZakharov", url: "https://github.com/TheAndreyZakharov", icon: "/icons/icons8-github-96.png", primary: true },
   { name: "Telegram", handle: "TheAndreyZakharov", url: "https://t.me/TheAndreyZakharov", icon: "/icons/icons8-telegram-96.png", primary: true },
@@ -106,6 +110,7 @@ const copy = {
     resumeTitle: "Resumes",
     resumeIntro: "Focused resumes for different roles",
     resumePageTitle: "Resumes",
+    resumeViewerAuthor: "Andrey Zakharov",
     openResumes: "Open resumes",
     certificatePageTitle: "Certificates & Diplomas",
     certificateSearch: "Search",
@@ -155,6 +160,7 @@ const copy = {
     resumeTitle: "Резюме",
     resumeIntro: "Резюме под разные роли и задачи",
     resumePageTitle: "Профильные резюме",
+    resumeViewerAuthor: "Андрей Захаров",
     openResumes: "Открыть резюме",
     certificatePageTitle: "Сертификаты и Дипломы",
     certificateSearch: "Поиск",
@@ -647,6 +653,54 @@ function SocialsView({ theme, text, language, onBack, leaving = false }) {
   );
 }
 
+function ResumeViewer({ resume, theme, text, onClose, onStartClose }) {
+  const [closing, setClosing] = useState(false);
+  const closeTimer = useRef(null);
+
+  const close = useCallback(() => {
+    if (closing) return;
+    onStartClose();
+    setClosing(true);
+    closeTimer.current = window.setTimeout(onClose, 300);
+  }, [closing, onClose, onStartClose]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") close();
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [close]);
+
+  useEffect(() => () => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+  }, []);
+
+  return (
+    <div className={`certificate-viewer ${closing ? "certificate-viewer--closing" : ""}`} data-theme={theme} role="dialog" aria-modal="true" aria-label={resume.title}>
+      <button className="certificate-viewer__backdrop" type="button" onClick={close} aria-label={text.close} />
+      <div className="certificate-viewer__panel resume-viewer__panel">
+        <div className="certificate-viewer__header">
+          <div><strong>{resume.title}</strong><small>{text.resumeViewerAuthor}</small></div>
+          <div className="resume-viewer__actions">
+            <a href={resume.file} download={resume.downloadName}>{text.download}</a>
+            <button type="button" onClick={close}>{text.close}</button>
+          </div>
+        </div>
+        <div className="resume-viewer__document">
+          <img className="resume-viewer__preview" src={resumePreviewSource(resume.file)} alt={`${resume.title}, ${text.resumeViewerAuthor}`} />
+        </div>
+        <div className="certificate-viewer__footer"><span>{resume.title}</span><span>PDF</span></div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [language, setLanguage] = useState("en");
   const [languageTransitioning, setLanguageTransitioning] = useState(false);
@@ -655,6 +709,8 @@ function App() {
   const [pageLeaving, setPageLeaving] = useState(false);
   const pageTransitionTimer = useRef(null);
   const [view, setView] = useState(viewFromLocation);
+  const [activeResume, setActiveResume] = useState(null);
+  const [resumeViewerClosing, setResumeViewerClosing] = useState(false);
   const [themeMode, setThemeMode] = useState(() => {
     const savedTheme = window.localStorage.getItem("theme-mode");
     return ["light", "dark", "system"].includes(savedTheme) ? savedTheme : "system";
@@ -714,6 +770,13 @@ function App() {
   }, [themeMode]);
 
   useEffect(() => {
+    if (view !== "resumes") {
+      setActiveResume(null);
+      setResumeViewerClosing(false);
+    }
+  }, [view]);
+
+  useEffect(() => {
     document.documentElement.lang = language;
     document.title = language === "ru" ? "Андрей Захаров" : "Andrey Zakharov";
   }, [language]);
@@ -755,22 +818,28 @@ function App() {
     languageTransitionTimer.current = window.setTimeout(() => setLanguageTransitioning(false), 480);
   };
 
+  const openResumeViewer = (resume) => {
+    setResumeViewerClosing(false);
+    setActiveResume(resume);
+  };
+
   if (view === "resumes") {
     return (
-      <main className={`page-shell ${pageLeaving ? "page-shell--leaving" : ""}`} data-theme={theme}>
+      <main className={`page-shell ${pageLeaving ? "page-shell--leaving" : ""} ${activeResume && !resumeViewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
         <AmbientLayer variant="resumes" />
         <section className="profile-card resume-page">
           <div className="resume-page-top"><button className="back-button" type="button" onClick={closeResumes}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
           <header className="resume-page-header"><h1>{text.resumePageTitle}</h1></header>
           <div className="resume-list">
             {resumes.map((resume) => (
-              <div className="resume-page-item" key={resume.key}>
+              <div className="resume-page-item" key={resume.key} role="button" tabIndex="0" onClick={() => openResumeViewer(resume)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); openResumeViewer(resume); } }}>
                 <span className="resume-page-item__title">{resume.title}</span>
-                <a className="resume-page-item__action" href={resume.file} download={resume.downloadName}>{text.download}</a>
+                <a className="resume-page-item__action" href={resume.file} download={resume.downloadName} onClick={(event) => event.stopPropagation()}>{text.download}</a>
               </div>
             ))}
           </div>
         </section>
+        {activeResume && <ResumeViewer resume={activeResume} theme={theme} text={text} onStartClose={() => setResumeViewerClosing(true)} onClose={() => { setActiveResume(null); setResumeViewerClosing(false); }} />}
       </main>
     );
   }
