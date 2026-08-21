@@ -655,6 +655,7 @@ function SocialsView({ theme, text, language, onBack, leaving = false }) {
 
 function ResumeViewer({ resume, theme, text, onClose, onStartClose }) {
   const [closing, setClosing] = useState(false);
+  const [previewLoaded, setPreviewLoaded] = useState(false);
   const closeTimer = useRef(null);
 
   const close = useCallback(() => {
@@ -681,6 +682,10 @@ function ResumeViewer({ resume, theme, text, onClose, onStartClose }) {
     if (closeTimer.current) window.clearTimeout(closeTimer.current);
   }, []);
 
+  useEffect(() => {
+    setPreviewLoaded(false);
+  }, [resume.file]);
+
   return (
     <div className={`certificate-viewer ${closing ? "certificate-viewer--closing" : ""}`} data-theme={theme} role="dialog" aria-modal="true" aria-label={resume.title}>
       <button className="certificate-viewer__backdrop" type="button" onClick={close} aria-label={text.close} />
@@ -693,7 +698,7 @@ function ResumeViewer({ resume, theme, text, onClose, onStartClose }) {
           </div>
         </div>
         <div className="resume-viewer__document">
-          <img className="resume-viewer__preview" src={resumePreviewSource(resume.file)} alt={`${resume.title}, ${text.resumeViewerAuthor}`} />
+          <img className={`resume-viewer__preview ${previewLoaded ? "resume-viewer__preview--loaded" : ""}`} onLoad={() => setPreviewLoaded(true)} src={resumePreviewSource(resume.file)} alt={`${resume.title}, ${text.resumeViewerAuthor}`} />
         </div>
         <div className="certificate-viewer__footer"><span>{resume.title}</span><span>PDF</span></div>
       </div>
@@ -774,6 +779,20 @@ function App() {
       setActiveResume(null);
       setResumeViewerClosing(false);
     }
+  }, [view]);
+
+  useEffect(() => {
+    if (view !== "resumes") return undefined;
+    const previews = resumes.map((resume) => {
+      const image = new Image();
+      image.decoding = "async";
+      image.src = resumePreviewSource(resume.file);
+      return image;
+    });
+    return () => previews.forEach((image) => {
+      image.onload = null;
+      image.onerror = null;
+    });
   }, [view]);
 
   useEffect(() => {
