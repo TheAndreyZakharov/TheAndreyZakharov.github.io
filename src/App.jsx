@@ -4,6 +4,48 @@ import certificateManifest from "./certificates.json";
 
 const emailAddress = "Andrey.Zakharov.Contact@gmail.com";
 
+const certificateThumbnailSources = [...new Set(
+  certificateManifest.providers.flatMap((provider) => provider.documents.map((certificate) => certificate.pages[0])),
+)];
+
+function preloadImageDimensions(source) {
+  return new Promise((resolve) => {
+    const image = new Image();
+    let finished = false;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      resolve({
+        width: image.naturalWidth || 1400,
+        height: image.naturalHeight || 1000,
+      });
+    };
+
+    image.decoding = "async";
+    image.onload = finish;
+    image.onerror = finish;
+    image.src = source;
+
+    if (image.complete) finish();
+  });
+}
+
+async function preloadCertificateThumbnails(sources) {
+  const dimensions = {};
+  let nextIndex = 0;
+  const workerCount = /iPhone|iPad|iPod/i.test(navigator.userAgent) ? 2 : 5;
+  const worker = async () => {
+    while (nextIndex < sources.length) {
+      const source = sources[nextIndex];
+      nextIndex += 1;
+      dimensions[source] = await preloadImageDimensions(source);
+    }
+  };
+
+  await Promise.all(Array.from({ length: Math.min(workerCount, sources.length) }, worker));
+  return dimensions;
+}
+
 const links = [
   { name: "GitHub", handle: "TheAndreyZakharov", url: "https://github.com/TheAndreyZakharov", icon: "/icons/icons8-github-96.png", primary: true },
   { name: "Telegram", handle: "TheAndreyZakharov", url: "https://t.me/TheAndreyZakharov", icon: "/icons/icons8-telegram-96.png", primary: true },
@@ -282,6 +324,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   const [viewerClosing, setViewerClosing] = useState(false);
   const viewerCloseTimer = useRef(null);
   const pageFlipRequest = useRef(0);
+  const [thumbnailDimensions, setThumbnailDimensions] = useState({});
   const [certificatesReady, setCertificatesReady] = useState(false);
   const [showCertificateLoader, setShowCertificateLoader] = useState(true);
   const normalizedQuery = query.trim().toLowerCase();
@@ -344,26 +387,11 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   useEffect(() => {
     let cancelled = false;
     let loaderTimer = null;
-    const waitForImage = (image) => new Promise((resolve) => {
-      const finish = () => resolve();
-      image.addEventListener("error", finish, { once: true });
-      image.addEventListener("load", () => {
-        if (typeof image.decode !== "function") {
-          finish();
-          return;
-        }
-        image.decode().catch(() => {}).finally(finish);
-      }, { once: true });
-      if (image.complete) {
-        if (typeof image.decode !== "function") finish();
-        else image.decode().catch(() => {}).finally(finish);
-      }
-    });
-    const galleryImages = [...document.querySelectorAll(".certificate-preload img")];
-    Promise.all([Promise.all(galleryImages.map(waitForImage)), document.fonts?.ready ?? Promise.resolve()]).then(() => {
+    Promise.all([preloadCertificateThumbnails(certificateThumbnailSources), document.fonts?.ready ?? Promise.resolve()]).then(([dimensions]) => {
       if (cancelled) return;
       window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
         if (cancelled) return;
+        setThumbnailDimensions(dimensions);
         setCertificatesReady(true);
         loaderTimer = window.setTimeout(() => setShowCertificateLoader(false), 460);
       }));
@@ -511,24 +539,23 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
               <section className="certificate-group" id={`certificate-provider-${provider.originalIndex}`} key={provider.name}>
                 <div className="certificate-group__heading"><h2>{provider.name}</h2><span>{provider.documents.length}</span></div>
                 <div className="certificate-grid">
-                  {provider.documents.map((certificate) => (
+                  {provider.documents.map((certificate) => {
+                    const dimensions = thumbnailDimensions[certificate.pages[0]] ?? { width: 1400, height: 1000 };
+                    return (
                     <button className="certificate-card" type="button" onClick={() => openCertificate(provider.name, certificate)} key={`${provider.name}-${certificate.title}`}>
-                      <img loading="eager" src={certificate.pages[0]} alt={certificate.title} />
+                      <img loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.pages[0]} alt={certificate.title} />
                       <span>{certificate.title}</span>
                       <small>{pageCountLabel(certificate.pages.length, language)}</small>
                     </button>
-                  ))}
+                    );
+                  })}
                 </div>
               </section>
             ))}
           </div>
         ) : <p className="certificate-empty">{text.certificatePageEmpty}</p>}
         </div>
-        ) : (
-          <div className="certificate-preload" aria-hidden="true">
-            {[...new Set(certificateManifest.providers.flatMap((provider) => provider.documents.flatMap((certificate) => certificate.pages)))].map((source) => <img src={source} alt="" key={source} />)}
-          </div>
-        )}
+        ) : null}
         <div className={`certificate-loading ${showCertificateLoader ? "" : "certificate-loading--hidden"}`} role="status" aria-live="polite" aria-hidden={!showCertificateLoader}>
           <span className="certificate-loading__spinner" aria-hidden="true" />
           <span>{text.loadingCertificates}</span>
