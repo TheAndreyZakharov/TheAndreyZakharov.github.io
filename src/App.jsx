@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./App.css";
 import certificateManifest from "./certificates.json";
 
@@ -59,15 +59,20 @@ const links = [
   { name: "Twitch", handle: "TheAndreyZakharov", url: "https://www.twitch.tv/TheAndreyZakharov", icon: "/icons/icons8-twitch-96.png" },
   { name: "YouTube", handle: "TheAndreyZakharov", url: "https://www.youtube.com/@TheAndreyZakharov", icon: "/icons/icons8-youtube-96.png" },
   { name: "Discord", handle: "TheAndreyZakharov", url: "https://discord.gg/CVtA4QDPXN", icon: "/icons/icons8-discord-96.png" },
+  { name: "Kick", handle: "TheAndreyZakharov", url: "https://kick.com/theandreyzakharov", icon: "/icons/kick.png" },
   { name: "Facebook", handle: "TheAndreyZakharov", url: "https://www.facebook.com/TheAndreyZakharov", icon: "/icons/icons8-facebook-96.png" },
-  { name: "X", handle: "iAndreyZakharov", url: "https://x.com/iAndreyZakharov", icon: "/icons/icons8-x-96.png" },
   { name: "Instagram", handle: "the_andrey_zakharov", url: "https://www.instagram.com/the_andrey_zakharov", icon: "/icons/icons8-instagram-96.png" },
+  { name: "X", handle: "iAndreyZakharov", url: "https://x.com/iAndreyZakharov", icon: "/icons/icons8-x-96.png" },
+  { name: "Bluesky", handle: "theandreyzakharov.bsky.social", url: "https://main.bsky.dev/profile/theandreyzakharov.bsky.social", icon: "/icons/icons8-bluesky-96.png" },
   { name: "Reddit", handle: "TheAndreyZakharov", url: "https://www.reddit.com/user/TheAndreyZakharov", icon: "/icons/icons8-reddit-96.png" },
   { name: "Pinterest", handle: "The_Andrey_Zakharov", url: "https://ru.pinterest.com/The_Andrey_Zakharov", icon: "/icons/icons8-pinterest-96.png" },
   { name: "Spotify", handle: { en: "My profile", ru: "Мой профиль" }, url: "https://open.spotify.com/user/31xnbwxotc2ixa65z42u5obuwwxi", icon: "/icons/icons8-spotify-96.png" },
   { name: "VK", handle: "TheAndreyZakharov", url: "https://vk.com/TheAndreyZakharov", icon: "/icons/icons8-vk-96.png" },
   { name: "LeetCode", handle: "TheAndreyZakharov", url: "https://leetcode.com/u/TheAndreyZakharov", icon: "/icons/icons8-leetcode-96.png" },
   { name: "Chess", handle: "TheAndreyZakharov", url: "https://www.chess.com/member/TheAndreyZakharov", icon: "/icons/icons8-chess-96.png" },
+  { name: "DonationAlerts", handle: "TheAndreyZakharov", url: "https://www.donationalerts.com/r/theandreyzakharov", icon: "/icons/DonationAlerts.png" },
+  { name: "DonateX", handle: "TheAndreyZakharov", url: "https://donatex.gg/donate/theandreyzakharov", icon: "/icons/DonateX.svg" },
+  { name: "DonatePay", handle: "TheAndreyZakharov", url: "https://new.donatepay.ru/@TheAndreyZakharov", icon: "/icons/DontePay.png" },
 ];
 
 const contactLinks = [
@@ -77,7 +82,7 @@ const contactLinks = [
 
 const resumes = [
   { key: "full", title: "Full-Stack Software Engineer", file: "/resumes/Andrey_Zakharov_Full-Stack_Software_Engineer.pdf", downloadName: "Andrey_Zakharov_Full-Stack_Software_Engineer.pdf" },
-  { key: "backend", title: "Backend Developer", file: "/resumes/Andrey_Zakharov_Backend_Developer_copy.pdf", downloadName: "Andrey_Zakharov_Backend_Developer_copy.pdf" },
+  { key: "backend", title: "Backend Developer", file: "/resumes/Andrey_Zakharov_Backend_Developer.pdf", downloadName: "Andrey_Zakharov_Backend_Developer.pdf" },
   { key: "python-backend", title: "Python Backend Developer", file: "/resumes/Andrey_Zakharov_Python_Backend_Developer.pdf", downloadName: "Andrey_Zakharov_Python_Backend_Developer.pdf" },
   { key: "ml", title: "ML Engineer", file: "/resumes/Andrey_Zakharov_ML_Engineer.pdf", downloadName: "Andrey_Zakharov_ML_Engineer.pdf" },
   { key: "ai", title: "AI Developer", file: "/resumes/Andrey_Zakharov_AI_Developer.pdf", downloadName: "Andrey_Zakharov_AI_Developer.pdf" },
@@ -107,6 +112,8 @@ const copy = {
     copied: "Email copied",
     mainLinks: "Main social links",
     otherAccounts: "Other social links",
+    otherAccountsIntro: "Here are links to my social media accounts. This list is intended to identify my official profiles and provide information about them. I am not asking anyone to visit or follow them.",
+    otherAccountsNote: "Some accounts have no public activity.",
     resumeTitle: "Resumes",
     resumeIntro: "Focused resumes for different roles",
     resumePageTitle: "Resumes",
@@ -157,6 +164,8 @@ const copy = {
     copied: "Почта скопирована",
     mainLinks: "Основные соцсети",
     otherAccounts: "Остальные соцсети",
+    otherAccountsIntro: "Здесь собраны ссылки на мои аккаунты в социальных сетях. Этот список создан для идентификации моих официальных профилей и ознакомления с ними. Я не призываю переходить на эти страницы или подписываться на них.",
+    otherAccountsNote: "На некоторых аккаунтах нет публичной активности.",
     resumeTitle: "Резюме",
     resumeIntro: "Резюме под разные роли и задачи",
     resumePageTitle: "Профильные резюме",
@@ -222,7 +231,7 @@ function LanguageText({ children }) {
 function AmbientLayer({ variant }) {
   const [geometry, setGeometry] = useState(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const card = document.querySelector(".profile-card");
     if (!card) return undefined;
 
@@ -646,7 +655,7 @@ function SocialsView({ theme, text, language, onBack, leaving = false }) {
               </button>
             </div>
           </div>
-          <div className="other-links-panel" id="other-links-panel"><div className="other-links-panel__inner"><nav className="social-links social-card-grid" aria-label={text.otherAccounts}>{otherLinks.map((link, index) => <SocialCard key={link.name} language={language} link={link} style={otherCardStyle(index)} />)}</nav></div></div>
+          <div className="other-links-panel" id="other-links-panel"><div className="other-links-panel__inner"><p className="other-links-panel__intro"><LanguageText>{text.otherAccountsIntro}</LanguageText><br /><span className="other-links-panel__note"><LanguageText>{text.otherAccountsNote}</LanguageText></span></p><nav className="social-links social-card-grid" aria-label={text.otherAccounts}>{otherLinks.map((link, index) => <SocialCard key={link.name} language={language} link={link} style={otherCardStyle(index)} />)}</nav></div></div>
         </section>
       </section>
     </main>

@@ -56,7 +56,7 @@ button { border: 0; }
 .ambient-layer--socials { --ambient-glow-one: #c3a6ff; --ambient-glow-two: #82caff; }
 .ambient-glow { position: absolute; z-index: -1; width: 520px; height: 520px; border-radius: 50%; filter: blur(140px); opacity: .35; pointer-events: none; animation: drift 9s ease-in-out infinite alternate; transition: opacity .45s ease, filter .45s ease; }
 .page-shell[data-theme="dark"] .ambient-glow { opacity: .3; filter: blur(150px); }
-.page-shell:not([data-theme="dark"]) .ambient-glow { opacity: .52; filter: blur(125px); animation: drift 9s ease-in-out infinite alternate, light-glow-pulse 1.15s cubic-bezier(.22, 1, .36, 1) both; }
+.page-shell:not([data-theme="dark"]) .ambient-glow { opacity: .52; filter: blur(125px); animation: drift 9s ease-in-out infinite alternate; }
 .ambient-glow--one { top: calc(25% - 260px); left: calc(50% - 260px); background: var(--ambient-glow-one); }
 .ambient-glow--two { top: calc(75% - 260px); left: calc(50% - 260px); background: var(--ambient-glow-two); animation-delay: 0s, -4.5s; }
 
@@ -187,6 +187,7 @@ h2 { margin: 0; color: var(--text); font-family: "Manrope", Arial, sans-serif; f
 .other-section--open .other-links-panel { grid-template-rows: 1fr; }
 .other-links-panel__inner { min-height: 0; overflow: hidden; padding-top: 0; transition: padding .5s ease; }
 .other-section--open .other-links-panel__inner { padding-top: 18px; }
+.other-links-panel__intro { max-width: 552px; margin: 0 auto 16px; color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: .04em; line-height: 1.45; text-align: center; }
 .other-links-panel .social-links { display: flex; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 552px; margin-inline: auto; gap: 8px; padding-bottom: 5px; }
 .other-links-panel .social-link { flex: 0 0 132px; width: 132px; }
 .other-links-panel .social-link { --social-reveal-delay: 0s; opacity: 0; transform: translateY(10px); filter: blur(3px); pointer-events: none; transition: opacity .32s ease var(--social-reveal-delay), filter .32s ease var(--social-reveal-delay), color .25s ease, background .25s ease, border-color .25s ease, transform .18s cubic-bezier(.22, 1, .36, 1); }
