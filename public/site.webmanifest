@@ -1,0 +1,17 @@
+{
+  "name": "Andrey Zakharov",
+  "short_name": "Andrey Zakharov",
+  "description": "Portfolio of Andrey Zakharov, a software engineer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ecece9",
+  "theme_color": "#f3f3f1",
+  "icons": [
+    {
+      "src": "/favicon-light.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
