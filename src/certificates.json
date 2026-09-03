@@ -1,6 +1,6 @@
 {
-  "totalDocuments": 258,
-  "totalPages": 316,
+  "totalDocuments": 259,
+  "totalPages": 317,
   "providers": [
     {
       "name": "Academy Europe Open University",
@@ -1206,39 +1206,45 @@
           ]
         },
         {
+          "title": "Diploma of the Winner of the Competition for the Best Student Scientific Work in Natural, Technical, and Humanities Sciences at SUAI in the 2025–2026 Academic Year",
+          "pages": [
+            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/002-diploma-of-the-winner-of-the-competition-for-the-best-student-scientific-work-in-natural-technical-and-humanities-sciences-at-suai-in-the-2025-2026-academic-year.webp"
+          ]
+        },
+        {
           "title": "Professional Retraining Diploma in \"Fundamentals of Frontend Development\" with Qualification of \"Web and Multimedia Applications Developer\", 2024",
           "pages": [
-            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/002-professional-retraining-diploma-in-fundamentals-of-frontend-development-with-qualification-of-web-and-multimedia-applications-developer-2024.webp"
+            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/003-professional-retraining-diploma-in-fundamentals-of-frontend-development-with-qualification-of-web-and-multimedia-applications-developer-2024.webp"
           ]
         },
         {
           "title": "SUAI Economic Olympiad 2025 — First Degree Diploma",
           "pages": [
-            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/003-suai-economic-olympiad-2025-first-degree-diploma.webp"
+            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/004-suai-economic-olympiad-2025-first-degree-diploma.webp"
           ]
         },
         {
           "title": "SUAI Humanities Olympiad 2025 — Third Degree Diploma",
           "pages": [
-            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/004-suai-humanities-olympiad-2025-third-degree-diploma.webp"
+            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/005-suai-humanities-olympiad-2025-third-degree-diploma.webp"
           ]
         },
         {
           "title": "SUAI Law Olympiad 2025 — First Degree Diploma",
           "pages": [
-            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/005-suai-law-olympiad-2025-first-degree-diploma.webp"
+            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/006-suai-law-olympiad-2025-first-degree-diploma.webp"
           ]
         },
         {
           "title": "SUAI Technical Olympiad — Second Degree Diploma",
           "pages": [
-            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/006-suai-technical-olympiad-second-degree-diploma.webp"
+            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/007-suai-technical-olympiad-second-degree-diploma.webp"
           ]
         },
         {
           "title": "SUAI Technical Olympiad 2025 — First Degree Diploma",
           "pages": [
-            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/007-suai-technical-olympiad-2025-first-degree-diploma.webp"
+            "/certificates/48-saint-petersburg-state-university-of-aerospace-instrumentation-suai/008-suai-technical-olympiad-2025-first-degree-diploma.webp"
           ]
         }
       ]
