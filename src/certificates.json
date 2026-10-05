@@ -1,6 +1,6 @@
 {
-  "totalDocuments": 260,
-  "totalPages": 318,
+  "totalDocuments": 268,
+  "totalPages": 326,
   "providers": [
     {
       "name": "Academy Europe Open University",
@@ -1261,209 +1261,262 @@
       ]
     },
     {
+      "name": "Saint Petersburg State University of Economics (UNECON)",
+      "documents": [
+        {
+          "title": "Economic Aspects of Quality Management",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/001-economic-aspects-of-quality-management.webp"
+          ]
+        },
+        {
+          "title": "Employee Social Well-Being Management",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/002-employee-social-well-being-management.webp"
+          ]
+        },
+        {
+          "title": "End-to-End Digital Technologies for Supporting Flexible Management Systems",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/003-end-to-end-digital-technologies-for-supporting-flexible-management-systems.webp"
+          ]
+        },
+        {
+          "title": "Fundamentals of Building a Corporate Hybrid Cloud IT Infrastructure",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/004-fundamentals-of-building-a-corporate-hybrid-cloud-it-infrastructure.webp"
+          ]
+        },
+        {
+          "title": "Knowledge Management and Continuous Personnel Development",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/005-knowledge-management-and-continuous-personnel-development.webp"
+          ]
+        },
+        {
+          "title": "Modern Innovative High-Tech Manufacturing Processes",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/006-modern-innovative-high-tech-manufacturing-processes.webp"
+          ]
+        },
+        {
+          "title": "The Essentials for Business Life",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/007-the-essentials-for-business-life.webp"
+          ]
+        },
+        {
+          "title": "Youth Startup",
+          "pages": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/008-youth-startup.webp"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Saylor Academy",
       "documents": [
         {
           "title": "COMM001 Principles of Human Communication",
           "pages": [
-            "/certificates/50-saylor-academy/001-comm001-principles-of-human-communication-page-1.webp",
-            "/certificates/50-saylor-academy/001-comm001-principles-of-human-communication-page-2.webp"
+            "/certificates/51-saylor-academy/001-comm001-principles-of-human-communication-page-1.webp",
+            "/certificates/51-saylor-academy/001-comm001-principles-of-human-communication-page-2.webp"
           ]
         },
         {
           "title": "CS207 Fundamentals of Machine Learning",
           "pages": [
-            "/certificates/50-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-1.webp",
-            "/certificates/50-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-2.webp"
+            "/certificates/51-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-1.webp",
+            "/certificates/51-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-2.webp"
           ]
         },
         {
           "title": "CS250 Python for Data Science",
           "pages": [
-            "/certificates/50-saylor-academy/003-cs250-python-for-data-science-page-1.webp",
-            "/certificates/50-saylor-academy/003-cs250-python-for-data-science-page-2.webp"
+            "/certificates/51-saylor-academy/003-cs250-python-for-data-science-page-1.webp",
+            "/certificates/51-saylor-academy/003-cs250-python-for-data-science-page-2.webp"
           ]
         },
         {
           "title": "CS302 Software Engineering",
           "pages": [
-            "/certificates/50-saylor-academy/004-cs302-software-engineering-page-1.webp",
-            "/certificates/50-saylor-academy/004-cs302-software-engineering-page-2.webp"
+            "/certificates/51-saylor-academy/004-cs302-software-engineering-page-1.webp",
+            "/certificates/51-saylor-academy/004-cs302-software-engineering-page-2.webp"
           ]
         },
         {
           "title": "CS402 Computer Communications and Networks",
           "pages": [
-            "/certificates/50-saylor-academy/005-cs402-computer-communications-and-networks-page-1.webp",
-            "/certificates/50-saylor-academy/005-cs402-computer-communications-and-networks-page-2.webp"
+            "/certificates/51-saylor-academy/005-cs402-computer-communications-and-networks-page-1.webp",
+            "/certificates/51-saylor-academy/005-cs402-computer-communications-and-networks-page-2.webp"
           ]
         },
         {
           "title": "CS403 Introduction to Modern Database Systems",
           "pages": [
-            "/certificates/50-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-1.webp",
-            "/certificates/50-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-2.webp"
+            "/certificates/51-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-1.webp",
+            "/certificates/51-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-2.webp"
           ]
         },
         {
           "title": "CS406 Information Security",
           "pages": [
-            "/certificates/50-saylor-academy/007-cs406-information-security-page-1.webp",
-            "/certificates/50-saylor-academy/007-cs406-information-security-page-2.webp"
+            "/certificates/51-saylor-academy/007-cs406-information-security-page-1.webp",
+            "/certificates/51-saylor-academy/007-cs406-information-security-page-2.webp"
           ]
         },
         {
           "title": "ESL001 Elementary English as a Second Language",
           "pages": [
-            "/certificates/50-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-1.webp",
-            "/certificates/50-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-2.webp"
+            "/certificates/51-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-1.webp",
+            "/certificates/51-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-2.webp"
           ]
         },
         {
           "title": "ESL002 Intermediate English as a Second Language",
           "pages": [
-            "/certificates/50-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-1.webp",
-            "/certificates/50-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-2.webp"
+            "/certificates/51-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-1.webp",
+            "/certificates/51-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-2.webp"
           ]
         },
         {
           "title": "ESL003 Upper-Intermediate English as a Second Language",
           "pages": [
-            "/certificates/50-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-1.webp",
-            "/certificates/50-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-2.webp"
+            "/certificates/51-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-1.webp",
+            "/certificates/51-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-2.webp"
           ]
         },
         {
           "title": "ESL004 Advanced English as a Second Language",
           "pages": [
-            "/certificates/50-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-1.webp",
-            "/certificates/50-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-2.webp"
+            "/certificates/51-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-1.webp",
+            "/certificates/51-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-2.webp"
           ]
         },
         {
           "title": "ESL005 Business-Proficient English as a Second Language",
           "pages": [
-            "/certificates/50-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-1.webp",
-            "/certificates/50-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-2.webp"
+            "/certificates/51-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-1.webp",
+            "/certificates/51-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-2.webp"
           ]
         },
         {
           "title": "MA121 Introduction to Statistics",
           "pages": [
-            "/certificates/50-saylor-academy/013-ma121-introduction-to-statistics-page-1.webp",
-            "/certificates/50-saylor-academy/013-ma121-introduction-to-statistics-page-2.webp"
+            "/certificates/51-saylor-academy/013-ma121-introduction-to-statistics-page-1.webp",
+            "/certificates/51-saylor-academy/013-ma121-introduction-to-statistics-page-2.webp"
           ]
         },
         {
           "title": "PRDV005 Time and Stress Management",
           "pages": [
-            "/certificates/50-saylor-academy/014-prdv005-time-and-stress-management-page-1.webp",
-            "/certificates/50-saylor-academy/014-prdv005-time-and-stress-management-page-2.webp"
+            "/certificates/51-saylor-academy/014-prdv005-time-and-stress-management-page-1.webp",
+            "/certificates/51-saylor-academy/014-prdv005-time-and-stress-management-page-2.webp"
           ]
         },
         {
           "title": "PRDV104 Professional Etiquette",
           "pages": [
-            "/certificates/50-saylor-academy/015-prdv104-professional-etiquette-page-1.webp",
-            "/certificates/50-saylor-academy/015-prdv104-professional-etiquette-page-2.webp"
+            "/certificates/51-saylor-academy/015-prdv104-professional-etiquette-page-1.webp",
+            "/certificates/51-saylor-academy/015-prdv104-professional-etiquette-page-2.webp"
           ]
         },
         {
           "title": "PRDV200 Communicating with Data",
           "pages": [
-            "/certificates/50-saylor-academy/016-prdv200-communicating-with-data-page-1.webp",
-            "/certificates/50-saylor-academy/016-prdv200-communicating-with-data-page-2.webp"
+            "/certificates/51-saylor-academy/016-prdv200-communicating-with-data-page-1.webp",
+            "/certificates/51-saylor-academy/016-prdv200-communicating-with-data-page-2.webp"
           ]
         },
         {
           "title": "PRDV214 Organizational Communication",
           "pages": [
-            "/certificates/50-saylor-academy/017-prdv214-organizational-communication-page-1.webp",
-            "/certificates/50-saylor-academy/017-prdv214-organizational-communication-page-2.webp"
+            "/certificates/51-saylor-academy/017-prdv214-organizational-communication-page-1.webp",
+            "/certificates/51-saylor-academy/017-prdv214-organizational-communication-page-2.webp"
           ]
         },
         {
           "title": "PRDV224 Leadership and Teams",
           "pages": [
-            "/certificates/50-saylor-academy/018-prdv224-leadership-and-teams-page-1.webp",
-            "/certificates/50-saylor-academy/018-prdv224-leadership-and-teams-page-2.webp"
+            "/certificates/51-saylor-academy/018-prdv224-leadership-and-teams-page-1.webp",
+            "/certificates/51-saylor-academy/018-prdv224-leadership-and-teams-page-2.webp"
           ]
         },
         {
           "title": "PRDV225 Managing Employees",
           "pages": [
-            "/certificates/50-saylor-academy/019-prdv225-managing-employees-page-1.webp",
-            "/certificates/50-saylor-academy/019-prdv225-managing-employees-page-2.webp"
+            "/certificates/51-saylor-academy/019-prdv225-managing-employees-page-1.webp",
+            "/certificates/51-saylor-academy/019-prdv225-managing-employees-page-2.webp"
           ]
         },
         {
           "title": "PRDV226 Introduction to Human Resource Management",
           "pages": [
-            "/certificates/50-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-1.webp",
-            "/certificates/50-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-2.webp"
+            "/certificates/51-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-1.webp",
+            "/certificates/51-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-2.webp"
           ]
         },
         {
           "title": "PRDV227 Introduction to Business Planning and Strategy",
           "pages": [
-            "/certificates/50-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-1.webp",
-            "/certificates/50-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-2.webp"
+            "/certificates/51-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-1.webp",
+            "/certificates/51-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-2.webp"
           ]
         },
         {
           "title": "PRDV228 Decision-Making",
           "pages": [
-            "/certificates/50-saylor-academy/022-prdv228-decision-making-page-1.webp",
-            "/certificates/50-saylor-academy/022-prdv228-decision-making-page-2.webp"
+            "/certificates/51-saylor-academy/022-prdv228-decision-making-page-1.webp",
+            "/certificates/51-saylor-academy/022-prdv228-decision-making-page-2.webp"
           ]
         },
         {
           "title": "PRDV229 Organization Structure, Change, and the Future of Management",
           "pages": [
-            "/certificates/50-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-1.webp",
-            "/certificates/50-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-2.webp"
+            "/certificates/51-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-1.webp",
+            "/certificates/51-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-2.webp"
           ]
         },
         {
           "title": "PRDV231 Elements of Ethical Leadership",
           "pages": [
-            "/certificates/50-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-1.webp",
-            "/certificates/50-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-2.webp"
+            "/certificates/51-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-1.webp",
+            "/certificates/51-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-2.webp"
           ]
         },
         {
           "title": "PRDV401 Introduction to JavaScript I",
           "pages": [
-            "/certificates/50-saylor-academy/025-prdv401-introduction-to-javascript-i-page-1.webp",
-            "/certificates/50-saylor-academy/025-prdv401-introduction-to-javascript-i-page-2.webp"
+            "/certificates/51-saylor-academy/025-prdv401-introduction-to-javascript-i-page-1.webp",
+            "/certificates/51-saylor-academy/025-prdv401-introduction-to-javascript-i-page-2.webp"
           ]
         },
         {
           "title": "PRDV402 Introduction to JavaScript II",
           "pages": [
-            "/certificates/50-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-1.webp",
-            "/certificates/50-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-2.webp"
+            "/certificates/51-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-1.webp",
+            "/certificates/51-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-2.webp"
           ]
         },
         {
           "title": "PRDV410 Introduction to Java and Object-Oriented Programming",
           "pages": [
-            "/certificates/50-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-1.webp",
-            "/certificates/50-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-2.webp"
+            "/certificates/51-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-1.webp",
+            "/certificates/51-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-2.webp"
           ]
         },
         {
           "title": "PRDV420 Introduction to R Programming",
           "pages": [
-            "/certificates/50-saylor-academy/028-prdv420-introduction-to-r-programming-page-1.webp",
-            "/certificates/50-saylor-academy/028-prdv420-introduction-to-r-programming-page-2.webp"
+            "/certificates/51-saylor-academy/028-prdv420-introduction-to-r-programming-page-1.webp",
+            "/certificates/51-saylor-academy/028-prdv420-introduction-to-r-programming-page-2.webp"
           ]
         },
         {
           "title": "PRDV430 AI for Business Applications",
           "pages": [
-            "/certificates/50-saylor-academy/029-prdv430-ai-for-business-applications-page-1.webp",
-            "/certificates/50-saylor-academy/029-prdv430-ai-for-business-applications-page-2.webp"
+            "/certificates/51-saylor-academy/029-prdv430-ai-for-business-applications-page-1.webp",
+            "/certificates/51-saylor-academy/029-prdv430-ai-for-business-applications-page-2.webp"
           ]
         }
       ]
@@ -1474,19 +1527,19 @@
         {
           "title": "Crafting a Winning SEO Strategy - A Guide for In-House Marketers",
           "pages": [
-            "/certificates/51-semrush-academy/001-crafting-a-winning-seo-strategy-a-guide-for-in-house-marketers.webp"
+            "/certificates/52-semrush-academy/001-crafting-a-winning-seo-strategy-a-guide-for-in-house-marketers.webp"
           ]
         },
         {
           "title": "How to Get More Customers with Your Small Business Website with Wes McDowell",
           "pages": [
-            "/certificates/51-semrush-academy/002-how-to-get-more-customers-with-your-small-business-website-with-wes-mcdowell.webp"
+            "/certificates/52-semrush-academy/002-how-to-get-more-customers-with-your-small-business-website-with-wes-mcdowell.webp"
           ]
         },
         {
           "title": "Maximizing ROI through Marketing Analytics - A Practical Guide for In-House Marketers",
           "pages": [
-            "/certificates/51-semrush-academy/003-maximizing-roi-through-marketing-analytics-a-practical-guide-for-in-house-marketers.webp"
+            "/certificates/52-semrush-academy/003-maximizing-roi-through-marketing-analytics-a-practical-guide-for-in-house-marketers.webp"
           ]
         }
       ]
@@ -1497,19 +1550,19 @@
         {
           "title": "Free Full Stack Developer Course",
           "pages": [
-            "/certificates/52-simplilearn/001-free-full-stack-developer-course.webp"
+            "/certificates/53-simplilearn/001-free-full-stack-developer-course.webp"
           ]
         },
         {
           "title": "Free Project Manager Course",
           "pages": [
-            "/certificates/52-simplilearn/002-free-project-manager-course.webp"
+            "/certificates/53-simplilearn/002-free-project-manager-course.webp"
           ]
         },
         {
           "title": "Machine Learning Using Python",
           "pages": [
-            "/certificates/52-simplilearn/003-machine-learning-using-python.webp"
+            "/certificates/53-simplilearn/003-machine-learning-using-python.webp"
           ]
         }
       ]
@@ -1520,25 +1573,25 @@
         {
           "title": "Algorithms: Theory and Practice — Data Structures",
           "pages": [
-            "/certificates/53-stepik/001-algorithms-theory-and-practice-data-structures.webp"
+            "/certificates/54-stepik/001-algorithms-theory-and-practice-data-structures.webp"
           ]
         },
         {
           "title": "Business English (Peoples' Friendship University of Russia named after Patrice Lumumba - RUDN University)",
           "pages": [
-            "/certificates/53-stepik/002-business-english-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.webp"
+            "/certificates/54-stepik/002-business-english-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.webp"
           ]
         },
         {
           "title": "Extreme Combinatorics by A. M. Raygorodskii Moscow Institute of Physics and Technology (National Research University; MIPT)",
           "pages": [
-            "/certificates/53-stepik/003-extreme-combinatorics-by-a-m-raygorodskii-moscow-institute-of-physics-and-technology-national-research-university-mipt.webp"
+            "/certificates/54-stepik/003-extreme-combinatorics-by-a-m-raygorodskii-moscow-institute-of-physics-and-technology-national-research-university-mipt.webp"
           ]
         },
         {
           "title": "Mathematical Teletraffic Theory (Peoples' Friendship University of Russia named after Patrice Lumumba - RUDN University)",
           "pages": [
-            "/certificates/53-stepik/004-mathematical-teletraffic-theory-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.webp"
+            "/certificates/54-stepik/004-mathematical-teletraffic-theory-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.webp"
           ]
         }
       ]
@@ -1549,43 +1602,43 @@
         {
           "title": "Develop and Automate with SAP Build",
           "pages": [
-            "/certificates/54-systems-applications-and-products-in-data-processing-sap-learning/001-develop-and-automate-with-sap-build.webp"
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/001-develop-and-automate-with-sap-build.webp"
           ]
         },
         {
           "title": "Exploring SAP Analytics Cloud",
           "pages": [
-            "/certificates/54-systems-applications-and-products-in-data-processing-sap-learning/002-exploring-sap-analytics-cloud.webp"
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/002-exploring-sap-analytics-cloud.webp"
           ]
         },
         {
           "title": "Exploring SAP Business Technology Platform",
           "pages": [
-            "/certificates/54-systems-applications-and-products-in-data-processing-sap-learning/003-exploring-sap-business-technology-platform.webp"
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/003-exploring-sap-business-technology-platform.webp"
           ]
         },
         {
           "title": "Getting Started with SAP Cloud Application Programming Model",
           "pages": [
-            "/certificates/54-systems-applications-and-products-in-data-processing-sap-learning/004-getting-started-with-sap-cloud-application-programming-model.webp"
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/004-getting-started-with-sap-cloud-application-programming-model.webp"
           ]
         },
         {
           "title": "Implementing with SAP Cloud ALM",
           "pages": [
-            "/certificates/54-systems-applications-and-products-in-data-processing-sap-learning/005-implementing-with-sap-cloud-alm.webp"
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/005-implementing-with-sap-cloud-alm.webp"
           ]
         },
         {
           "title": "Introducing SAP Cloud ALM",
           "pages": [
-            "/certificates/54-systems-applications-and-products-in-data-processing-sap-learning/006-introducing-sap-cloud-alm.webp"
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/006-introducing-sap-cloud-alm.webp"
           ]
         },
         {
           "title": "Operating with SAP Cloud ALM",
           "pages": [
-            "/certificates/54-systems-applications-and-products-in-data-processing-sap-learning/007-operating-with-sap-cloud-alm.webp"
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/007-operating-with-sap-cloud-alm.webp"
           ]
         }
       ]
@@ -1596,25 +1649,25 @@
         {
           "title": "Developing Designs for User Experience",
           "pages": [
-            "/certificates/55-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/001-developing-designs-for-user-experience.webp"
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/001-developing-designs-for-user-experience.webp"
           ]
         },
         {
           "title": "Developing Designs for User Interface",
           "pages": [
-            "/certificates/55-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/002-developing-designs-for-user-interface.webp"
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/002-developing-designs-for-user-interface.webp"
           ]
         },
         {
           "title": "English for Business and Entrepreneurship",
           "pages": [
-            "/certificates/55-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/003-english-for-business-and-entrepreneurship.webp"
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/003-english-for-business-and-entrepreneurship.webp"
           ]
         },
         {
           "title": "English for Science, Technology, Engineering, and Mathematics (eSTEM)",
           "pages": [
-            "/certificates/55-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/004-english-for-science-technology-engineering-and-mathematics-estem.webp"
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/004-english-for-science-technology-engineering-and-mathematics-estem.webp"
           ]
         }
       ]
@@ -1625,19 +1678,19 @@
         {
           "title": "Building Up Quality Leaders",
           "pages": [
-            "/certificates/56-test-automation-university/001-building-up-quality-leaders.webp"
+            "/certificates/57-test-automation-university/001-building-up-quality-leaders.webp"
           ]
         },
         {
           "title": "Intro to Testing Machine Learning Models",
           "pages": [
-            "/certificates/56-test-automation-university/002-intro-to-testing-machine-learning-models.webp"
+            "/certificates/57-test-automation-university/002-intro-to-testing-machine-learning-models.webp"
           ]
         },
         {
           "title": "Setting a Foundation for Successful Test Automation",
           "pages": [
-            "/certificates/56-test-automation-university/003-setting-a-foundation-for-successful-test-automation.webp"
+            "/certificates/57-test-automation-university/003-setting-a-foundation-for-successful-test-automation.webp"
           ]
         }
       ]
@@ -1648,65 +1701,65 @@
         {
           "title": "Digital thinking tools for better decision making",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-2.webp"
           ]
         },
         {
           "title": "Effective communication in the workplace",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-2.webp"
           ]
         },
         {
           "title": "English skills for learning",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/003-english-skills-for-learning-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/003-english-skills-for-learning-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/003-english-skills-for-learning-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/003-english-skills-for-learning-page-2.webp"
           ]
         },
         {
           "title": "Everyday English 1",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/004-everyday-english-1-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/004-everyday-english-1-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/004-everyday-english-1-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/004-everyday-english-1-page-2.webp"
           ]
         },
         {
           "title": "Everyday English 2",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/005-everyday-english-2-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/005-everyday-english-2-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/005-everyday-english-2-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/005-everyday-english-2-page-2.webp"
           ]
         },
         {
           "title": "Leadership and followership",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/006-leadership-and-followership-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/006-leadership-and-followership-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/006-leadership-and-followership-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/006-leadership-and-followership-page-2.webp"
           ]
         },
         {
           "title": "Risk management",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/007-risk-management-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/007-risk-management-page-2.webp",
-            "/certificates/57-the-open-university-openlearn/007-risk-management-page-3.webp"
+            "/certificates/58-the-open-university-openlearn/007-risk-management-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/007-risk-management-page-2.webp",
+            "/certificates/58-the-open-university-openlearn/007-risk-management-page-3.webp"
           ]
         },
         {
           "title": "Succeed in the workplace",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/008-succeed-in-the-workplace-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/008-succeed-in-the-workplace-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/008-succeed-in-the-workplace-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/008-succeed-in-the-workplace-page-2.webp"
           ]
         },
         {
           "title": "Succeed with learning",
           "pages": [
-            "/certificates/57-the-open-university-openlearn/009-succeed-with-learning-page-1.webp",
-            "/certificates/57-the-open-university-openlearn/009-succeed-with-learning-page-2.webp"
+            "/certificates/58-the-open-university-openlearn/009-succeed-with-learning-page-1.webp",
+            "/certificates/58-the-open-university-openlearn/009-succeed-with-learning-page-2.webp"
           ]
         }
       ]
@@ -1717,13 +1770,13 @@
         {
           "title": "Automation Solution Architecture Fundamentals",
           "pages": [
-            "/certificates/58-uipath-academy/001-automation-solution-architecture-fundamentals.webp"
+            "/certificates/59-uipath-academy/001-automation-solution-architecture-fundamentals.webp"
           ]
         },
         {
           "title": "Introduction to Automation",
           "pages": [
-            "/certificates/58-uipath-academy/002-introduction-to-automation.webp"
+            "/certificates/59-uipath-academy/002-introduction-to-automation.webp"
           ]
         }
       ]
@@ -1734,7 +1787,7 @@
         {
           "title": "Research and Evidence at UNICEF",
           "pages": [
-            "/certificates/59-united-nations-children-s-fund-unicef-agora/001-research-and-evidence-at-unicef.webp"
+            "/certificates/60-united-nations-children-s-fund-unicef-agora/001-research-and-evidence-at-unicef.webp"
           ]
         }
       ]
@@ -1745,19 +1798,19 @@
         {
           "title": "Hydraulic Modeling with HEC-RAS",
           "pages": [
-            "/certificates/60-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/001-hydraulic-modeling-with-hec-ras.webp"
+            "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/001-hydraulic-modeling-with-hec-ras.webp"
           ]
         },
         {
           "title": "Hydrologic Modeling with HEC-HMS",
           "pages": [
-            "/certificates/60-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/002-hydrologic-modeling-with-hec-hms.webp"
+            "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/002-hydrologic-modeling-with-hec-hms.webp"
           ]
         },
         {
           "title": "Open Educational Resources (OER) Development",
           "pages": [
-            "/certificates/60-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/003-open-educational-resources-oer-development.webp"
+            "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/003-open-educational-resources-oer-development.webp"
           ]
         }
       ]
@@ -1768,21 +1821,21 @@
         {
           "title": "English for Business and Entrepreneurship (MOOC)",
           "pages": [
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-1.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-2.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-3.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-4.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-5.webp"
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-1.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-2.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-3.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-4.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-5.webp"
           ]
         },
         {
           "title": "English for Career Development (MOOC)",
           "pages": [
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-1.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-2.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-3.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-4.webp",
-            "/certificates/61-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-5.webp"
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-1.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-2.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-3.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-4.webp",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-5.webp"
           ]
         }
       ]
@@ -1793,7 +1846,7 @@
         {
           "title": "Full Stack Open",
           "pages": [
-            "/certificates/62-university-of-helsinki-uh-houston-inc/001-full-stack-open.webp"
+            "/certificates/63-university-of-helsinki-uh-houston-inc/001-full-stack-open.webp"
           ]
         }
       ]
@@ -1804,7 +1857,7 @@
         {
           "title": "Leadership — No-Blame Problem Solving at the University of Illinois Chicago (UIC)",
           "pages": [
-            "/certificates/63-university-of-illinois-chicago-uic/001-leadership-no-blame-problem-solving-at-the-university-of-illinois-chicago-uic.webp"
+            "/certificates/64-university-of-illinois-chicago-uic/001-leadership-no-blame-problem-solving-at-the-university-of-illinois-chicago-uic.webp"
           ]
         }
       ]
@@ -1815,61 +1868,61 @@
         {
           "title": "Business Analysis Fundamentals with AI Certified (BALearning)",
           "pages": [
-            "/certificates/64-vmedu/001-business-analysis-fundamentals-with-ai-certified-balearning.webp"
+            "/certificates/65-vmedu/001-business-analysis-fundamentals-with-ai-certified-balearning.webp"
           ]
         },
         {
           "title": "Corporate Sales Fundamentals (SMstudy)",
           "pages": [
-            "/certificates/64-vmedu/002-corporate-sales-fundamentals-smstudy.webp"
+            "/certificates/65-vmedu/002-corporate-sales-fundamentals-smstudy.webp"
           ]
         },
         {
           "title": "Digital Marketing Fundamentals (SMstudy)",
           "pages": [
-            "/certificates/64-vmedu/003-digital-marketing-fundamentals-smstudy.webp"
+            "/certificates/65-vmedu/003-digital-marketing-fundamentals-smstudy.webp"
           ]
         },
         {
           "title": "Kanban Essentials with AI Certified (Kanbanstudy)",
           "pages": [
-            "/certificates/64-vmedu/004-kanban-essentials-with-ai-certified-kanbanstudy.webp"
+            "/certificates/65-vmedu/004-kanban-essentials-with-ai-certified-kanbanstudy.webp"
           ]
         },
         {
           "title": "Marketing Research Fundamentals (SMstudy)",
           "pages": [
-            "/certificates/64-vmedu/005-marketing-research-fundamentals-smstudy.webp"
+            "/certificates/65-vmedu/005-marketing-research-fundamentals-smstudy.webp"
           ]
         },
         {
           "title": "Marketing Strategy Fundamentals (SMstudy)",
           "pages": [
-            "/certificates/64-vmedu/006-marketing-strategy-fundamentals-smstudy.webp"
+            "/certificates/65-vmedu/006-marketing-strategy-fundamentals-smstudy.webp"
           ]
         },
         {
           "title": "Negotiation Associate (NGstudy)",
           "pages": [
-            "/certificates/64-vmedu/007-negotiation-associate-ngstudy.webp"
+            "/certificates/65-vmedu/007-negotiation-associate-ngstudy.webp"
           ]
         },
         {
           "title": "OKR Fundamentals with AI Certified (OKRstudy)",
           "pages": [
-            "/certificates/64-vmedu/008-okr-fundamentals-with-ai-certified-okrstudy.webp"
+            "/certificates/65-vmedu/008-okr-fundamentals-with-ai-certified-okrstudy.webp"
           ]
         },
         {
           "title": "Scrum Fundamentals Certified (SCRUMstudy)",
           "pages": [
-            "/certificates/64-vmedu/009-scrum-fundamentals-certified-scrumstudy.webp"
+            "/certificates/65-vmedu/009-scrum-fundamentals-certified-scrumstudy.webp"
           ]
         },
         {
           "title": "Six Sigma Yellow Belt (6sigmastudy)",
           "pages": [
-            "/certificates/64-vmedu/010-six-sigma-yellow-belt-6sigmastudy.webp"
+            "/certificates/65-vmedu/010-six-sigma-yellow-belt-6sigmastudy.webp"
           ]
         }
       ]
@@ -1880,13 +1933,13 @@
         {
           "title": "Let's Learn English Level 1",
           "pages": [
-            "/certificates/65-voice-of-america-voa/001-let-s-learn-english-level-1.webp"
+            "/certificates/66-voice-of-america-voa/001-let-s-learn-english-level-1.webp"
           ]
         },
         {
           "title": "Let's Learn English Level 2",
           "pages": [
-            "/certificates/65-voice-of-america-voa/002-let-s-learn-english-level-2.webp"
+            "/certificates/66-voice-of-america-voa/002-let-s-learn-english-level-2.webp"
           ]
         }
       ]
@@ -1897,31 +1950,31 @@
         {
           "title": "WCU Admission Decision",
           "pages": [
-            "/certificates/66-wild-chicken-university-wcu/001-wcu-admission-decision.webp"
+            "/certificates/67-wild-chicken-university-wcu/001-wcu-admission-decision.webp"
           ]
         },
         {
           "title": "WCU Diploma - Doctor of Management",
           "pages": [
-            "/certificates/66-wild-chicken-university-wcu/002-wcu-diploma-doctor-of-management.webp"
+            "/certificates/67-wild-chicken-university-wcu/002-wcu-diploma-doctor-of-management.webp"
           ]
         },
         {
           "title": "WCU Diploma - Master",
           "pages": [
-            "/certificates/66-wild-chicken-university-wcu/003-wcu-diploma-master.webp"
+            "/certificates/67-wild-chicken-university-wcu/003-wcu-diploma-master.webp"
           ]
         },
         {
           "title": "WCU Diploma - Master of Engineering 1",
           "pages": [
-            "/certificates/66-wild-chicken-university-wcu/004-wcu-diploma-master-of-engineering-1.webp"
+            "/certificates/67-wild-chicken-university-wcu/004-wcu-diploma-master-of-engineering-1.webp"
           ]
         },
         {
           "title": "WCU Diploma - Master of Engineering 2",
           "pages": [
-            "/certificates/66-wild-chicken-university-wcu/005-wcu-diploma-master-of-engineering-2.webp"
+            "/certificates/67-wild-chicken-university-wcu/005-wcu-diploma-master-of-engineering-2.webp"
           ]
         }
       ]
@@ -1932,25 +1985,25 @@
         {
           "title": "Introduction to Image Processing",
           "pages": [
-            "/certificates/67-wolfram-u/001-introduction-to-image-processing.webp"
+            "/certificates/68-wolfram-u/001-introduction-to-image-processing.webp"
           ]
         },
         {
           "title": "Multiparadigm Data Science",
           "pages": [
-            "/certificates/67-wolfram-u/002-multiparadigm-data-science.webp"
+            "/certificates/68-wolfram-u/002-multiparadigm-data-science.webp"
           ]
         },
         {
           "title": "Visual Exploration of Data",
           "pages": [
-            "/certificates/67-wolfram-u/003-visual-exploration-of-data.webp"
+            "/certificates/68-wolfram-u/003-visual-exploration-of-data.webp"
           ]
         },
         {
           "title": "Visual Explorations in Data Science",
           "pages": [
-            "/certificates/67-wolfram-u/004-visual-explorations-in-data-science.webp"
+            "/certificates/68-wolfram-u/004-visual-explorations-in-data-science.webp"
           ]
         }
       ]
