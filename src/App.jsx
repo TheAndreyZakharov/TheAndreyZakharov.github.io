@@ -67,7 +67,10 @@ const links = [
   { name: "Reddit", handle: "TheAndreyZakharov", url: "https://www.reddit.com/user/TheAndreyZakharov", icon: "/icons/icons8-reddit-96.png" },
   { name: "Pinterest", handle: "The_Andrey_Zakharov", url: "https://ru.pinterest.com/The_Andrey_Zakharov", icon: "/icons/icons8-pinterest-96.png" },
   { name: "Spotify", handle: { en: "My profile", ru: "Мой профиль" }, url: "https://open.spotify.com/user/31xnbwxotc2ixa65z42u5obuwwxi", icon: "/icons/icons8-spotify-96.png" },
-  { name: "VK", handle: "TheAndreyZakharov", url: "https://vk.com/TheAndreyZakharov", icon: "/icons/icons8-vk-96.png" },
+  { name: { en: "VK Page", ru: "ВК страница" }, handle: "TheAndreyZakharov", url: "https://vk.com/TheAndreyZakharov", icon: "/icons/icons8-vk-96.png" },
+  { name: { en: "VK Community", ru: "ВК сообщество" }, handle: "The_Andrey_Zakharov", url: "https://vk.ru/The_Andrey_Zakharov", icon: "/icons/icons8-vk-96.png" },
+  { name: { en: "VK Video", ru: "VK Видео" }, handle: "@The_Andrey_Zakharov", url: "https://vkvideo.ru/@the_andrey_zakharov", icon: "/icons/vk-video.png" },
+  { name: { en: "VK Live", ru: "VK Live" }, handle: "TheAndreyZakharov", url: "https://live.vkvideo.ru/theandreyzakharov", icon: "/icons/vk-live.png" },
   { name: "LeetCode", handle: "TheAndreyZakharov", url: "https://leetcode.com/u/TheAndreyZakharov", icon: "/icons/icons8-leetcode-96.png" },
   { name: "Chess", handle: "TheAndreyZakharov", url: "https://www.chess.com/member/TheAndreyZakharov", icon: "/icons/icons8-chess-96.png" },
   { name: "DonationAlerts", handle: "TheAndreyZakharov", url: "https://www.donationalerts.com/r/theandreyzakharov", icon: "/icons/DonationAlerts.png" },
@@ -89,10 +92,40 @@ const resumes = [
   { key: "geo", title: "Geospatial Software Engineer", file: "/resumes/Andrey_Zakharov_Geospatial_Software_Engineer.pdf", downloadName: "Andrey_Zakharov_Geospatial_Software_Engineer.pdf" },
 ];
 
+const educationHistory = [
+  {
+    year: "2031",
+    progress: "future",
+    status: { en: "Planned defense", ru: "Планируемая защита" },
+    title: { en: "PhD", ru: "Кандидат технических наук" },
+    detail: { en: "Technical Sciences — Systems Analysis, Control and Information Processing", ru: "Системный анализ, управление и обработка информации" },
+    institution: { en: "Saint Petersburg State University of Industrial Technologies and Design (SPbSUITD)", ru: "Санкт-Петербургский государственный университет промышленных технологий и дизайна (СПбГУПТД)" },
+  },
+  {
+    year: "2027",
+    progress: "future",
+    status: { en: "In progress", ru: "В процессе" },
+    title: { en: "Master’s Degree in Management", ru: "Магистратура по направлению «Менеджмент»" },
+    detail: { en: "Strategic Human Resource Management", ru: "Стратегическое управление человеческими ресурсами" },
+    institution: { en: "Saint-Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
+  },
+  {
+    year: "2025",
+    progress: "complete",
+    title: { en: "Bachelor’s Degree in Software Engineering", ru: "Бакалавриат по программной инженерии" },
+    detail: { en: "Software Systems Design", ru: "Проектирование программных систем" },
+    institution: { en: "Saint-Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
+  },
+];
+
 const copy = {
   en: {
     education: "Education",
-    educationIntro: "Certificates and Diplomas archive",
+    educationIntro: "My education path, diplomas & certificates",
+    educationArchiveButton: "View diplomas & certificates",
+    research: "Research & Science",
+    researchIntro: "Patents, registrations, articles & research",
+    researchPageIntro: "My articles, patents, and other research work will be collected here soon.",
     sections: "Main sections",
     professionalSummary: "Software engineer working on a wide range of software products, applied research and challenges across different subject areas. I combine a broad technical perspective with a practical understanding of product goals and the problems a solution needs to solve. I can independently build a fast MVP or contribute to a larger product developed by a team over time.",
     professionalSummaryMore: [
@@ -104,10 +137,10 @@ const copy = {
     professionalSummaryReadLess: "Show less",
     archive: "Certificates & Diplomas",
     email: "Email",
-    socialsTitle: "Socials & contact",
+    socialsTitle: "Socials & Contact",
     socialsIntro: "Ways to reach me and follow my work",
     openSocials: "Open contacts",
-    socialsPageTitle: "Socials & contact",
+    socialsPageTitle: "Socials & Contact",
     mainContacts: "Main contacts",
     copied: "Email copied",
     mainLinks: "Main social links",
@@ -144,7 +177,11 @@ const copy = {
   },
   ru: {
     education: "Образование",
-    educationIntro: "Архив сертификатов и дипломов",
+    educationIntro: "Мой образовательный путь, дипломы и сертификаты",
+    educationArchiveButton: "Дипломы и сертификаты",
+    research: "Научная Деятельность",
+    researchIntro: "Патенты, регистрации, статьи и исследования",
+    researchPageIntro: "Здесь скоро появятся мои статьи, патенты и другие материалы о научной деятельности.",
     sections: "Основные разделы",
     professionalSummary: "Инженер-программист, работающий над разнообразными программными продуктами, прикладными исследованиями и задачами в разных предметных областях. Соединяю широкий технический кругозор с практическим пониманием целей продукта и задач, которые он должен решать. Могу самостоятельно быстро собрать MVP или последовательно развивать большой продукт в команде.",
     professionalSummaryMore: [
@@ -156,10 +193,10 @@ const copy = {
     professionalSummaryReadLess: "Свернуть",
     archive: "Сертификаты и Дипломы",
     email: "Почта",
-    socialsTitle: "Соцсети и контакты",
+    socialsTitle: "Соцсети и Контакты",
     socialsIntro: "Все способы связаться со мной",
     openSocials: "Открыть контакты",
-    socialsPageTitle: "Соцсети и контакты",
+    socialsPageTitle: "Соцсети и Контакты",
     mainContacts: "Основные контакты",
     copied: "Почта скопирована",
     mainLinks: "Основные соцсети",
@@ -210,6 +247,10 @@ function SearchIcon() {
 
 function GraduationCapIcon() {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2.5 9.5 9.5-4 9.5 4-9.5 4-9.5-4Z" /><path d="M6 11.2v4.1c2.9 2.1 9.1 2.1 12 0v-4.1" /><path d="M21.5 10v5" /></svg>;
+}
+
+function ResearchIcon() {
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1" /><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(45 12 12)" /><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-45 12 12)" /></svg>;
 }
 
 function ResumeIcon() {
@@ -278,12 +319,13 @@ function AmbientLayer({ variant }) {
 }
 
 function SocialCard({ link, language, style }) {
+  const name = typeof link.name === "string" ? link.name : link.name?.[language];
   const handle = typeof link.handle === "string" ? link.handle : link.handle?.[language];
   return (
     <a className="social-link social-link--icon" href={link.url} target={link.url.startsWith("mailto:") ? undefined : "_blank"} rel={link.url.startsWith("mailto:") ? undefined : "noreferrer"} style={style}>
       <span className="social-link__content">
-        <span className="social-link__icon"><img src={link.icon} alt="" /></span>
-        <span className="social-link__name">{link.name}</span>
+        <span className="social-link__icon"><img className={link.icon === "/icons/vk-video.png" || link.icon === "/icons/vk-live.png" ? "social-link__icon-image--compact" : undefined} src={link.icon} alt="" /></span>
+        <span className="social-link__name">{name}</span>
         <span className="social-link__handle"><LanguageText>{handle}</LanguageText></span>
       </span>
     </a>
@@ -293,7 +335,9 @@ function SocialCard({ link, language, style }) {
 function viewFromLocation() {
   if (window.location.hash === "#resumes") return "resumes";
   if (window.location.hash === "#socials") return "socials";
-  if (window.location.hash === "#education" || window.location.hash === "#certificates" || window.location.hash.startsWith("#certificate-provider-")) return "certificates";
+  if (window.location.hash === "#research") return "research";
+  if (window.location.hash === "#education") return "education";
+  if (window.location.hash === "#certificates" || window.location.hash.startsWith("#certificate-provider-")) return "certificates";
   return "home";
 }
 
@@ -484,7 +528,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
 
   const scrollToProvider = (event, index) => {
     event.preventDefault();
-    window.history.replaceState({ view: "certificates" }, "", "#education");
+    window.history.replaceState({ view: "certificates" }, "", "#certificates");
     const scroll = () => {
       const target = document.getElementById(`certificate-provider-${index}`);
       if (!target) return;
@@ -512,7 +556,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   };
 
   const scrollToTop = () => {
-    window.history.replaceState({ view: "certificates" }, "", "#education");
+    window.history.replaceState({ view: "certificates" }, "", "#certificates");
     const scrollRoot = document.scrollingElement || document.documentElement;
     const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
     scrollRoot.scrollTo({ top: 0, behavior });
@@ -655,7 +699,7 @@ function SocialsView({ theme, text, language, onBack, leaving = false }) {
               </button>
             </div>
           </div>
-          <div className="other-links-panel" id="other-links-panel"><div className="other-links-panel__inner"><p className="other-links-panel__intro"><LanguageText>{text.otherAccountsIntro}</LanguageText><br /><span className="other-links-panel__note"><LanguageText>{text.otherAccountsNote}</LanguageText></span></p><nav className="social-links social-card-grid" aria-label={text.otherAccounts}>{otherLinks.map((link, index) => <SocialCard key={link.name} language={language} link={link} style={otherCardStyle(index)} />)}</nav></div></div>
+          <div className="other-links-panel" id="other-links-panel"><div className="other-links-panel__inner"><p className="other-links-panel__intro"><LanguageText>{text.otherAccountsIntro}</LanguageText><br /><span className="other-links-panel__note"><LanguageText>{text.otherAccountsNote}</LanguageText></span></p><nav className="social-links social-card-grid" aria-label={text.otherAccounts}>{otherLinks.map((link, index) => <SocialCard key={link.url} language={language} link={link} style={otherCardStyle(index)} />)}</nav></div></div>
         </section>
       </section>
     </main>
@@ -823,7 +867,15 @@ function App() {
   };
 
   const openCertificates = () => {
-    transitionView("certificates", () => window.history.pushState({ view: "certificates" }, "", "#education"));
+    transitionView("certificates", () => window.history.pushState({ view: "certificates" }, "", "#certificates"));
+  };
+
+  const openEducation = () => {
+    transitionView("education", () => window.history.pushState({ view: "education" }, "", "#education"));
+  };
+
+  const openResearch = () => {
+    transitionView("research", () => window.history.pushState({ view: "research" }, "", "#research"));
   };
 
   const closeResumes = () => {
@@ -835,6 +887,10 @@ function App() {
   };
 
   const closeCertificates = () => {
+    transitionView("education", () => window.history.pushState({ view: "education" }, "", "#education"));
+  };
+
+  const closeEducation = () => {
     transitionView("home", () => window.history.pushState({ view: "home" }, "", window.location.pathname));
   };
 
@@ -876,8 +932,47 @@ function App() {
     return <CertificatesView theme={theme} text={text} language={language} onBack={closeCertificates} leaving={pageLeaving} />;
   }
 
+  if (view === "education") {
+    return (
+      <main className={`page-shell ${pageLeaving ? "page-shell--leaving" : ""}`} data-theme={theme}>
+        <AmbientLayer variant="certificates" />
+        <section className="profile-card education-page">
+          <div className="resume-page-top"><button className="back-button" type="button" onClick={closeEducation}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
+          <header className="resume-page-header"><h1><LanguageText>{text.education}</LanguageText></h1></header>
+          <div className="education-timeline">
+            {educationHistory.map((item) => (
+              <article className={`education-timeline__item education-timeline__item--${item.progress}`} key={item.year}>
+                <span className="education-timeline__year">{item.year}{item.status && <small><LanguageText>{item.status[language]}</LanguageText></small>}</span>
+                <span className="education-timeline__dot" aria-hidden="true" />
+                <div className="education-timeline__details">
+                  <h2><LanguageText>{item.title[language]}</LanguageText></h2>
+                  <p><LanguageText>{item.detail[language]}</LanguageText></p>
+                  {item.institution && <small><LanguageText>{item.institution[language]}</LanguageText></small>}
+                </div>
+              </article>
+            ))}
+          </div>
+          <button className="education-archive-button" type="button" onClick={openCertificates}><LanguageText>{text.educationArchiveButton}</LanguageText><span aria-hidden="true">→</span></button>
+        </section>
+      </main>
+    );
+  }
+
   if (view === "socials") {
     return <SocialsView theme={theme} text={text} language={language} onBack={closeSocials} leaving={pageLeaving} />;
+  }
+
+  if (view === "research") {
+    return (
+      <main className={`page-shell ${pageLeaving ? "page-shell--leaving" : ""}`} data-theme={theme}>
+        <AmbientLayer variant="home" />
+        <section className="profile-card section-page">
+          <div className="resume-page-top"><button className="back-button" type="button" onClick={closeEducation}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
+          <header className="resume-page-header"><h1><LanguageText>{text.research}</LanguageText></h1></header>
+          <p className="section-page__intro"><LanguageText>{text.researchPageIntro}</LanguageText></p>
+        </section>
+      </main>
+    );
   }
 
   return (
@@ -924,28 +1019,27 @@ function App() {
 
         <div className="section-divider profile-section-divider"><span><LanguageText>{text.sections}</LanguageText></span></div>
 
-        <div className="secondary-links">
-          <div className="education-card">
-            <div className="education-card__main">
-              <span className="education-mark"><MessageIcon /></span>
-              <div><strong><LanguageText>{text.socialsTitle}</LanguageText></strong><span><LanguageText>{text.socialsIntro}</LanguageText></span></div>
-            </div>
-            <button className="secondary-button" type="button" onClick={openSocials}><LanguageText>{text.openSocials}</LanguageText></button>
-          </div>
-          <div className="education-card resume-card">
-            <div className="education-card__main">
-              <span className="education-mark"><ResumeIcon /></span>
-              <div><strong><LanguageText>{text.resumeTitle}</LanguageText></strong><span><LanguageText>{text.resumeIntro}</LanguageText></span></div>
-            </div>
-            <button className="secondary-button" type="button" onClick={openResumes}><LanguageText>{text.openResumes}</LanguageText></button>
-          </div>
-          <div className="education-card">
-            <div className="education-card__main">
-              <span className="education-mark"><GraduationCapIcon /></span>
-              <div><strong><LanguageText>{text.education}</LanguageText></strong><span><LanguageText>{text.educationIntro}</LanguageText></span></div>
-            </div>
-            <button className="secondary-button" type="button" onClick={openCertificates}><LanguageText>{text.archive}</LanguageText></button>
-          </div>
+        <div className="home-sections">
+          <button className="home-tile" type="button" onClick={openSocials}>
+            <span className="education-mark"><MessageIcon /></span>
+            <strong><LanguageText>{text.socialsTitle}</LanguageText></strong>
+            <span className="home-tile__description"><LanguageText>{text.socialsIntro}</LanguageText></span>
+          </button>
+          <button className="home-tile" type="button" onClick={openResumes}>
+            <span className="education-mark"><ResumeIcon /></span>
+            <strong><LanguageText>{text.resumeTitle}</LanguageText></strong>
+            <span className="home-tile__description"><LanguageText>{text.resumeIntro}</LanguageText></span>
+          </button>
+          <button className="home-tile" type="button" onClick={openEducation}>
+            <span className="education-mark"><GraduationCapIcon /></span>
+            <strong><LanguageText>{text.education}</LanguageText></strong>
+            <span className="home-tile__description"><LanguageText>{text.educationIntro}</LanguageText></span>
+          </button>
+          <button className="home-tile" type="button" onClick={openResearch}>
+            <span className="education-mark"><ResearchIcon /></span>
+            <strong><LanguageText>{text.research}</LanguageText></strong>
+            <span className="home-tile__description"><LanguageText>{text.researchIntro}</LanguageText></span>
+          </button>
         </div>
       </section>
     </main>

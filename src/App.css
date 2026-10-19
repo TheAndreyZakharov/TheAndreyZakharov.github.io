@@ -127,6 +127,30 @@ h1 { margin-bottom: 10px; color: var(--text); font-family: "Manrope", Arial, san
 
 .secondary-links { display: grid; gap: 9px; margin-bottom: 34px; }
 .home-page .secondary-links { margin-bottom: 0; }
+.home-sections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 12px; }
+.home-tile { display: flex; min-width: 0; min-height: 154px; align-items: center; justify-content: center; flex-direction: column; gap: 10px; padding: 20px 16px; border: 1px solid var(--line); border-radius: 19px; color: var(--text); background: var(--soft); cursor: pointer; text-align: center; transition: background .25s ease, border-color .25s ease, transform .25s ease; }
+.home-tile:hover, .home-tile:focus-visible { border-color: var(--line); background: var(--soft-hover); transform: translateY(-2px); }
+.home-tile:active { transform: translateY(0) scale(.99); }
+.home-tile strong { display: block; max-width: 100%; font-size: 14px; font-weight: 650; line-height: 1.25; }
+.home-tile__description { display: block; max-width: 100%; color: var(--muted); font-size: 11px; line-height: 1.4; }
+.section-page__intro { margin: 0 0 12px; padding: 22px; border: 1px solid var(--line); border-radius: 19px; color: var(--muted); background: var(--soft); font-size: 14px; line-height: 1.6; text-align: center; }
+.education-timeline { --education-timeline-axis-x: 94px; position: relative; display: grid; gap: 8px; margin-bottom: 16px; }
+.education-timeline::before, .education-timeline::after { position: absolute; z-index: 0; left: calc(var(--education-timeline-axis-x) - 1px); width: 2px; border-radius: 2px; content: ""; }
+.education-timeline::before { top: 72px; bottom: 72px; background: var(--line); }
+.education-timeline::after { top: calc(75% - 36px); bottom: 72px; background: var(--text); }
+.education-timeline__item { position: relative; display: grid; grid-template-columns: 70px 32px minmax(0, 1fr); align-items: center; gap: 0 8px; min-height: 144px; padding-right: 17px; }
+.education-timeline__year { color: var(--text); font-family: "Manrope", sans-serif; font-size: 19px; font-weight: 650; letter-spacing: -.04em; text-align: right; }
+.education-timeline__year small { display: block; margin-top: 4px; color: var(--muted); font-family: Arial, sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0; line-height: 1.35; }
+.education-timeline__dot { position: absolute; z-index: 1; top: 50%; left: var(--education-timeline-axis-x); width: 17px; height: 17px; border: 2px solid var(--line); border-radius: 50%; background: var(--card-solid); transform: translate(-50%, -50%); transition: background .3s ease, border-color .3s ease; }
+.education-timeline__item--complete .education-timeline__dot { border-color: var(--text); background: var(--text); }
+.education-timeline__details { grid-column: 3; min-width: 0; padding: 15px 17px; border: 1px solid var(--line); border-radius: 16px; background: var(--soft); }
+.education-timeline__details h2 { margin: 1px 0 5px; font-size: 14px; font-weight: 650; letter-spacing: -.025em; }
+.education-timeline__details p { margin: 0 0 7px; color: var(--text); font-size: 12px; line-height: 1.4; }
+.education-timeline__details > small { display: block; color: var(--muted); font-size: 10px; line-height: 1.4; }
+.education-archive-button { display: flex; width: 100%; min-height: 50px; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 17px; border: 1px solid var(--line); border-radius: 16px; color: var(--text); background: var(--soft-hover); cursor: pointer; font-size: 12px; font-weight: 650; transition: background .25s ease, border-color .25s ease, transform .2s ease; }
+.education-archive-button:hover, .education-archive-button:focus-visible { border-color: var(--text); background: var(--soft); }
+.education-archive-button:active { transform: scale(.99); }
+.education-archive-button > span { font-size: 19px; font-weight: 400; }
 .education-card, .email-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 82px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 19px; color: var(--text); background: var(--soft); transition: background .25s ease, border-color .25s ease, transform .25s ease; }
 .education-card:hover, .education-card:focus-within, .email-link:hover, .email-link:focus-within { border-color: var(--line); background: var(--soft-hover); transform: translateY(-1px); }
 .education-card__main, .email-card__main { display: flex; align-items: center; gap: 12px; min-width: 0; }
@@ -154,6 +178,7 @@ h2 { margin: 0; color: var(--text); font-family: "Manrope", Arial, sans-serif; f
 .social-link--icon:hover .social-link__content, .social-link--icon:focus-visible .social-link__content { transform: translateY(0); }
 .social-link__icon { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 12px; background: var(--soft-hover); transition: background .25s ease, border-color .25s ease; }
 .social-link__icon img { display: block; width: 27px; height: 27px; object-fit: contain; filter: grayscale(1) contrast(.82); transition: filter .25s ease; }
+.social-link__icon img.social-link__icon-image--compact { width: 22px; height: 22px; }
 .social-link:hover .social-link__icon, .social-link:focus-visible .social-link__icon { border-color: var(--line); background: var(--card-bg); }
 .social-link:hover .social-link__icon img, .social-link:focus-visible .social-link__icon img { filter: none; }
 .social-link__name { overflow: hidden; font-size: 13px; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
