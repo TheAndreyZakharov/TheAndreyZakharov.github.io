@@ -99,8 +99,10 @@ button { border: 0; }
 .control-button:active { transform: scale(.9); }
 .language-text { display: inline-block; }
 .language-transitioning .language-text { animation: language-text-in .42s ease both; }
+.language-transitioning .profile-header h1 .language-text { animation: profile-name-in .42s ease both; }
 
 .profile-header { padding: 26px 0 30px; text-align: center; }
+.profile-header h1 { margin-bottom: 0; padding: 0 .08em .12em; letter-spacing: -.035em; line-height: 1.16; }
 .profile-logo-wrap { position: relative; isolation: isolate; width: 108px; height: 108px; display: block; margin: 0 auto 40px; border-radius: 50%; }
 .profile-logo-wrap::before { position: absolute; z-index: -1; inset: -35%; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,.9), transparent 70%); content: ""; transition: background .45s ease; }
 .page-shell[data-theme="dark"] .profile-logo-wrap::before { background: radial-gradient(circle, rgba(0,0,0,.85), transparent 70%); }
@@ -367,6 +369,7 @@ h2 { margin: 0; color: var(--text); font-family: "Manrope", Arial, sans-serif; f
 @keyframes drift { from { transform: translate3d(-85px, -8px, 0) scale(1); } to { transform: translate3d(85px, 8px, 0) scale(1.06); } }
 @keyframes light-glow-pulse { 0% { filter: blur(180px); opacity: 0; } 45% { filter: blur(90px); opacity: .9; } 100% { filter: blur(125px); opacity: .52; } }
 @keyframes language-text-in { from { opacity: 0; filter: blur(3px); } to { opacity: 1; filter: blur(0); } }
+@keyframes profile-name-in { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes disclosure-open { from { transform: rotate(0deg); } to { transform: rotate(180deg); } }
 @keyframes disclosure-close { from { transform: rotate(180deg); } to { transform: rotate(360deg); } }
@@ -386,6 +389,9 @@ html[data-theme="dark"]::view-transition, html[data-theme="dark"]::view-transiti
 
 @media (max-width: 680px) {
   .page-shell { padding: 12px 12px 24px; }
+  .page-shell:has(.certificate-page) { animation: none; }
+  .certificate-page { transform: none; -webkit-backface-visibility: visible; backface-visibility: visible; animation: none; }
+  .certificate-page__content { animation: none; }
   .profile-card { padding: 14px 14px 24px; border-radius: 25px; }
   .profile-card.home-page { padding-top: 14px; padding-bottom: 14px; }
   .profile-header { padding-top: 34px; }

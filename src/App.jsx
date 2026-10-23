@@ -241,12 +241,21 @@ function AmbientLayer({ variant }) {
       const bounds = card.getBoundingClientRect();
       const top = Math.max(0, bounds.top);
       const bottom = Math.min(window.innerHeight, bounds.bottom);
-      setGeometry({
+      const nextGeometry = {
         top,
         left: bounds.left,
         width: bounds.width,
         height: Math.max(1, bottom - top),
-      });
+      };
+      setGeometry((current) => (
+        current
+        && current.top === nextGeometry.top
+        && current.left === nextGeometry.left
+        && current.width === nextGeometry.width
+        && current.height === nextGeometry.height
+          ? current
+          : nextGeometry
+      ));
     };
     const scheduleUpdate = () => {
       if (frameId !== null) return;
@@ -725,6 +734,8 @@ function App() {
       setView(nextView);
     };
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const enteringCertificatesOnSmallScreen = nextView === "certificates"
+      && window.matchMedia("(max-width: 680px)").matches;
     if (nextView === "home" && view === "certificates" && !reducedMotion) {
       if (pageTransitionTimer.current) window.clearTimeout(pageTransitionTimer.current);
       setPageLeaving(true);
@@ -735,7 +746,7 @@ function App() {
       }, 220);
       return;
     }
-    if (nextView === view || reducedMotion || typeof document.startViewTransition !== "function") {
+    if (nextView === view || reducedMotion || enteringCertificatesOnSmallScreen || typeof document.startViewTransition !== "function") {
       update();
       return;
     }
@@ -792,6 +803,11 @@ function App() {
     document.documentElement.lang = language;
     document.title = language === "ru" ? "Андрей Захаров" : "Andrey Zakharov";
   }, [language]);
+
+  useEffect(() => {
+    if (!document.fonts?.load) return;
+    document.fonts.load('650 48px "Manrope"', "Andrey Zakharov Андрей Захаров").catch(() => {});
+  }, []);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
