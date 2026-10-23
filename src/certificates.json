@@ -9,18 +9,45 @@
           "title": "Logo Programming",
           "pages": [
             "/certificates/01-academy-europe-open-university/001-logo-programming.webp"
+          ],
+          "thumbnails": [
+            "/certificates/01-academy-europe-open-university/001-logo-programming.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1316,
+              "height": 930
+            }
           ]
         },
         {
           "title": "Modelling and Simulation",
           "pages": [
             "/certificates/01-academy-europe-open-university/002-modelling-and-simulation.webp"
+          ],
+          "thumbnails": [
+            "/certificates/01-academy-europe-open-university/002-modelling-and-simulation.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1316,
+              "height": 930
+            }
           ]
         },
         {
           "title": "Power Electronics Devices, Converters, and Control Methods",
           "pages": [
             "/certificates/01-academy-europe-open-university/003-power-electronics-devices-converters-and-control-methods.webp"
+          ],
+          "thumbnails": [
+            "/certificates/01-academy-europe-open-university/003-power-electronics-devices-converters-and-control-methods.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1316,
+              "height": 930
+            }
           ]
         }
       ]
@@ -32,6 +59,15 @@
           "title": "Adaptive Leadership",
           "pages": [
             "/certificates/02-acumen-academy/001-adaptive-leadership.webp"
+          ],
+          "thumbnails": [
+            "/certificates/02-acumen-academy/001-adaptive-leadership.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         }
       ]
@@ -43,30 +79,75 @@
           "title": "Basic Reporting in Jira",
           "pages": [
             "/certificates/03-atlassian-university/001-basic-reporting-in-jira.webp"
+          ],
+          "thumbnails": [
+            "/certificates/03-atlassian-university/001-basic-reporting-in-jira.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Confluence Fundamentals",
           "pages": [
             "/certificates/03-atlassian-university/002-confluence-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/03-atlassian-university/002-confluence-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Jira Fundamentals",
           "pages": [
             "/certificates/03-atlassian-university/003-jira-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/03-atlassian-university/003-jira-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Jira Service Management Fundamentals",
           "pages": [
             "/certificates/03-atlassian-university/004-jira-service-management-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/03-atlassian-university/004-jira-service-management-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Writing Complex JQL Queries in Jira Software",
           "pages": [
             "/certificates/03-atlassian-university/005-writing-complex-jql-queries-in-jira-software.webp"
+          ],
+          "thumbnails": [
+            "/certificates/03-atlassian-university/005-writing-complex-jql-queries-in-jira-software.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         }
       ]
@@ -78,48 +159,120 @@
           "title": "Career Navigator - Profession of the Future",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/001-career-navigator-profession-of-the-future.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/001-career-navigator-profession-of-the-future.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Communicative Leader",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/002-communicative-leader.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/002-communicative-leader.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Computer Science and Programming - Theory, Practice, and Teaching Methodology in School Education (Advanced Level)",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/003-computer-science-and-programming-theory-practice-and-teaching-methodology-in-school-education-advanced-level.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/003-computer-science-and-programming-theory-practice-and-teaching-methodology-in-school-education-advanced-level.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Designing a Comfortable and Safe Educational Environment",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/004-designing-a-comfortable-and-safe-educational-environment.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/004-designing-a-comfortable-and-safe-educational-environment.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Fundamentals of Graphic Design",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/005-fundamentals-of-graphic-design.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/005-fundamentals-of-graphic-design.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Fundamentals of Web Development",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/006-fundamentals-of-web-development.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/006-fundamentals-of-web-development.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Genetics for Everyone - Making the Complex Simple",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/007-genetics-for-everyone-making-the-complex-simple.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/007-genetics-for-everyone-making-the-complex-simple.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Teaching Methodology of Pedagogical Disciplines in Higher Education",
           "pages": [
             "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/008-teaching-methodology-of-pedagogical-disciplines-in-higher-education.webp"
+          ],
+          "thumbnails": [
+            "/certificates/04-bashkir-state-pedagogical-university-named-after-m-akmulla-bspu-institute-of-continuing-professional-education-vector-of-development/008-teaching-methodology-of-pedagogical-disciplines-in-higher-education.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         }
       ]
@@ -131,18 +284,45 @@
           "title": "Introduction to Cybersecurity",
           "pages": [
             "/certificates/05-cisco-networking-academy/001-introduction-to-cybersecurity.webp"
+          ],
+          "thumbnails": [
+            "/certificates/05-cisco-networking-academy/001-introduction-to-cybersecurity.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1246,
+              "height": 844
+            }
           ]
         },
         {
           "title": "Network Addressing and Basic Troubleshooting",
           "pages": [
             "/certificates/05-cisco-networking-academy/002-network-addressing-and-basic-troubleshooting.webp"
+          ],
+          "thumbnails": [
+            "/certificates/05-cisco-networking-academy/002-network-addressing-and-basic-troubleshooting.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1246,
+              "height": 844
+            }
           ]
         },
         {
           "title": "Networking Basics",
           "pages": [
             "/certificates/05-cisco-networking-academy/003-networking-basics.webp"
+          ],
+          "thumbnails": [
+            "/certificates/05-cisco-networking-academy/003-networking-basics.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1246,
+              "height": 844
+            }
           ]
         }
       ]
@@ -154,24 +334,60 @@
           "title": "Fractals and Scaling",
           "pages": [
             "/certificates/06-complexity-explorer-santa-fe-institute/001-fractals-and-scaling.webp"
+          ],
+          "thumbnails": [
+            "/certificates/06-complexity-explorer-santa-fe-institute/001-fractals-and-scaling.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1572,
+              "height": 1206
+            }
           ]
         },
         {
           "title": "Introduction to Complexity",
           "pages": [
             "/certificates/06-complexity-explorer-santa-fe-institute/002-introduction-to-complexity.webp"
+          ],
+          "thumbnails": [
+            "/certificates/06-complexity-explorer-santa-fe-institute/002-introduction-to-complexity.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1572,
+              "height": 1210
+            }
           ]
         },
         {
           "title": "Introduction to Dynamical Systems and Chaos",
           "pages": [
             "/certificates/06-complexity-explorer-santa-fe-institute/003-introduction-to-dynamical-systems-and-chaos.webp"
+          ],
+          "thumbnails": [
+            "/certificates/06-complexity-explorer-santa-fe-institute/003-introduction-to-dynamical-systems-and-chaos.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1574,
+              "height": 1210
+            }
           ]
         },
         {
           "title": "Nonlinear Dynamics - Mathematical and Computational Approaches",
           "pages": [
             "/certificates/06-complexity-explorer-santa-fe-institute/004-nonlinear-dynamics-mathematical-and-computational-approaches.webp"
+          ],
+          "thumbnails": [
+            "/certificates/06-complexity-explorer-santa-fe-institute/004-nonlinear-dynamics-mathematical-and-computational-approaches.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1572,
+              "height": 1204
+            }
           ]
         }
       ]
@@ -183,18 +399,45 @@
           "title": "cPanel & WHM System Administrator II Certification Exame",
           "pages": [
             "/certificates/07-cpanel-university/001-cpanel-whm-system-administrator-ii-certification-exame.webp"
+          ],
+          "thumbnails": [
+            "/certificates/07-cpanel-university/001-cpanel-whm-system-administrator-ii-certification-exame.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "cPanel Professional Certification Exame",
           "pages": [
             "/certificates/07-cpanel-university/002-cpanel-professional-certification-exame.webp"
+          ],
+          "thumbnails": [
+            "/certificates/07-cpanel-university/002-cpanel-professional-certification-exame.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "LiteSpeed Certification Exame",
           "pages": [
             "/certificates/07-cpanel-university/003-litespeed-certification-exame.webp"
+          ],
+          "thumbnails": [
+            "/certificates/07-cpanel-university/003-litespeed-certification-exame.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         }
       ]
@@ -206,24 +449,60 @@
           "title": "Databricks Accredited AI Agent Fundamentals",
           "pages": [
             "/certificates/08-databricks-academy/001-databricks-accredited-ai-agent-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/08-databricks-academy/001-databricks-accredited-ai-agent-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Databricks Accredited Databricks Fundamentals",
           "pages": [
             "/certificates/08-databricks-academy/002-databricks-accredited-databricks-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/08-databricks-academy/002-databricks-accredited-databricks-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Databricks Accredited Generative AI Fundamentals",
           "pages": [
             "/certificates/08-databricks-academy/003-databricks-accredited-generative-ai-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/08-databricks-academy/003-databricks-accredited-generative-ai-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Databricks Fundamentals Accreditation",
           "pages": [
             "/certificates/08-databricks-academy/004-databricks-fundamentals-accreditation.webp"
+          ],
+          "thumbnails": [
+            "/certificates/08-databricks-academy/004-databricks-fundamentals-accreditation.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         }
       ]
@@ -235,6 +514,15 @@
           "title": "Interaction with Business",
           "pages": [
             "/certificates/09-dobro-university/001-interaction-with-business.webp"
+          ],
+          "thumbnails": [
+            "/certificates/09-dobro-university/001-interaction-with-business.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1315,
+              "height": 929
+            }
           ]
         }
       ]
@@ -246,6 +534,15 @@
           "title": "English Certificate",
           "pages": [
             "/certificates/10-ef-standard-english-test-ef-set-education/001-english-certificate.webp"
+          ],
+          "thumbnails": [
+            "/certificates/10-ef-standard-english-test-ef-set-education/001-english-certificate.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 798,
+              "height": 1129
+            }
           ]
         }
       ]
@@ -257,6 +554,15 @@
           "title": "Software Engineering Job Simulation - JPMorgan Chase & Co",
           "pages": [
             "/certificates/11-forage/001-software-engineering-job-simulation-jpmorgan-chase-co.webp"
+          ],
+          "thumbnails": [
+            "/certificates/11-forage/001-software-engineering-job-simulation-jpmorgan-chase-co.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1754,
+              "height": 1240
+            }
           ]
         }
       ]
@@ -269,6 +575,20 @@
           "pages": [
             "/certificates/12-futurelearn/001-digital-skills-artificial-intelligence-page-1.webp",
             "/certificates/12-futurelearn/001-digital-skills-artificial-intelligence-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/12-futurelearn/001-digital-skills-artificial-intelligence-page-1.thumb.jpg",
+            "/certificates/12-futurelearn/001-digital-skills-artificial-intelligence-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         }
       ]
@@ -280,12 +600,30 @@
           "title": "FAIR Forward - Artificial Intelligence for All AI Policymakers Training",
           "pages": [
             "/certificates/13-german-corporation-for-international-cooperation-giz-atingi/001-fair-forward-artificial-intelligence-for-all-ai-policymakers-training.webp"
+          ],
+          "thumbnails": [
+            "/certificates/13-german-corporation-for-international-cooperation-giz-atingi/001-fair-forward-artificial-intelligence-for-all-ai-policymakers-training.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1754,
+              "height": 1240
+            }
           ]
         },
         {
           "title": "Machine Learning on Earth Observation - ML4EO Bootcamp training on the atingi eLearning platform",
           "pages": [
             "/certificates/13-german-corporation-for-international-cooperation-giz-atingi/002-machine-learning-on-earth-observation-ml4eo-bootcamp-training-on-the-atingi-elearning-platform.webp"
+          ],
+          "thumbnails": [
+            "/certificates/13-german-corporation-for-international-cooperation-giz-atingi/002-machine-learning-on-earth-observation-ml4eo-bootcamp-training-on-the-atingi-elearning-platform.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1654,
+              "height": 2339
+            }
           ]
         }
       ]
@@ -297,6 +635,15 @@
           "title": "Education During and After Conflict - A Human Rights Call",
           "pages": [
             "/certificates/14-global-campus-of-human-rights/001-education-during-and-after-conflict-a-human-rights-call.webp"
+          ],
+          "thumbnails": [
+            "/certificates/14-global-campus-of-human-rights/001-education-during-and-after-conflict-a-human-rights-call.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1656
+            }
           ]
         }
       ]
@@ -308,36 +655,90 @@
           "title": "Data Quality",
           "pages": [
             "/certificates/15-global-health-learning-center/001-data-quality.webp"
+          ],
+          "thumbnails": [
+            "/certificates/15-global-health-learning-center/001-data-quality.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1772,
+              "height": 1240
+            }
           ]
         },
         {
           "title": "Data Use for Program Managers",
           "pages": [
             "/certificates/15-global-health-learning-center/002-data-use-for-program-managers.webp"
+          ],
+          "thumbnails": [
+            "/certificates/15-global-health-learning-center/002-data-use-for-program-managers.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1772,
+              "height": 1240
+            }
           ]
         },
         {
           "title": "Data Visualization - An Introduction",
           "pages": [
             "/certificates/15-global-health-learning-center/003-data-visualization-an-introduction.webp"
+          ],
+          "thumbnails": [
+            "/certificates/15-global-health-learning-center/003-data-visualization-an-introduction.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1772,
+              "height": 1240
+            }
           ]
         },
         {
           "title": "Health Communication for Managers",
           "pages": [
             "/certificates/15-global-health-learning-center/004-health-communication-for-managers.webp"
+          ],
+          "thumbnails": [
+            "/certificates/15-global-health-learning-center/004-health-communication-for-managers.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1772,
+              "height": 1240
+            }
           ]
         },
         {
           "title": "Healthy Businesses",
           "pages": [
             "/certificates/15-global-health-learning-center/005-healthy-businesses.webp"
+          ],
+          "thumbnails": [
+            "/certificates/15-global-health-learning-center/005-healthy-businesses.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1772,
+              "height": 1240
+            }
           ]
         },
         {
           "title": "Preparing Data for Impact Analysis",
           "pages": [
             "/certificates/15-global-health-learning-center/006-preparing-data-for-impact-analysis.webp"
+          ],
+          "thumbnails": [
+            "/certificates/15-global-health-learning-center/006-preparing-data-for-impact-analysis.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1772,
+              "height": 1240
+            }
           ]
         }
       ]
@@ -349,60 +750,150 @@
           "title": "Beginning Graphic Design Tutorial",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/001-beginning-graphic-design-tutorial.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/001-beginning-graphic-design-tutorial.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Business Communication",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/002-business-communication.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/002-business-communication.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Career Experiences Tutorial",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/003-career-experiences-tutorial.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/003-career-experiences-tutorial.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Career Planning and Salary",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/004-career-planning-and-salary.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/004-career-planning-and-salary.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Critical Thinking and Decision-Making Tutorial",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/005-critical-thinking-and-decision-making-tutorial.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/005-critical-thinking-and-decision-making-tutorial.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Entrepreneurship 101",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/006-entrepreneurship-101.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/006-entrepreneurship-101.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Grammar",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/007-grammar.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/007-grammar.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Job Search and Networking",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/008-job-search-and-networking.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/008-job-search-and-networking.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Learning Tips Tutorial",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/009-learning-tips-tutorial.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/009-learning-tips-tutorial.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Online Education Tutorial",
           "pages": [
             "/certificates/16-goodwill-community-foundation-gcf-global/010-online-education-tutorial.webp"
+          ],
+          "thumbnails": [
+            "/certificates/16-goodwill-community-foundation-gcf-global/010-online-education-tutorial.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         }
       ]
@@ -414,6 +905,15 @@
           "title": "Fundamentals of digital marketing",
           "pages": [
             "/certificates/17-google-digital-garage/001-fundamentals-of-digital-marketing.webp"
+          ],
+          "thumbnails": [
+            "/certificates/17-google-digital-garage/001-fundamentals-of-digital-marketing.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 786,
+              "height": 673
+            }
           ]
         }
       ]
@@ -425,48 +925,120 @@
           "title": "AI-Powered Performance Ads Certification",
           "pages": [
             "/certificates/18-google-skillshop/001-ai-powered-performance-ads-certification.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/001-ai-powered-performance-ads-certification.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Campaign Manager 360 Certification Exam",
           "pages": [
             "/certificates/18-google-skillshop/002-campaign-manager-360-certification-exam.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/002-campaign-manager-360-certification-exam.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Conversion Optimization Certification Exam",
           "pages": [
             "/certificates/18-google-skillshop/003-conversion-optimization-certification-exam.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/003-conversion-optimization-certification-exam.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Display & Video 360 Certification Exam",
           "pages": [
             "/certificates/18-google-skillshop/004-display-video-360-certification-exam.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/004-display-video-360-certification-exam.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Google Ads Measurement Certification",
           "pages": [
             "/certificates/18-google-skillshop/005-google-ads-measurement-certification.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/005-google-ads-measurement-certification.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Google Ads Search Certification",
           "pages": [
             "/certificates/18-google-skillshop/006-google-ads-search-certification.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/006-google-ads-search-certification.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Google Analytics Certification",
           "pages": [
             "/certificates/18-google-skillshop/007-google-analytics-certification.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/007-google-analytics-certification.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Search Ads 360",
           "pages": [
             "/certificates/18-google-skillshop/008-search-ads-360.webp"
+          ],
+          "thumbnails": [
+            "/certificates/18-google-skillshop/008-search-ads-360.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         }
       ]
@@ -478,24 +1050,60 @@
           "title": "Java (Basic)",
           "pages": [
             "/certificates/19-hackerrank/001-java-basic.webp"
+          ],
+          "thumbnails": [
+            "/certificates/19-hackerrank/001-java-basic.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1595,
+              "height": 1215
+            }
           ]
         },
         {
           "title": "JavaScript (Intermediate)",
           "pages": [
             "/certificates/19-hackerrank/002-javascript-intermediate.webp"
+          ],
+          "thumbnails": [
+            "/certificates/19-hackerrank/002-javascript-intermediate.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1595,
+              "height": 1215
+            }
           ]
         },
         {
           "title": "Software Engineer",
           "pages": [
             "/certificates/19-hackerrank/003-software-engineer.webp"
+          ],
+          "thumbnails": [
+            "/certificates/19-hackerrank/003-software-engineer.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1595,
+              "height": 1215
+            }
           ]
         },
         {
           "title": "SQL (Advanced)",
           "pages": [
             "/certificates/19-hackerrank/004-sql-advanced.webp"
+          ],
+          "thumbnails": [
+            "/certificates/19-hackerrank/004-sql-advanced.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1595,
+              "height": 1215
+            }
           ]
         }
       ]
@@ -507,6 +1115,15 @@
           "title": "CS50 Certificate - CS50x Introduction to Computer Science",
           "pages": [
             "/certificates/20-harvard-university/001-cs50-certificate-cs50x-introduction-to-computer-science.webp"
+          ],
+          "thumbnails": [
+            "/certificates/20-harvard-university/001-cs50-certificate-cs50x-introduction-to-computer-science.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2246,
+              "height": 1588
+            }
           ]
         }
       ]
@@ -518,36 +1135,90 @@
           "title": "clean-IT — Towards Sustainable Digital Technologies",
           "pages": [
             "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/001-clean-it-towards-sustainable-digital-technologies.webp"
+          ],
+          "thumbnails": [
+            "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/001-clean-it-towards-sustainable-digital-technologies.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "Data Science Bootcamp",
           "pages": [
             "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/002-data-science-bootcamp.webp"
+          ],
+          "thumbnails": [
+            "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/002-data-science-bootcamp.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "Introduction to Bayesian Data Analysis",
           "pages": [
             "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/003-introduction-to-bayesian-data-analysis.webp"
+          ],
+          "thumbnails": [
+            "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/003-introduction-to-bayesian-data-analysis.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "Introduction to Quantum Computing with Qiskit",
           "pages": [
             "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/004-introduction-to-quantum-computing-with-qiskit.webp"
+          ],
+          "thumbnails": [
+            "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/004-introduction-to-quantum-computing-with-qiskit.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1654,
+              "height": 2339
+            }
           ]
         },
         {
           "title": "Quantum Machine Learning",
           "pages": [
             "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/005-quantum-machine-learning.webp"
+          ],
+          "thumbnails": [
+            "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/005-quantum-machine-learning.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "Sustainability in the Digital Age — AI & Sustainability: Balancing Innovation and Responsibility",
           "pages": [
             "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/006-sustainability-in-the-digital-age-ai-sustainability-balancing-innovation-and-responsibility.webp"
+          ],
+          "thumbnails": [
+            "/certificates/21-hasso-plattner-institute-for-digital-engineering-hpi-openhpi/006-sustainability-in-the-digital-age-ai-sustainability-balancing-innovation-and-responsibility.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         }
       ]
@@ -559,18 +1230,45 @@
           "title": "Data Science & Analytics",
           "pages": [
             "/certificates/22-hewlett-packard-hp-life/001-data-science-analytics.webp"
+          ],
+          "thumbnails": [
+            "/certificates/22-hewlett-packard-hp-life/001-data-science-analytics.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Effective Leadership",
           "pages": [
             "/certificates/22-hewlett-packard-hp-life/002-effective-leadership.webp"
+          ],
+          "thumbnails": [
+            "/certificates/22-hewlett-packard-hp-life/002-effective-leadership.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "IT for Business Success",
           "pages": [
             "/certificates/22-hewlett-packard-hp-life/003-it-for-business-success.webp"
+          ],
+          "thumbnails": [
+            "/certificates/22-hewlett-packard-hp-life/003-it-for-business-success.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         }
       ]
@@ -582,24 +1280,60 @@
           "title": "Digital Marketing Certified",
           "pages": [
             "/certificates/23-hubspot-academy/001-digital-marketing-certified.webp"
+          ],
+          "thumbnails": [
+            "/certificates/23-hubspot-academy/001-digital-marketing-certified.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1140,
+              "height": 880
+            }
           ]
         },
         {
           "title": "HubSpot Revenue Operations Certified",
           "pages": [
             "/certificates/23-hubspot-academy/002-hubspot-revenue-operations-certified.webp"
+          ],
+          "thumbnails": [
+            "/certificates/23-hubspot-academy/002-hubspot-revenue-operations-certified.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1140,
+              "height": 880
+            }
           ]
         },
         {
           "title": "Inbound Certified",
           "pages": [
             "/certificates/23-hubspot-academy/003-inbound-certified.webp"
+          ],
+          "thumbnails": [
+            "/certificates/23-hubspot-academy/003-inbound-certified.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1140,
+              "height": 880
+            }
           ]
         },
         {
           "title": "Inbound Marketing Optimization Certified",
           "pages": [
             "/certificates/23-hubspot-academy/004-inbound-marketing-optimization-certified.webp"
+          ],
+          "thumbnails": [
+            "/certificates/23-hubspot-academy/004-inbound-marketing-optimization-certified.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1140,
+              "height": 880
+            }
           ]
         }
       ]
@@ -611,18 +1345,45 @@
           "title": "Environment and Trade",
           "pages": [
             "/certificates/24-information-exchange-for-multilateral-environmental-agreements-informea/001-environment-and-trade.webp"
+          ],
+          "thumbnails": [
+            "/certificates/24-information-exchange-for-multilateral-environmental-agreements-informea/001-environment-and-trade.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         },
         {
           "title": "Introduction to Environmental Governance",
           "pages": [
             "/certificates/24-information-exchange-for-multilateral-environmental-agreements-informea/002-introduction-to-environmental-governance.webp"
+          ],
+          "thumbnails": [
+            "/certificates/24-information-exchange-for-multilateral-environmental-agreements-informea/002-introduction-to-environmental-governance.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         },
         {
           "title": "Online Negotiations",
           "pages": [
             "/certificates/24-information-exchange-for-multilateral-environmental-agreements-informea/003-online-negotiations.webp"
+          ],
+          "thumbnails": [
+            "/certificates/24-information-exchange-for-multilateral-environmental-agreements-informea/003-online-negotiations.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -634,6 +1395,15 @@
           "title": "Generative AI for HR Tasks — Job Descriptions, Interviews & Feedback",
           "pages": [
             "/certificates/25-information-technology-institute-iti-mahara-tech/001-generative-ai-for-hr-tasks-job-descriptions-interviews-feedback.webp"
+          ],
+          "thumbnails": [
+            "/certificates/25-information-technology-institute-iti-mahara-tech/001-generative-ai-for-hr-tasks-job-descriptions-interviews-feedback.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4004,
+              "height": 2929
+            }
           ]
         }
       ]
@@ -646,6 +1416,20 @@
           "pages": [
             "/certificates/26-innopolis-university/001-2023-fundamentals-of-frontend-development-page-1.webp",
             "/certificates/26-innopolis-university/001-2023-fundamentals-of-frontend-development-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/26-innopolis-university/001-2023-fundamentals-of-frontend-development-page-1.thumb.jpg",
+            "/certificates/26-innopolis-university/001-2023-fundamentals-of-frontend-development-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 683,
+              "height": 987
+            },
+            {
+              "width": 683,
+              "height": 987
+            }
           ]
         }
       ]
@@ -658,6 +1442,20 @@
           "pages": [
             "/certificates/27-international-atomic-energy-agency-iaea/001-introduction-to-radioactive-sources-and-their-applications-page-1.webp",
             "/certificates/27-international-atomic-energy-agency-iaea/001-introduction-to-radioactive-sources-and-their-applications-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/27-international-atomic-energy-agency-iaea/001-introduction-to-radioactive-sources-and-their-applications-page-1.thumb.jpg",
+            "/certificates/27-international-atomic-energy-agency-iaea/001-introduction-to-radioactive-sources-and-their-applications-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            },
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         },
         {
@@ -665,6 +1463,20 @@
           "pages": [
             "/certificates/27-international-atomic-energy-agency-iaea/002-radiation-basics-and-consequences-of-exposure-to-radiation-page-1.webp",
             "/certificates/27-international-atomic-energy-agency-iaea/002-radiation-basics-and-consequences-of-exposure-to-radiation-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/27-international-atomic-energy-agency-iaea/002-radiation-basics-and-consequences-of-exposure-to-radiation-page-1.thumb.jpg",
+            "/certificates/27-international-atomic-energy-agency-iaea/002-radiation-basics-and-consequences-of-exposure-to-radiation-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            },
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -676,36 +1488,90 @@
           "title": "Big Data 101",
           "pages": [
             "/certificates/28-international-business-machines-ibm-cognitive-class/001-big-data-101.webp"
+          ],
+          "thumbnails": [
+            "/certificates/28-international-business-machines-ibm-cognitive-class/001-big-data-101.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Data Science Methodology",
           "pages": [
             "/certificates/28-international-business-machines-ibm-cognitive-class/002-data-science-methodology.webp"
+          ],
+          "thumbnails": [
+            "/certificates/28-international-business-machines-ibm-cognitive-class/002-data-science-methodology.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Docker Essentials - A Developer Introduction",
           "pages": [
             "/certificates/28-international-business-machines-ibm-cognitive-class/003-docker-essentials-a-developer-introduction.webp"
+          ],
+          "thumbnails": [
+            "/certificates/28-international-business-machines-ibm-cognitive-class/003-docker-essentials-a-developer-introduction.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Mathematical Optimization for Business Problems",
           "pages": [
             "/certificates/28-international-business-machines-ibm-cognitive-class/004-mathematical-optimization-for-business-problems.webp"
+          ],
+          "thumbnails": [
+            "/certificates/28-international-business-machines-ibm-cognitive-class/004-mathematical-optimization-for-business-problems.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "Python 101 for Data Science",
           "pages": [
             "/certificates/28-international-business-machines-ibm-cognitive-class/005-python-101-for-data-science.webp"
+          ],
+          "thumbnails": [
+            "/certificates/28-international-business-machines-ibm-cognitive-class/005-python-101-for-data-science.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "SQL and Relational Databases 101",
           "pages": [
             "/certificates/28-international-business-machines-ibm-cognitive-class/006-sql-and-relational-databases-101.webp"
+          ],
+          "thumbnails": [
+            "/certificates/28-international-business-machines-ibm-cognitive-class/006-sql-and-relational-databases-101.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         }
       ]
@@ -717,6 +1583,15 @@
           "title": "Web Development Fundamentals",
           "pages": [
             "/certificates/29-international-business-machines-ibm-skillsbuild/001-web-development-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/29-international-business-machines-ibm-skillsbuild/001-web-development-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         }
       ]
@@ -728,12 +1603,30 @@
           "title": "Cybersecurity for Businesses - The Fundamental Edition",
           "pages": [
             "/certificates/30-international-council-of-e-commerce-consultants-ec-council-learning/001-cybersecurity-for-businesses-the-fundamental-edition.webp"
+          ],
+          "thumbnails": [
+            "/certificates/30-international-council-of-e-commerce-consultants-ec-council-learning/001-cybersecurity-for-businesses-the-fundamental-edition.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3213,
+              "height": 2480
+            }
           ]
         },
         {
           "title": "SQL Injection Attacks",
           "pages": [
             "/certificates/30-international-council-of-e-commerce-consultants-ec-council-learning/002-sql-injection-attacks.webp"
+          ],
+          "thumbnails": [
+            "/certificates/30-international-council-of-e-commerce-consultants-ec-council-learning/002-sql-injection-attacks.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3213,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -745,12 +1638,30 @@
           "title": "Cyber Security Awareness Course",
           "pages": [
             "/certificates/31-international-federation-of-consulting-engineers-fidic-academy/001-cyber-security-awareness-course.webp"
+          ],
+          "thumbnails": [
+            "/certificates/31-international-federation-of-consulting-engineers-fidic-academy/001-cyber-security-awareness-course.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2541,
+              "height": 3591
+            }
           ]
         },
         {
           "title": "Risk Management Under FIDIC Contracts",
           "pages": [
             "/certificates/31-international-federation-of-consulting-engineers-fidic-academy/002-risk-management-under-fidic-contracts.webp"
+          ],
+          "thumbnails": [
+            "/certificates/31-international-federation-of-consulting-engineers-fidic-academy/002-risk-management-under-fidic-contracts.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2541,
+              "height": 3591
+            }
           ]
         }
       ]
@@ -762,6 +1673,15 @@
           "title": "Building a Trade Information Service",
           "pages": [
             "/certificates/32-international-trade-centre-itc-sme-trade-academy/001-building-a-trade-information-service.webp"
+          ],
+          "thumbnails": [
+            "/certificates/32-international-trade-centre-itc-sme-trade-academy/001-building-a-trade-information-service.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -773,48 +1693,120 @@
           "title": "Advanced SQL",
           "pages": [
             "/certificates/33-kaggle-learn/001-advanced-sql.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/001-advanced-sql.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         },
         {
           "title": "Computer Vision",
           "pages": [
             "/certificates/33-kaggle-learn/002-computer-vision.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/002-computer-vision.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         },
         {
           "title": "Data Cleaning",
           "pages": [
             "/certificates/33-kaggle-learn/003-data-cleaning.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/003-data-cleaning.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         },
         {
           "title": "Data Visualization",
           "pages": [
             "/certificates/33-kaggle-learn/004-data-visualization.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/004-data-visualization.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         },
         {
           "title": "Feature Engineering",
           "pages": [
             "/certificates/33-kaggle-learn/005-feature-engineering.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/005-feature-engineering.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         },
         {
           "title": "Geospatial Analysis",
           "pages": [
             "/certificates/33-kaggle-learn/006-geospatial-analysis.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/006-geospatial-analysis.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         },
         {
           "title": "Intermediate Machine Learning",
           "pages": [
             "/certificates/33-kaggle-learn/007-intermediate-machine-learning.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/007-intermediate-machine-learning.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         },
         {
           "title": "Machine Learning Explainability",
           "pages": [
             "/certificates/33-kaggle-learn/008-machine-learning-explainability.webp"
+          ],
+          "thumbnails": [
+            "/certificates/33-kaggle-learn/008-machine-learning-explainability.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4800,
+              "height": 2960
+            }
           ]
         }
       ]
@@ -826,6 +1818,15 @@
           "title": "Effective Negotiation and the Art of Argumentation",
           "pages": [
             "/certificates/34-knowledge-academy/001-effective-negotiation-and-the-art-of-argumentation.webp"
+          ],
+          "thumbnails": [
+            "/certificates/34-knowledge-academy/001-effective-negotiation-and-the-art-of-argumentation.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         }
       ]
@@ -837,6 +1838,15 @@
           "title": "Fundamentals of Programming in C",
           "pages": [
             "/certificates/35-lectorium/001-fundamentals-of-programming-in-c.webp"
+          ],
+          "thumbnails": [
+            "/certificates/35-lectorium/001-fundamentals-of-programming-in-c.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         }
       ]
@@ -848,6 +1858,15 @@
           "title": "Artificial Intelligence — A Personal Assistant in Construction",
           "pages": [
             "/certificates/36-ministry-of-construction-university-scientific-research-institute-of-building-physics-niisf-of-the-russian-academy-of-architecture-and-construction-sciences-raasn/001-artificial-intelligence-a-personal-assistant-in-construction.webp"
+          ],
+          "thumbnails": [
+            "/certificates/36-ministry-of-construction-university-scientific-research-institute-of-building-physics-niisf-of-the-russian-academy-of-architecture-and-construction-sciences-raasn/001-artificial-intelligence-a-personal-assistant-in-construction.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1754,
+              "height": 1240
+            }
           ]
         }
       ]
@@ -859,6 +1878,15 @@
           "title": "MongoDB Indexing Design Fundamentals",
           "pages": [
             "/certificates/37-mongodb-university/001-mongodb-indexing-design-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/37-mongodb-university/001-mongodb-indexing-design-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 841,
+              "height": 595
+            }
           ]
         }
       ]
@@ -870,6 +1898,15 @@
           "title": "Fundamentals of Remote Sensing",
           "pages": [
             "/certificates/38-national-aeronautics-and-space-administration-nasa-applied-remote-sensing-training-arset/001-fundamentals-of-remote-sensing.webp"
+          ],
+          "thumbnails": [
+            "/certificates/38-national-aeronautics-and-space-administration-nasa-applied-remote-sensing-training-arset/001-fundamentals-of-remote-sensing.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -882,6 +1919,20 @@
           "pages": [
             "/certificates/39-national-open-university-intuit/001-computer-architecture-page-1.webp",
             "/certificates/39-national-open-university-intuit/001-computer-architecture-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/39-national-open-university-intuit/001-computer-architecture-page-1.thumb.jpg",
+            "/certificates/39-national-open-university-intuit/001-computer-architecture-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 764,
+              "height": 540
+            },
+            {
+              "width": 764,
+              "height": 540
+            }
           ]
         },
         {
@@ -889,6 +1940,20 @@
           "pages": [
             "/certificates/39-national-open-university-intuit/002-information-systems-and-technologies-in-economics-and-management-page-1.webp",
             "/certificates/39-national-open-university-intuit/002-information-systems-and-technologies-in-economics-and-management-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/39-national-open-university-intuit/002-information-systems-and-technologies-in-economics-and-management-page-1.thumb.jpg",
+            "/certificates/39-national-open-university-intuit/002-information-systems-and-technologies-in-economics-and-management-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 764,
+              "height": 540
+            },
+            {
+              "width": 764,
+              "height": 540
+            }
           ]
         },
         {
@@ -896,6 +1961,20 @@
           "pages": [
             "/certificates/39-national-open-university-intuit/003-it-project-management-theory-tasks-and-solutions-page-1.webp",
             "/certificates/39-national-open-university-intuit/003-it-project-management-theory-tasks-and-solutions-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/39-national-open-university-intuit/003-it-project-management-theory-tasks-and-solutions-page-1.thumb.jpg",
+            "/certificates/39-national-open-university-intuit/003-it-project-management-theory-tasks-and-solutions-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 764,
+              "height": 540
+            },
+            {
+              "width": 764,
+              "height": 540
+            }
           ]
         },
         {
@@ -903,6 +1982,20 @@
           "pages": [
             "/certificates/39-national-open-university-intuit/004-models-and-software-for-multiprocessor-systems-high-performance-computing-university-page-1.webp",
             "/certificates/39-national-open-university-intuit/004-models-and-software-for-multiprocessor-systems-high-performance-computing-university-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/39-national-open-university-intuit/004-models-and-software-for-multiprocessor-systems-high-performance-computing-university-page-1.thumb.jpg",
+            "/certificates/39-national-open-university-intuit/004-models-and-software-for-multiprocessor-systems-high-performance-computing-university-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 774,
+              "height": 520
+            },
+            {
+              "width": 774,
+              "height": 520
+            }
           ]
         },
         {
@@ -910,6 +2003,20 @@
           "pages": [
             "/certificates/39-national-open-university-intuit/005-multi-core-processors-page-1.webp",
             "/certificates/39-national-open-university-intuit/005-multi-core-processors-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/39-national-open-university-intuit/005-multi-core-processors-page-1.thumb.jpg",
+            "/certificates/39-national-open-university-intuit/005-multi-core-processors-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 764,
+              "height": 540
+            },
+            {
+              "width": 764,
+              "height": 540
+            }
           ]
         },
         {
@@ -917,6 +2024,20 @@
           "pages": [
             "/certificates/39-national-open-university-intuit/006-parallel-programming-for-multicore-processors-page-1.webp",
             "/certificates/39-national-open-university-intuit/006-parallel-programming-for-multicore-processors-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/39-national-open-university-intuit/006-parallel-programming-for-multicore-processors-page-1.thumb.jpg",
+            "/certificates/39-national-open-university-intuit/006-parallel-programming-for-multicore-processors-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 764,
+              "height": 540
+            },
+            {
+              "width": 764,
+              "height": 540
+            }
           ]
         },
         {
@@ -924,6 +2045,20 @@
           "pages": [
             "/certificates/39-national-open-university-intuit/007-workshop-on-process-management-using-cloud-software-page-1.webp",
             "/certificates/39-national-open-university-intuit/007-workshop-on-process-management-using-cloud-software-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/39-national-open-university-intuit/007-workshop-on-process-management-using-cloud-software-page-1.thumb.jpg",
+            "/certificates/39-national-open-university-intuit/007-workshop-on-process-management-using-cloud-software-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 764,
+              "height": 540
+            },
+            {
+              "width": 764,
+              "height": 540
+            }
           ]
         }
       ]
@@ -935,18 +2070,45 @@
           "title": "Socially Responsible Leadership",
           "pages": [
             "/certificates/40-national-research-university-higher-school-of-economics-hse-university-osnova-educational-project/001-socially-responsible-leadership.webp"
+          ],
+          "thumbnails": [
+            "/certificates/40-national-research-university-higher-school-of-economics-hse-university-osnova-educational-project/001-socially-responsible-leadership.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         },
         {
           "title": "Studying Without Stress - How to Maintain Motivation and Energy Throughout the Academic Year",
           "pages": [
             "/certificates/40-national-research-university-higher-school-of-economics-hse-university-osnova-educational-project/002-studying-without-stress-how-to-maintain-motivation-and-energy-throughout-the-academic-year.webp"
+          ],
+          "thumbnails": [
+            "/certificates/40-national-research-university-higher-school-of-economics-hse-university-osnova-educational-project/002-studying-without-stress-how-to-maintain-motivation-and-energy-throughout-the-academic-year.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         },
         {
           "title": "The Art of Caring - How to Support Someone in a Difficult Situation",
           "pages": [
             "/certificates/40-national-research-university-higher-school-of-economics-hse-university-osnova-educational-project/003-the-art-of-caring-how-to-support-someone-in-a-difficult-situation.webp"
+          ],
+          "thumbnails": [
+            "/certificates/40-national-research-university-higher-school-of-economics-hse-university-osnova-educational-project/003-the-art-of-caring-how-to-support-someone-in-a-difficult-situation.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -958,12 +2120,30 @@
           "title": "Neo4j Certified Professional",
           "pages": [
             "/certificates/41-neo4j-graphacademy/001-neo4j-certified-professional.webp"
+          ],
+          "thumbnails": [
+            "/certificates/41-neo4j-graphacademy/001-neo4j-certified-professional.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2456,
+              "height": 1376
+            }
           ]
         },
         {
           "title": "Neo4j Graph Data Science Certification",
           "pages": [
             "/certificates/41-neo4j-graphacademy/002-neo4j-graph-data-science-certification.webp"
+          ],
+          "thumbnails": [
+            "/certificates/41-neo4j-graphacademy/002-neo4j-graph-data-science-certification.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2454,
+              "height": 1376
+            }
           ]
         }
       ]
@@ -975,24 +2155,60 @@
           "title": "How to Become a Business Process Manager and Improve Company Efficiency",
           "pages": [
             "/certificates/42-netology/001-how-to-become-a-business-process-manager-and-improve-company-efficiency.webp"
+          ],
+          "thumbnails": [
+            "/certificates/42-netology/001-how-to-become-a-business-process-manager-and-improve-company-efficiency.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 845,
+              "height": 593
+            }
           ]
         },
         {
           "title": "How to Become a Product or Project Manager",
           "pages": [
             "/certificates/42-netology/002-how-to-become-a-product-or-project-manager.webp"
+          ],
+          "thumbnails": [
+            "/certificates/42-netology/002-how-to-become-a-product-or-project-manager.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 845,
+              "height": 593
+            }
           ]
         },
         {
           "title": "Product Manager First Skills in the Profession",
           "pages": [
             "/certificates/42-netology/003-product-manager-first-skills-in-the-profession.webp"
+          ],
+          "thumbnails": [
+            "/certificates/42-netology/003-product-manager-first-skills-in-the-profession.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 845,
+              "height": 593
+            }
           ]
         },
         {
           "title": "Project Manager Starting a Career",
           "pages": [
             "/certificates/42-netology/004-project-manager-starting-a-career.webp"
+          ],
+          "thumbnails": [
+            "/certificates/42-netology/004-project-manager-starting-a-career.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 845,
+              "height": 593
+            }
           ]
         }
       ]
@@ -1004,6 +2220,15 @@
           "title": "Protection of Critical Energy Infrastructure — From Risk Analysis to Risk Management",
           "pages": [
             "/certificates/43-organization-for-security-and-co-operation-in-europe-osce-e-learning/001-protection-of-critical-energy-infrastructure-from-risk-analysis-to-risk-management.webp"
+          ],
+          "thumbnails": [
+            "/certificates/43-organization-for-security-and-co-operation-in-europe-osce-e-learning/001-protection-of-critical-energy-infrastructure-from-risk-analysis-to-risk-management.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -1015,108 +2240,270 @@
           "title": "Business Communication",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/001-business-communication.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/001-business-communication.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Digital Pedagogy",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/002-digital-pedagogy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/002-digital-pedagogy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Effective Engagement with the Blogosphere and Opinion Leaders",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/003-effective-engagement-with-the-blogosphere-and-opinion-leaders.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/003-effective-engagement-with-the-blogosphere-and-opinion-leaders.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Financial Literacy",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/004-financial-literacy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/004-financial-literacy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Fundamentals of Computer Science - Complex Concepts Made Simple",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/005-fundamentals-of-computer-science-complex-concepts-made-simple.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/005-fundamentals-of-computer-science-complex-concepts-made-simple.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Fundamentals of Electricity and Magnetism",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/006-fundamentals-of-electricity-and-magnetism.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/006-fundamentals-of-electricity-and-magnetism.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "History of Russia's International Relations",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/007-history-of-russia-s-international-relations.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/007-history-of-russia-s-international-relations.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "How Medicines Are Made - Strategies for Chemical Synthesis",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/008-how-medicines-are-made-strategies-for-chemical-synthesis.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/008-how-medicines-are-made-strategies-for-chemical-synthesis.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Instrumental Methods of Pharmacopoeial Analysis",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/009-instrumental-methods-of-pharmacopoeial-analysis.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/009-instrumental-methods-of-pharmacopoeial-analysis.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Online Promotion",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/010-online-promotion.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/010-online-promotion.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Public Speaking Techniques",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/011-public-speaking-techniques.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/011-public-speaking-techniques.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Russia in Global Politics",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/012-russia-in-global-politics.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/012-russia-in-global-politics.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Russia on the World Map",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/013-russia-on-the-world-map.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/013-russia-on-the-world-map.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Russian History through the Lives of Outstanding Russians",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/014-russian-history-through-the-lives-of-outstanding-russians.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/014-russian-history-through-the-lives-of-outstanding-russians.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "School of Stress Management",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/015-school-of-stress-management.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/015-school-of-stress-management.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Solving Trigonometry Problems of Varying Difficulty",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/016-solving-trigonometry-problems-of-varying-difficulty.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/016-solving-trigonometry-problems-of-varying-difficulty.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Translation Theory",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/017-translation-theory.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/017-translation-theory.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         },
         {
           "title": "Treasures of Russian Culture in a Multilingual World",
           "pages": [
             "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/018-treasures-of-russian-culture-in-a-multilingual-world.webp"
+          ],
+          "thumbnails": [
+            "/certificates/44-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university-further-education/018-treasures-of-russian-culture-in-a-multilingual-world.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 4873,
+              "height": 3167
+            }
           ]
         }
       ]
@@ -1128,42 +2515,105 @@
           "title": "Business Continuity",
           "pages": [
             "/certificates/45-project-management-institute-pmi/001-business-continuity.webp"
+          ],
+          "thumbnails": [
+            "/certificates/45-project-management-institute-pmi/001-business-continuity.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Free Introduction — PMI Authorized On-Demand PMP Exam Prep",
           "pages": [
             "/certificates/45-project-management-institute-pmi/002-free-introduction-pmi-authorized-on-demand-pmp-exam-prep.webp"
+          ],
+          "thumbnails": [
+            "/certificates/45-project-management-institute-pmi/002-free-introduction-pmi-authorized-on-demand-pmp-exam-prep.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Free Introduction to Cognitive Project Management in AI (CPMAI)",
           "pages": [
             "/certificates/45-project-management-institute-pmi/003-free-introduction-to-cognitive-project-management-in-ai-cpmai.webp"
+          ],
+          "thumbnails": [
+            "/certificates/45-project-management-institute-pmi/003-free-introduction-to-cognitive-project-management-in-ai-cpmai.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Generative AI Overview for Project Managers",
           "pages": [
             "/certificates/45-project-management-institute-pmi/004-generative-ai-overview-for-project-managers.webp"
+          ],
+          "thumbnails": [
+            "/certificates/45-project-management-institute-pmi/004-generative-ai-overview-for-project-managers.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "PMI Citizen Developer Business Architect (CDBA) Introduction",
           "pages": [
             "/certificates/45-project-management-institute-pmi/005-pmi-citizen-developer-business-architect-cdba-introduction.webp"
+          ],
+          "thumbnails": [
+            "/certificates/45-project-management-institute-pmi/005-pmi-citizen-developer-business-architect-cdba-introduction.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Practical Application of Generative AI for Project Managers",
           "pages": [
             "/certificates/45-project-management-institute-pmi/006-practical-application-of-generative-ai-for-project-managers.webp"
+          ],
+          "thumbnails": [
+            "/certificates/45-project-management-institute-pmi/006-practical-application-of-generative-ai-for-project-managers.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Talking to AI — Prompt Engineering for Project Managers",
           "pages": [
             "/certificates/45-project-management-institute-pmi/007-talking-to-ai-prompt-engineering-for-project-managers.webp"
+          ],
+          "thumbnails": [
+            "/certificates/45-project-management-institute-pmi/007-talking-to-ai-prompt-engineering-for-project-managers.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         }
       ]
@@ -1175,6 +2625,15 @@
           "title": "Rat Tickling Certification Course",
           "pages": [
             "/certificates/46-purdue-university/001-rat-tickling-certification-course.webp"
+          ],
+          "thumbnails": [
+            "/certificates/46-purdue-university/001-rat-tickling-certification-course.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1428,
+              "height": 1072
+            }
           ]
         }
       ]
@@ -1186,6 +2645,15 @@
           "title": "Qt Framework Overview",
           "pages": [
             "/certificates/47-qt-academy/001-qt-framework-overview.webp"
+          ],
+          "thumbnails": [
+            "/certificates/47-qt-academy/001-qt-framework-overview.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 10821,
+              "height": 7504
+            }
           ]
         }
       ]
@@ -1197,12 +2665,30 @@
           "title": "Universal Competencies Passport — Additional Competencies",
           "pages": [
             "/certificates/48-russia-land-of-opportunity/001-universal-competencies-passport-additional-competencies.webp"
+          ],
+          "thumbnails": [
+            "/certificates/48-russia-land-of-opportunity/001-universal-competencies-passport-additional-competencies.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 798,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "Universal Competencies Passport — Basic Competencies",
           "pages": [
             "/certificates/48-russia-land-of-opportunity/002-universal-competencies-passport-basic-competencies.webp"
+          ],
+          "thumbnails": [
+            "/certificates/48-russia-land-of-opportunity/002-universal-competencies-passport-basic-competencies.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 798,
+              "height": 1128
+            }
           ]
         }
       ]
@@ -1214,48 +2700,120 @@
           "title": "Bachelor's Degree Diploma in \"Software Engineering\" (Program Code 09.03.04), with Profile \"Software Systems Design\" (Profile Code 02), 2025",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/001-bachelor-s-degree-diploma-in-software-engineering-program-code-09-03-04-with-profile-software-systems-design-profile-code-02-2025.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/001-bachelor-s-degree-diploma-in-software-engineering-program-code-09-03-04-with-profile-software-systems-design-profile-code-02-2025.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3110,
+              "height": 2200
+            }
           ]
         },
         {
           "title": "Diploma of the Winner of the Competition for the Best Student Scientific Work in Natural, Technical, and Humanities Sciences at SUAI in the 2025–2026 Academic Year",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/002-diploma-of-the-winner-of-the-competition-for-the-best-student-scientific-work-in-natural-technical-and-humanities-sciences-at-suai-in-the-2025-2026-academic-year.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/002-diploma-of-the-winner-of-the-competition-for-the-best-student-scientific-work-in-natural-technical-and-humanities-sciences-at-suai-in-the-2025-2026-academic-year.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2480,
+              "height": 3507
+            }
           ]
         },
         {
           "title": "Professional Retraining Diploma in \"Fundamentals of Frontend Development\" with Qualification of \"Web and Multimedia Applications Developer\", 2024",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/003-professional-retraining-diploma-in-fundamentals-of-frontend-development-with-qualification-of-web-and-multimedia-applications-developer-2024.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/003-professional-retraining-diploma-in-fundamentals-of-frontend-development-with-qualification-of-web-and-multimedia-applications-developer-2024.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3106,
+              "height": 2198
+            }
           ]
         },
         {
           "title": "SUAI Economic Olympiad 2025 — First Degree Diploma",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/004-suai-economic-olympiad-2025-first-degree-diploma.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/004-suai-economic-olympiad-2025-first-degree-diploma.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "SUAI Humanities Olympiad 2025 — Third Degree Diploma",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/005-suai-humanities-olympiad-2025-third-degree-diploma.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/005-suai-humanities-olympiad-2025-third-degree-diploma.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "SUAI Law Olympiad 2025 — First Degree Diploma",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/006-suai-law-olympiad-2025-first-degree-diploma.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/006-suai-law-olympiad-2025-first-degree-diploma.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "SUAI Technical Olympiad — Second Degree Diploma",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/007-suai-technical-olympiad-second-degree-diploma.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/007-suai-technical-olympiad-second-degree-diploma.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "SUAI Technical Olympiad 2025 — First Degree Diploma",
           "pages": [
             "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/008-suai-technical-olympiad-2025-first-degree-diploma.webp"
+          ],
+          "thumbnails": [
+            "/certificates/49-saint-petersburg-state-university-of-aerospace-instrumentation-suai/008-suai-technical-olympiad-2025-first-degree-diploma.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         }
       ]
@@ -1267,48 +2825,120 @@
           "title": "Economic Aspects of Quality Management",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/001-economic-aspects-of-quality-management.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/001-economic-aspects-of-quality-management.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Employee Social Well-Being Management",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/002-employee-social-well-being-management.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/002-employee-social-well-being-management.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "End-to-End Digital Technologies for Supporting Flexible Management Systems",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/003-end-to-end-digital-technologies-for-supporting-flexible-management-systems.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/003-end-to-end-digital-technologies-for-supporting-flexible-management-systems.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Fundamentals of Building a Corporate Hybrid Cloud IT Infrastructure",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/004-fundamentals-of-building-a-corporate-hybrid-cloud-it-infrastructure.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/004-fundamentals-of-building-a-corporate-hybrid-cloud-it-infrastructure.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Knowledge Management and Continuous Personnel Development",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/005-knowledge-management-and-continuous-personnel-development.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/005-knowledge-management-and-continuous-personnel-development.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Modern Innovative High-Tech Manufacturing Processes",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/006-modern-innovative-high-tech-manufacturing-processes.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/006-modern-innovative-high-tech-manufacturing-processes.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "The Essentials for Business Life",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/007-the-essentials-for-business-life.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/007-the-essentials-for-business-life.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         },
         {
           "title": "Youth Startup",
           "pages": [
             "/certificates/50-saint-petersburg-state-university-of-economics-unecon/008-youth-startup.webp"
+          ],
+          "thumbnails": [
+            "/certificates/50-saint-petersburg-state-university-of-economics-unecon/008-youth-startup.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2339,
+              "height": 1654
+            }
           ]
         }
       ]
@@ -1321,6 +2951,20 @@
           "pages": [
             "/certificates/51-saylor-academy/001-comm001-principles-of-human-communication-page-1.webp",
             "/certificates/51-saylor-academy/001-comm001-principles-of-human-communication-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/001-comm001-principles-of-human-communication-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/001-comm001-principles-of-human-communication-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1328,6 +2972,20 @@
           "pages": [
             "/certificates/51-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-1.webp",
             "/certificates/51-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/002-cs207-fundamentals-of-machine-learning-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1335,6 +2993,20 @@
           "pages": [
             "/certificates/51-saylor-academy/003-cs250-python-for-data-science-page-1.webp",
             "/certificates/51-saylor-academy/003-cs250-python-for-data-science-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/003-cs250-python-for-data-science-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/003-cs250-python-for-data-science-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1342,6 +3014,20 @@
           "pages": [
             "/certificates/51-saylor-academy/004-cs302-software-engineering-page-1.webp",
             "/certificates/51-saylor-academy/004-cs302-software-engineering-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/004-cs302-software-engineering-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/004-cs302-software-engineering-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1349,6 +3035,20 @@
           "pages": [
             "/certificates/51-saylor-academy/005-cs402-computer-communications-and-networks-page-1.webp",
             "/certificates/51-saylor-academy/005-cs402-computer-communications-and-networks-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/005-cs402-computer-communications-and-networks-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/005-cs402-computer-communications-and-networks-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1356,6 +3056,20 @@
           "pages": [
             "/certificates/51-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-1.webp",
             "/certificates/51-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/006-cs403-introduction-to-modern-database-systems-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1363,6 +3077,20 @@
           "pages": [
             "/certificates/51-saylor-academy/007-cs406-information-security-page-1.webp",
             "/certificates/51-saylor-academy/007-cs406-information-security-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/007-cs406-information-security-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/007-cs406-information-security-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1370,6 +3098,20 @@
           "pages": [
             "/certificates/51-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-1.webp",
             "/certificates/51-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/008-esl001-elementary-english-as-a-second-language-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1377,6 +3119,20 @@
           "pages": [
             "/certificates/51-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-1.webp",
             "/certificates/51-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/009-esl002-intermediate-english-as-a-second-language-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1384,6 +3140,20 @@
           "pages": [
             "/certificates/51-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-1.webp",
             "/certificates/51-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/010-esl003-upper-intermediate-english-as-a-second-language-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1391,6 +3161,20 @@
           "pages": [
             "/certificates/51-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-1.webp",
             "/certificates/51-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/011-esl004-advanced-english-as-a-second-language-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1398,6 +3182,20 @@
           "pages": [
             "/certificates/51-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-1.webp",
             "/certificates/51-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/012-esl005-business-proficient-english-as-a-second-language-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1405,6 +3203,20 @@
           "pages": [
             "/certificates/51-saylor-academy/013-ma121-introduction-to-statistics-page-1.webp",
             "/certificates/51-saylor-academy/013-ma121-introduction-to-statistics-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/013-ma121-introduction-to-statistics-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/013-ma121-introduction-to-statistics-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1412,6 +3224,20 @@
           "pages": [
             "/certificates/51-saylor-academy/014-prdv005-time-and-stress-management-page-1.webp",
             "/certificates/51-saylor-academy/014-prdv005-time-and-stress-management-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/014-prdv005-time-and-stress-management-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/014-prdv005-time-and-stress-management-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1419,6 +3245,20 @@
           "pages": [
             "/certificates/51-saylor-academy/015-prdv104-professional-etiquette-page-1.webp",
             "/certificates/51-saylor-academy/015-prdv104-professional-etiquette-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/015-prdv104-professional-etiquette-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/015-prdv104-professional-etiquette-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1426,6 +3266,20 @@
           "pages": [
             "/certificates/51-saylor-academy/016-prdv200-communicating-with-data-page-1.webp",
             "/certificates/51-saylor-academy/016-prdv200-communicating-with-data-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/016-prdv200-communicating-with-data-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/016-prdv200-communicating-with-data-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1433,6 +3287,20 @@
           "pages": [
             "/certificates/51-saylor-academy/017-prdv214-organizational-communication-page-1.webp",
             "/certificates/51-saylor-academy/017-prdv214-organizational-communication-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/017-prdv214-organizational-communication-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/017-prdv214-organizational-communication-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1440,6 +3308,20 @@
           "pages": [
             "/certificates/51-saylor-academy/018-prdv224-leadership-and-teams-page-1.webp",
             "/certificates/51-saylor-academy/018-prdv224-leadership-and-teams-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/018-prdv224-leadership-and-teams-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/018-prdv224-leadership-and-teams-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1447,6 +3329,20 @@
           "pages": [
             "/certificates/51-saylor-academy/019-prdv225-managing-employees-page-1.webp",
             "/certificates/51-saylor-academy/019-prdv225-managing-employees-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/019-prdv225-managing-employees-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/019-prdv225-managing-employees-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1454,6 +3350,20 @@
           "pages": [
             "/certificates/51-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-1.webp",
             "/certificates/51-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/020-prdv226-introduction-to-human-resource-management-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1461,6 +3371,20 @@
           "pages": [
             "/certificates/51-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-1.webp",
             "/certificates/51-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/021-prdv227-introduction-to-business-planning-and-strategy-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1468,6 +3392,20 @@
           "pages": [
             "/certificates/51-saylor-academy/022-prdv228-decision-making-page-1.webp",
             "/certificates/51-saylor-academy/022-prdv228-decision-making-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/022-prdv228-decision-making-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/022-prdv228-decision-making-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1475,6 +3413,20 @@
           "pages": [
             "/certificates/51-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-1.webp",
             "/certificates/51-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/023-prdv229-organization-structure-change-and-the-future-of-management-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1482,6 +3434,20 @@
           "pages": [
             "/certificates/51-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-1.webp",
             "/certificates/51-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/024-prdv231-elements-of-ethical-leadership-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1489,6 +3455,20 @@
           "pages": [
             "/certificates/51-saylor-academy/025-prdv401-introduction-to-javascript-i-page-1.webp",
             "/certificates/51-saylor-academy/025-prdv401-introduction-to-javascript-i-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/025-prdv401-introduction-to-javascript-i-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/025-prdv401-introduction-to-javascript-i-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1496,6 +3476,20 @@
           "pages": [
             "/certificates/51-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-1.webp",
             "/certificates/51-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/026-prdv402-introduction-to-javascript-ii-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1503,6 +3497,20 @@
           "pages": [
             "/certificates/51-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-1.webp",
             "/certificates/51-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/027-prdv410-introduction-to-java-and-object-oriented-programming-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1510,6 +3518,20 @@
           "pages": [
             "/certificates/51-saylor-academy/028-prdv420-introduction-to-r-programming-page-1.webp",
             "/certificates/51-saylor-academy/028-prdv420-introduction-to-r-programming-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/028-prdv420-introduction-to-r-programming-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/028-prdv420-introduction-to-r-programming-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         },
         {
@@ -1517,6 +3539,20 @@
           "pages": [
             "/certificates/51-saylor-academy/029-prdv430-ai-for-business-applications-page-1.webp",
             "/certificates/51-saylor-academy/029-prdv430-ai-for-business-applications-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/51-saylor-academy/029-prdv430-ai-for-business-applications-page-1.thumb.jpg",
+            "/certificates/51-saylor-academy/029-prdv430-ai-for-business-applications-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1059,
+              "height": 820
+            },
+            {
+              "width": 1059,
+              "height": 820
+            }
           ]
         }
       ]
@@ -1528,18 +3564,45 @@
           "title": "Crafting a Winning SEO Strategy - A Guide for In-House Marketers",
           "pages": [
             "/certificates/52-semrush-academy/001-crafting-a-winning-seo-strategy-a-guide-for-in-house-marketers.webp"
+          ],
+          "thumbnails": [
+            "/certificates/52-semrush-academy/001-crafting-a-winning-seo-strategy-a-guide-for-in-house-marketers.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "How to Get More Customers with Your Small Business Website with Wes McDowell",
           "pages": [
             "/certificates/52-semrush-academy/002-how-to-get-more-customers-with-your-small-business-website-with-wes-mcdowell.webp"
+          ],
+          "thumbnails": [
+            "/certificates/52-semrush-academy/002-how-to-get-more-customers-with-your-small-business-website-with-wes-mcdowell.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Maximizing ROI through Marketing Analytics - A Practical Guide for In-House Marketers",
           "pages": [
             "/certificates/52-semrush-academy/003-maximizing-roi-through-marketing-analytics-a-practical-guide-for-in-house-marketers.webp"
+          ],
+          "thumbnails": [
+            "/certificates/52-semrush-academy/003-maximizing-roi-through-marketing-analytics-a-practical-guide-for-in-house-marketers.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         }
       ]
@@ -1551,18 +3614,45 @@
           "title": "Free Full Stack Developer Course",
           "pages": [
             "/certificates/53-simplilearn/001-free-full-stack-developer-course.webp"
+          ],
+          "thumbnails": [
+            "/certificates/53-simplilearn/001-free-full-stack-developer-course.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1129,
+              "height": 798
+            }
           ]
         },
         {
           "title": "Free Project Manager Course",
           "pages": [
             "/certificates/53-simplilearn/002-free-project-manager-course.webp"
+          ],
+          "thumbnails": [
+            "/certificates/53-simplilearn/002-free-project-manager-course.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1129,
+              "height": 798
+            }
           ]
         },
         {
           "title": "Machine Learning Using Python",
           "pages": [
             "/certificates/53-simplilearn/003-machine-learning-using-python.webp"
+          ],
+          "thumbnails": [
+            "/certificates/53-simplilearn/003-machine-learning-using-python.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1129,
+              "height": 798
+            }
           ]
         }
       ]
@@ -1574,24 +3664,60 @@
           "title": "Algorithms: Theory and Practice — Data Structures",
           "pages": [
             "/certificates/54-stepik/001-algorithms-theory-and-practice-data-structures.webp"
+          ],
+          "thumbnails": [
+            "/certificates/54-stepik/001-algorithms-theory-and-practice-data-structures.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Business English (Peoples' Friendship University of Russia named after Patrice Lumumba - RUDN University)",
           "pages": [
             "/certificates/54-stepik/002-business-english-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.webp"
+          ],
+          "thumbnails": [
+            "/certificates/54-stepik/002-business-english-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Extreme Combinatorics by A. M. Raygorodskii Moscow Institute of Physics and Technology (National Research University; MIPT)",
           "pages": [
             "/certificates/54-stepik/003-extreme-combinatorics-by-a-m-raygorodskii-moscow-institute-of-physics-and-technology-national-research-university-mipt.webp"
+          ],
+          "thumbnails": [
+            "/certificates/54-stepik/003-extreme-combinatorics-by-a-m-raygorodskii-moscow-institute-of-physics-and-technology-national-research-university-mipt.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Mathematical Teletraffic Theory (Peoples' Friendship University of Russia named after Patrice Lumumba - RUDN University)",
           "pages": [
             "/certificates/54-stepik/004-mathematical-teletraffic-theory-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.webp"
+          ],
+          "thumbnails": [
+            "/certificates/54-stepik/004-mathematical-teletraffic-theory-peoples-friendship-university-of-russia-named-after-patrice-lumumba-rudn-university.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         }
       ]
@@ -1603,42 +3729,105 @@
           "title": "Develop and Automate with SAP Build",
           "pages": [
             "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/001-develop-and-automate-with-sap-build.webp"
+          ],
+          "thumbnails": [
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/001-develop-and-automate-with-sap-build.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Exploring SAP Analytics Cloud",
           "pages": [
             "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/002-exploring-sap-analytics-cloud.webp"
+          ],
+          "thumbnails": [
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/002-exploring-sap-analytics-cloud.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
           "title": "Exploring SAP Business Technology Platform",
           "pages": [
             "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/003-exploring-sap-business-technology-platform.webp"
+          ],
+          "thumbnails": [
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/003-exploring-sap-business-technology-platform.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Getting Started with SAP Cloud Application Programming Model",
           "pages": [
             "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/004-getting-started-with-sap-cloud-application-programming-model.webp"
+          ],
+          "thumbnails": [
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/004-getting-started-with-sap-cloud-application-programming-model.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Implementing with SAP Cloud ALM",
           "pages": [
             "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/005-implementing-with-sap-cloud-alm.webp"
+          ],
+          "thumbnails": [
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/005-implementing-with-sap-cloud-alm.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Introducing SAP Cloud ALM",
           "pages": [
             "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/006-introducing-sap-cloud-alm.webp"
+          ],
+          "thumbnails": [
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/006-introducing-sap-cloud-alm.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Operating with SAP Cloud ALM",
           "pages": [
             "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/007-operating-with-sap-cloud-alm.webp"
+          ],
+          "thumbnails": [
+            "/certificates/55-systems-applications-and-products-in-data-processing-sap-learning/007-operating-with-sap-cloud-alm.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         }
       ]
@@ -1650,24 +3839,60 @@
           "title": "Developing Designs for User Experience",
           "pages": [
             "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/001-developing-designs-for-user-experience.webp"
+          ],
+          "thumbnails": [
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/001-developing-designs-for-user-experience.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "Developing Designs for User Interface",
           "pages": [
             "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/002-developing-designs-for-user-interface.webp"
+          ],
+          "thumbnails": [
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/002-developing-designs-for-user-interface.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "English for Business and Entrepreneurship",
           "pages": [
             "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/003-english-for-business-and-entrepreneurship.webp"
+          ],
+          "thumbnails": [
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/003-english-for-business-and-entrepreneurship.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         },
         {
           "title": "English for Science, Technology, Engineering, and Mathematics (eSTEM)",
           "pages": [
             "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/004-english-for-science-technology-engineering-and-mathematics-estem.webp"
+          ],
+          "thumbnails": [
+            "/certificates/56-technical-education-and-skills-development-authority-tesda-national-institute-for-technical-education-and-skills-development-nitesd/004-english-for-science-technology-engineering-and-mathematics-estem.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1128,
+              "height": 797
+            }
           ]
         }
       ]
@@ -1679,18 +3904,45 @@
           "title": "Building Up Quality Leaders",
           "pages": [
             "/certificates/57-test-automation-university/001-building-up-quality-leaders.webp"
+          ],
+          "thumbnails": [
+            "/certificates/57-test-automation-university/001-building-up-quality-leaders.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1932,
+              "height": 1390
+            }
           ]
         },
         {
           "title": "Intro to Testing Machine Learning Models",
           "pages": [
             "/certificates/57-test-automation-university/002-intro-to-testing-machine-learning-models.webp"
+          ],
+          "thumbnails": [
+            "/certificates/57-test-automation-university/002-intro-to-testing-machine-learning-models.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1932,
+              "height": 1390
+            }
           ]
         },
         {
           "title": "Setting a Foundation for Successful Test Automation",
           "pages": [
             "/certificates/57-test-automation-university/003-setting-a-foundation-for-successful-test-automation.webp"
+          ],
+          "thumbnails": [
+            "/certificates/57-test-automation-university/003-setting-a-foundation-for-successful-test-automation.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1932,
+              "height": 1390
+            }
           ]
         }
       ]
@@ -1703,6 +3955,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-1.webp",
             "/certificates/58-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/001-digital-thinking-tools-for-better-decision-making-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1710,6 +3976,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-1.webp",
             "/certificates/58-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/002-effective-communication-in-the-workplace-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1717,6 +3997,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/003-english-skills-for-learning-page-1.webp",
             "/certificates/58-the-open-university-openlearn/003-english-skills-for-learning-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/003-english-skills-for-learning-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/003-english-skills-for-learning-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1724,6 +4018,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/004-everyday-english-1-page-1.webp",
             "/certificates/58-the-open-university-openlearn/004-everyday-english-1-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/004-everyday-english-1-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/004-everyday-english-1-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1731,6 +4039,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/005-everyday-english-2-page-1.webp",
             "/certificates/58-the-open-university-openlearn/005-everyday-english-2-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/005-everyday-english-2-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/005-everyday-english-2-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1738,6 +4060,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/006-leadership-and-followership-page-1.webp",
             "/certificates/58-the-open-university-openlearn/006-leadership-and-followership-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/006-leadership-and-followership-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/006-leadership-and-followership-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1746,6 +4082,25 @@
             "/certificates/58-the-open-university-openlearn/007-risk-management-page-1.webp",
             "/certificates/58-the-open-university-openlearn/007-risk-management-page-2.webp",
             "/certificates/58-the-open-university-openlearn/007-risk-management-page-3.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/007-risk-management-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/007-risk-management-page-2.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/007-risk-management-page-3.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1753,6 +4108,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/008-succeed-in-the-workplace-page-1.webp",
             "/certificates/58-the-open-university-openlearn/008-succeed-in-the-workplace-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/008-succeed-in-the-workplace-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/008-succeed-in-the-workplace-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         },
         {
@@ -1760,6 +4129,20 @@
           "pages": [
             "/certificates/58-the-open-university-openlearn/009-succeed-with-learning-page-1.webp",
             "/certificates/58-the-open-university-openlearn/009-succeed-with-learning-page-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/58-the-open-university-openlearn/009-succeed-with-learning-page-1.thumb.jpg",
+            "/certificates/58-the-open-university-openlearn/009-succeed-with-learning-page-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1128
+            },
+            {
+              "width": 797,
+              "height": 1128
+            }
           ]
         }
       ]
@@ -1771,12 +4154,30 @@
           "title": "Automation Solution Architecture Fundamentals",
           "pages": [
             "/certificates/59-uipath-academy/001-automation-solution-architecture-fundamentals.webp"
+          ],
+          "thumbnails": [
+            "/certificates/59-uipath-academy/001-automation-solution-architecture-fundamentals.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 8333,
+              "height": 5883
+            }
           ]
         },
         {
           "title": "Introduction to Automation",
           "pages": [
             "/certificates/59-uipath-academy/002-introduction-to-automation.webp"
+          ],
+          "thumbnails": [
+            "/certificates/59-uipath-academy/002-introduction-to-automation.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 8333,
+              "height": 5883
+            }
           ]
         }
       ]
@@ -1788,6 +4189,15 @@
           "title": "Research and Evidence at UNICEF",
           "pages": [
             "/certificates/60-united-nations-children-s-fund-unicef-agora/001-research-and-evidence-at-unicef.webp"
+          ],
+          "thumbnails": [
+            "/certificates/60-united-nations-children-s-fund-unicef-agora/001-research-and-evidence-at-unicef.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -1799,18 +4209,45 @@
           "title": "Hydraulic Modeling with HEC-RAS",
           "pages": [
             "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/001-hydraulic-modeling-with-hec-ras.webp"
+          ],
+          "thumbnails": [
+            "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/001-hydraulic-modeling-with-hec-ras.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2550,
+              "height": 3300
+            }
           ]
         },
         {
           "title": "Hydrologic Modeling with HEC-HMS",
           "pages": [
             "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/002-hydrologic-modeling-with-hec-hms.webp"
+          ],
+          "thumbnails": [
+            "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/002-hydrologic-modeling-with-hec-hms.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2550,
+              "height": 3300
+            }
           ]
         },
         {
           "title": "Open Educational Resources (OER) Development",
           "pages": [
             "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/003-open-educational-resources-oer-development.webp"
+          ],
+          "thumbnails": [
+            "/certificates/61-united-nations-educational-scientific-and-cultural-organization-unesco-open-learning/003-open-educational-resources-oer-development.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 2550,
+              "height": 3300
+            }
           ]
         }
       ]
@@ -1826,6 +4263,35 @@
             "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-3.webp",
             "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-4.webp",
             "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-5.webp"
+          ],
+          "thumbnails": [
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-1.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-2.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-3.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-4.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/001-english-for-business-and-entrepreneurship-mooc-page-5.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1176,
+              "height": 895
+            },
+            {
+              "width": 1163,
+              "height": 896
+            },
+            {
+              "width": 1155,
+              "height": 877
+            },
+            {
+              "width": 1143,
+              "height": 862
+            },
+            {
+              "width": 1134,
+              "height": 856
+            }
           ]
         },
         {
@@ -1836,6 +4302,35 @@
             "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-3.webp",
             "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-4.webp",
             "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-5.webp"
+          ],
+          "thumbnails": [
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-1.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-2.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-3.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-4.thumb.jpg",
+            "/certificates/62-united-states-department-of-state-online-professional-english-network-open-massive-open-online-courses-moocs/002-english-for-career-development-mooc-page-5.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1058,
+              "height": 811
+            },
+            {
+              "width": 1060,
+              "height": 805
+            },
+            {
+              "width": 1034,
+              "height": 786
+            },
+            {
+              "width": 1002,
+              "height": 760
+            },
+            {
+              "width": 1005,
+              "height": 763
+            }
           ]
         }
       ]
@@ -1847,6 +4342,15 @@
           "title": "Full Stack Open",
           "pages": [
             "/certificates/63-university-of-helsinki-uh-houston-inc/001-full-stack-open.webp"
+          ],
+          "thumbnails": [
+            "/certificates/63-university-of-helsinki-uh-houston-inc/001-full-stack-open.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2480
+            }
           ]
         }
       ]
@@ -1858,6 +4362,15 @@
           "title": "Leadership — No-Blame Problem Solving at the University of Illinois Chicago (UIC)",
           "pages": [
             "/certificates/64-university-of-illinois-chicago-uic/001-leadership-no-blame-problem-solving-at-the-university-of-illinois-chicago-uic.webp"
+          ],
+          "thumbnails": [
+            "/certificates/64-university-of-illinois-chicago-uic/001-leadership-no-blame-problem-solving-at-the-university-of-illinois-chicago-uic.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 3508,
+              "height": 2479
+            }
           ]
         }
       ]
@@ -1869,60 +4382,150 @@
           "title": "Business Analysis Fundamentals with AI Certified (BALearning)",
           "pages": [
             "/certificates/65-vmedu/001-business-analysis-fundamentals-with-ai-certified-balearning.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/001-business-analysis-fundamentals-with-ai-certified-balearning.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Corporate Sales Fundamentals (SMstudy)",
           "pages": [
             "/certificates/65-vmedu/002-corporate-sales-fundamentals-smstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/002-corporate-sales-fundamentals-smstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Digital Marketing Fundamentals (SMstudy)",
           "pages": [
             "/certificates/65-vmedu/003-digital-marketing-fundamentals-smstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/003-digital-marketing-fundamentals-smstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Kanban Essentials with AI Certified (Kanbanstudy)",
           "pages": [
             "/certificates/65-vmedu/004-kanban-essentials-with-ai-certified-kanbanstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/004-kanban-essentials-with-ai-certified-kanbanstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Marketing Research Fundamentals (SMstudy)",
           "pages": [
             "/certificates/65-vmedu/005-marketing-research-fundamentals-smstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/005-marketing-research-fundamentals-smstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Marketing Strategy Fundamentals (SMstudy)",
           "pages": [
             "/certificates/65-vmedu/006-marketing-strategy-fundamentals-smstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/006-marketing-strategy-fundamentals-smstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Negotiation Associate (NGstudy)",
           "pages": [
             "/certificates/65-vmedu/007-negotiation-associate-ngstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/007-negotiation-associate-ngstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "OKR Fundamentals with AI Certified (OKRstudy)",
           "pages": [
             "/certificates/65-vmedu/008-okr-fundamentals-with-ai-certified-okrstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/008-okr-fundamentals-with-ai-certified-okrstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Scrum Fundamentals Certified (SCRUMstudy)",
           "pages": [
             "/certificates/65-vmedu/009-scrum-fundamentals-certified-scrumstudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/009-scrum-fundamentals-certified-scrumstudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "Six Sigma Yellow Belt (6sigmastudy)",
           "pages": [
             "/certificates/65-vmedu/010-six-sigma-yellow-belt-6sigmastudy.webp"
+          ],
+          "thumbnails": [
+            "/certificates/65-vmedu/010-six-sigma-yellow-belt-6sigmastudy.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         }
       ]
@@ -1934,12 +4537,30 @@
           "title": "Let's Learn English Level 1",
           "pages": [
             "/certificates/66-voice-of-america-voa/001-let-s-learn-english-level-1.webp"
+          ],
+          "thumbnails": [
+            "/certificates/66-voice-of-america-voa/001-let-s-learn-english-level-1.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1127
+            }
           ]
         },
         {
           "title": "Let's Learn English Level 2",
           "pages": [
             "/certificates/66-voice-of-america-voa/002-let-s-learn-english-level-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/66-voice-of-america-voa/002-let-s-learn-english-level-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 797,
+              "height": 1127
+            }
           ]
         }
       ]
@@ -1951,30 +4572,75 @@
           "title": "WCU Admission Decision",
           "pages": [
             "/certificates/67-wild-chicken-university-wcu/001-wcu-admission-decision.webp"
+          ],
+          "thumbnails": [
+            "/certificates/67-wild-chicken-university-wcu/001-wcu-admission-decision.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 820,
+              "height": 1061
+            }
           ]
         },
         {
           "title": "WCU Diploma - Doctor of Management",
           "pages": [
             "/certificates/67-wild-chicken-university-wcu/002-wcu-diploma-doctor-of-management.webp"
+          ],
+          "thumbnails": [
+            "/certificates/67-wild-chicken-university-wcu/002-wcu-diploma-doctor-of-management.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "WCU Diploma - Master",
           "pages": [
             "/certificates/67-wild-chicken-university-wcu/003-wcu-diploma-master.webp"
+          ],
+          "thumbnails": [
+            "/certificates/67-wild-chicken-university-wcu/003-wcu-diploma-master.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "WCU Diploma - Master of Engineering 1",
           "pages": [
             "/certificates/67-wild-chicken-university-wcu/004-wcu-diploma-master-of-engineering-1.webp"
+          ],
+          "thumbnails": [
+            "/certificates/67-wild-chicken-university-wcu/004-wcu-diploma-master-of-engineering-1.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         },
         {
           "title": "WCU Diploma - Master of Engineering 2",
           "pages": [
             "/certificates/67-wild-chicken-university-wcu/005-wcu-diploma-master-of-engineering-2.webp"
+          ],
+          "thumbnails": [
+            "/certificates/67-wild-chicken-university-wcu/005-wcu-diploma-master-of-engineering-2.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1061,
+              "height": 820
+            }
           ]
         }
       ]
@@ -1986,24 +4652,60 @@
           "title": "Introduction to Image Processing",
           "pages": [
             "/certificates/68-wolfram-u/001-introduction-to-image-processing.webp"
+          ],
+          "thumbnails": [
+            "/certificates/68-wolfram-u/001-introduction-to-image-processing.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1013,
+              "height": 782
+            }
           ]
         },
         {
           "title": "Multiparadigm Data Science",
           "pages": [
             "/certificates/68-wolfram-u/002-multiparadigm-data-science.webp"
+          ],
+          "thumbnails": [
+            "/certificates/68-wolfram-u/002-multiparadigm-data-science.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1013,
+              "height": 782
+            }
           ]
         },
         {
           "title": "Visual Exploration of Data",
           "pages": [
             "/certificates/68-wolfram-u/003-visual-exploration-of-data.webp"
+          ],
+          "thumbnails": [
+            "/certificates/68-wolfram-u/003-visual-exploration-of-data.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1013,
+              "height": 782
+            }
           ]
         },
         {
           "title": "Visual Explorations in Data Science",
           "pages": [
             "/certificates/68-wolfram-u/004-visual-explorations-in-data-science.webp"
+          ],
+          "thumbnails": [
+            "/certificates/68-wolfram-u/004-visual-explorations-in-data-science.thumb.jpg"
+          ],
+          "pageDimensions": [
+            {
+              "width": 1013,
+              "height": 782
+            }
           ]
         }
       ]

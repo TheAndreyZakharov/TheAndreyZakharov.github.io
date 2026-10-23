@@ -8,6 +8,7 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TARGET_DIR="$PROJECT_ROOT/public/certificates"
 MANIFEST_FILE="$PROJECT_ROOT/src/certificates.json"
 TEMP_ROOT="$(mktemp -d "${TMPDIR:-/tmp}/certificates-sync.XXXXXX")"
+STAGING_MANIFEST_FILE="$TEMP_ROOT/certificates.json"
 CHECKOUT_DIR="$TEMP_ROOT/repository"
 STAGING_DIR="$TEMP_ROOT/site-certificates"
 
@@ -28,7 +29,7 @@ fi
 
 mkdir -p "$STAGING_DIR"
 
-node - "$CHECKOUT_DIR/docs" "$STAGING_DIR" "$MANIFEST_FILE" <<'NODE'
+node - "$CHECKOUT_DIR/docs" "$STAGING_DIR" "$STAGING_MANIFEST_FILE" <<'NODE'
 const fs = require("node:fs");
 const path = require("node:path");
 
@@ -123,12 +124,17 @@ const manifest = {
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 NODE
 
-certificate_count="$(find "$STAGING_DIR" -type f | wc -l | tr -d ' ')"
+echo "Generating 320 px certificate thumbnails and recording original dimensions..."
+node "$PROJECT_ROOT/scripts/generate-certificate-assets.mjs" "$STAGING_DIR" "$STAGING_MANIFEST_FILE"
+
+certificate_count="$(find "$STAGING_DIR" -type f ! -name '*.thumb.jpg' | wc -l | tr -d ' ')"
+thumbnail_count="$(find "$STAGING_DIR" -type f -name '*.thumb.jpg' | wc -l | tr -d ' ')"
 
 if [ -e "$TARGET_DIR" ]; then
   rm -rf "$TARGET_DIR"
 fi
 mv "$STAGING_DIR" "$TARGET_DIR"
+cp "$STAGING_MANIFEST_FILE" "$MANIFEST_FILE"
 
-echo "Synchronized $certificate_count certificate images into public/certificates."
+echo "Synchronized $certificate_count certificate pages and $thumbnail_count thumbnails into public/certificates."
 echo "Generated URL-safe certificate paths and manifest: src/certificates.json"

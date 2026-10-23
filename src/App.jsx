@@ -4,48 +4,6 @@ import certificateManifest from "./certificates.json";
 
 const emailAddress = "Andrey.Zakharov.Contact@gmail.com";
 
-const certificateThumbnailSources = [...new Set(
-  certificateManifest.providers.flatMap((provider) => provider.documents.map((certificate) => certificate.pages[0])),
-)];
-
-function preloadImageDimensions(source) {
-  return new Promise((resolve) => {
-    const image = new Image();
-    let finished = false;
-    const finish = () => {
-      if (finished) return;
-      finished = true;
-      resolve({
-        width: image.naturalWidth || 1400,
-        height: image.naturalHeight || 1000,
-      });
-    };
-
-    image.decoding = "async";
-    image.onload = finish;
-    image.onerror = finish;
-    image.src = source;
-
-    if (image.complete) finish();
-  });
-}
-
-async function preloadCertificateThumbnails(sources) {
-  const dimensions = {};
-  let nextIndex = 0;
-  const workerCount = /iPhone|iPad|iPod/i.test(navigator.userAgent) ? 2 : 5;
-  const worker = async () => {
-    while (nextIndex < sources.length) {
-      const source = sources[nextIndex];
-      nextIndex += 1;
-      dimensions[source] = await preloadImageDimensions(source);
-    }
-  };
-
-  await Promise.all(Array.from({ length: Math.min(workerCount, sources.length) }, worker));
-  return dimensions;
-}
-
 function resumePreviewSource(file) {
   return file.replace("/resumes/", "/resume-previews/").replace(/\.pdf$/i, ".png");
 }
@@ -383,9 +341,8 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   const [viewerClosing, setViewerClosing] = useState(false);
   const viewerCloseTimer = useRef(null);
   const pageFlipRequest = useRef(0);
-  const [thumbnailDimensions, setThumbnailDimensions] = useState({});
-  const [certificatesReady, setCertificatesReady] = useState(false);
-  const [showCertificateLoader, setShowCertificateLoader] = useState(true);
+  const certificatesReady = true;
+  const showCertificateLoader = false;
   const normalizedQuery = query.trim().toLowerCase();
   const visibleProviders = certificateManifest.providers.map((provider, originalIndex) => ({
     ...provider,
@@ -444,23 +401,6 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   }, []);
 
   useEffect(() => {
-    let cancelled = false;
-    let loaderTimer = null;
-    Promise.all([preloadCertificateThumbnails(certificateThumbnailSources), document.fonts?.ready ?? Promise.resolve()]).then(([dimensions]) => {
-      if (cancelled) return;
-      window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
-        if (cancelled) return;
-        setThumbnailDimensions(dimensions);
-        setCertificatesReady(true);
-        loaderTimer = window.setTimeout(() => setShowCertificateLoader(false), 460);
-      }));
-    });
-    return () => {
-      cancelled = true;
-      if (loaderTimer) window.clearTimeout(loaderTimer);
-    };
-  }, []);
-  useEffect(() => {
     const handleScroll = () => {
       const scrollTop = Math.max(
         window.scrollY,
@@ -502,20 +442,15 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   }, [activeCertificate]);
 
   const openCertificate = (providerName, certificate) => {
-    const open = (orientation, ratio) => {
-      if (viewerCloseTimer.current) window.clearTimeout(viewerCloseTimer.current);
-      setViewerClosing(false);
-      setActiveOrientation(orientation);
-      setActiveImageRatio(ratio);
-      setActiveCertificate({ ...certificate, providerName });
-      setActivePage(0);
-      setPreviousPage(null);
-      setPageDirection("");
-    };
-    const preview = new Image();
-    preview.onload = () => open(preview.naturalHeight > preview.naturalWidth ? "portrait" : "landscape", preview.naturalWidth / preview.naturalHeight);
-    preview.onerror = () => open("landscape", 1.4);
-    preview.src = certificate.pages[0];
+    if (viewerCloseTimer.current) window.clearTimeout(viewerCloseTimer.current);
+    const dimensions = certificate.pageDimensions?.[0] ?? { width: 1400, height: 1000 };
+    setViewerClosing(false);
+    setActiveOrientation(dimensions.height > dimensions.width ? "portrait" : "landscape");
+    setActiveImageRatio(dimensions.width / dimensions.height);
+    setActiveCertificate({ ...certificate, providerName });
+    setActivePage(0);
+    setPreviousPage(null);
+    setPageDirection("");
   };
 
   const toggleContents = () => {
@@ -599,10 +534,10 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
                 <div className="certificate-group__heading"><h2>{provider.name}</h2><span>{provider.documents.length}</span></div>
                 <div className="certificate-grid">
                   {provider.documents.map((certificate) => {
-                    const dimensions = thumbnailDimensions[certificate.pages[0]] ?? { width: 1400, height: 1000 };
+                    const dimensions = certificate.pageDimensions?.[0] ?? { width: 1400, height: 1000 };
                     return (
                     <button className="certificate-card" type="button" onClick={() => openCertificate(provider.name, certificate)} key={`${provider.name}-${certificate.title}`}>
-                      <img loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.pages[0]} alt={certificate.title} />
+                      <img loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
                       <span>{certificate.title}</span>
                       <small>{pageCountLabel(certificate.pages.length, language)}</small>
                     </button>
@@ -887,7 +822,7 @@ function App() {
   };
 
   const closeCertificates = () => {
-    transitionView("education", () => window.history.pushState({ view: "education" }, "", "#education"));
+    transitionView("home", () => window.history.pushState({ view: "home" }, "", window.location.pathname));
   };
 
   const closeEducation = () => {
@@ -952,7 +887,7 @@ function App() {
               </article>
             ))}
           </div>
-          <button className="education-archive-button" type="button" onClick={openCertificates}><LanguageText>{text.educationArchiveButton}</LanguageText><span aria-hidden="true">→</span></button>
+          <button className="education-archive-button" type="button" onClick={openCertificates}><LanguageText>{text.educationArchiveButton}</LanguageText></button>
         </section>
       </main>
     );

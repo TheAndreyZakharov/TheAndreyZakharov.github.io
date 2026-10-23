@@ -147,10 +147,9 @@ h1 { margin-bottom: 10px; color: var(--text); font-family: "Manrope", Arial, san
 .education-timeline__details h2 { margin: 1px 0 5px; font-size: 14px; font-weight: 650; letter-spacing: -.025em; }
 .education-timeline__details p { margin: 0 0 7px; color: var(--text); font-size: 12px; line-height: 1.4; }
 .education-timeline__details > small { display: block; color: var(--muted); font-size: 10px; line-height: 1.4; }
-.education-archive-button { display: flex; width: 100%; min-height: 50px; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 17px; border: 1px solid var(--line); border-radius: 16px; color: var(--text); background: var(--soft-hover); cursor: pointer; font-size: 12px; font-weight: 650; transition: background .25s ease, border-color .25s ease, transform .2s ease; }
-.education-archive-button:hover, .education-archive-button:focus-visible { border-color: var(--text); background: var(--soft); }
-.education-archive-button:active { transform: scale(.99); }
-.education-archive-button > span { font-size: 19px; font-weight: 400; }
+.education-archive-button { display: flex; width: fit-content; max-width: 100%; min-height: 44px; align-items: center; justify-content: center; margin: 20px auto 0; padding: 0 20px; border: 1px solid var(--line); border-radius: 999px; color: var(--text); background: var(--soft-hover); cursor: pointer; font-size: 12px; font-weight: 650; transition: color .25s ease, background .25s ease, border-color .25s ease, transform .2s ease; }
+.education-archive-button:hover, .education-archive-button:focus-visible { border-color: var(--text); color: var(--page-bg); background: var(--text); transform: translateY(-1px); }
+.education-archive-button:active { transform: scale(.98); }
 .education-card, .email-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 82px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 19px; color: var(--text); background: var(--soft); transition: background .25s ease, border-color .25s ease, transform .25s ease; }
 .education-card:hover, .education-card:focus-within, .email-link:hover, .email-link:focus-within { border-color: var(--line); background: var(--soft-hover); transform: translateY(-1px); }
 .education-card__main, .email-card__main { display: flex; align-items: center; gap: 12px; min-width: 0; }
@@ -290,7 +289,7 @@ h2 { margin: 0; color: var(--text); font-family: "Manrope", Arial, sans-serif; f
 .certificate-group__heading h2 { max-width: 90%; font-size: clamp(1rem, 2.5vw, 1.35rem); }
 .certificate-group__heading span { color: var(--muted); font-size: 12px; font-weight: 600; line-height: 1; }
 .certificate-grid { display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 10px; }
-.certificate-card { display: flex; flex: 0 1 190px; flex-direction: column; width: 190px; overflow: hidden; min-width: 0; padding: 0; border: 1px solid var(--line); border-radius: 13px; color: var(--text); background: var(--soft); cursor: pointer; font: inherit; text-align: left; transition: background .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+.certificate-card { display: flex; flex: 0 1 190px; flex-direction: column; width: 190px; overflow: hidden; min-width: 0; padding: 0; border: 1px solid var(--line); border-radius: 13px; color: var(--text); background: var(--soft); cursor: pointer; font: inherit; text-align: center; transition: background .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
 .certificate-card:hover, .certificate-card:focus-visible { border-color: var(--line); background: var(--soft-hover); box-shadow: 0 10px 25px rgba(0,0,0,.07); transform: translateY(-3px); }
 .certificate-card img { display: block; flex: 0 0 auto; width: 100%; height: auto; border-radius: 12px; background: var(--soft-hover); }
 .certificate-card span, .certificate-card small { display: block; padding-right: 10px; padding-left: 10px; overflow-wrap: anywhere; }
