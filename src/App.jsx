@@ -121,6 +121,7 @@ const copy = {
     certificateContents: "Table of contents",
     certificatePageEmpty: "No certificates found.",
     loadingCertificates: "Loading documents…",
+    loadingCertificate: "Loading certificate…",
     home: "Home",
     toTop: "Top",
     close: "Close",
@@ -177,6 +178,7 @@ const copy = {
     certificateContents: "Содержание",
     certificatePageEmpty: "Сертификаты не найдены.",
     loadingCertificates: "Загрузка документов…",
+    loadingCertificate: "Загрузка сертификата…",
     home: "Главная",
     toTop: "Наверх",
     close: "Закрыть",
@@ -331,6 +333,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   const [showContents, setShowContents] = useState(false);
   const [contentsMotion, setContentsMotion] = useState("");
   const [activeCertificate, setActiveCertificate] = useState(null);
+  const [certificateImageLoading, setCertificateImageLoading] = useState(false);
   const [activeOrientation, setActiveOrientation] = useState("landscape");
   const [activeImageRatio, setActiveImageRatio] = useState(1.4);
   const [activePage, setActivePage] = useState(0);
@@ -445,6 +448,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
     if (viewerCloseTimer.current) window.clearTimeout(viewerCloseTimer.current);
     const dimensions = certificate.pageDimensions?.[0] ?? { width: 1400, height: 1000 };
     setViewerClosing(false);
+    setCertificateImageLoading(true);
     setActiveOrientation(dimensions.height > dimensions.width ? "portrait" : "landscape");
     setActiveImageRatio(dimensions.width / dimensions.height);
     setActiveCertificate({ ...certificate, providerName });
@@ -570,7 +574,8 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
               {activeCertificate.pages.length > 1 && <button type="button" onClick={() => changeViewerPage(-1)} aria-label={text.previous}>‹</button>}
               <div className="certificate-viewer__page-stack">
                 <img className="certificate-viewer__page certificate-viewer__page--back" src={activeCertificate.pages[previousPage ?? activePage]} alt="" aria-hidden="true" />
-                <img key={`${activeCertificate.title}-${activePage}`} className={`certificate-viewer__page certificate-viewer__page--current ${pageDirection ? `certificate-viewer__page--${pageDirection}` : ""}`} onLoad={(event) => { setActiveOrientation(event.currentTarget.naturalHeight > event.currentTarget.naturalWidth ? "portrait" : "landscape"); setActiveImageRatio(event.currentTarget.naturalWidth / event.currentTarget.naturalHeight); }} onAnimationEnd={(event) => { if (event.animationName === "certificate-page-fade-in") { setPreviousPage(null); setPageDirection(""); } }} onError={() => { setPreviousPage(null); setPageDirection(""); }} src={activeCertificate.pages[activePage]} alt={`${activeCertificate.title}, ${pageCountLabel(activePage + 1, language)}`} />
+                <img key={`${activeCertificate.title}-${activePage}`} className={`certificate-viewer__page certificate-viewer__page--current ${pageDirection ? `certificate-viewer__page--${pageDirection}` : ""}`} onLoad={(event) => { setCertificateImageLoading(false); setActiveOrientation(event.currentTarget.naturalHeight > event.currentTarget.naturalWidth ? "portrait" : "landscape"); setActiveImageRatio(event.currentTarget.naturalWidth / event.currentTarget.naturalHeight); }} onAnimationEnd={(event) => { if (event.animationName === "certificate-page-fade-in") { setPreviousPage(null); setPageDirection(""); } }} onError={() => { setCertificateImageLoading(false); setPreviousPage(null); setPageDirection(""); }} src={activeCertificate.pages[activePage]} alt={`${activeCertificate.title}, ${pageCountLabel(activePage + 1, language)}`} />
+                {certificateImageLoading && <span className="certificate-viewer__loading" role="status" aria-label={text.loadingCertificate}><span className="certificate-viewer__spinner" aria-hidden="true" /></span>}
               </div>
               {activeCertificate.pages.length > 1 && <button type="button" onClick={() => changeViewerPage(1)} aria-label={text.next}>›</button>}
             </div>
