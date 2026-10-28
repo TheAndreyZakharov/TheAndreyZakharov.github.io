@@ -31,6 +31,7 @@ const links = [
   { name: { en: "VK Live", ru: "VK Live" }, handle: "TheAndreyZakharov", url: "https://live.vkvideo.ru/theandreyzakharov", icon: "/icons/vk-live.png" },
   { name: "LeetCode", handle: "TheAndreyZakharov", url: "https://leetcode.com/u/TheAndreyZakharov", icon: "/icons/icons8-leetcode-96.png" },
   { name: "Chess", handle: "TheAndreyZakharov", url: "https://www.chess.com/member/TheAndreyZakharov", icon: "/icons/icons8-chess-96.png" },
+  { name: "Boosty", handle: "TheAndreyZakharov", url: "https://boosty.to/theandreyzakharov", icon: "/icons/boosty_logo.png" },
   { name: "DonationAlerts", handle: "TheAndreyZakharov", url: "https://www.donationalerts.com/r/theandreyzakharov", icon: "/icons/DonationAlerts.png" },
   { name: "DonateX", handle: "TheAndreyZakharov", url: "https://donatex.gg/donate/theandreyzakharov", icon: "/icons/DonateX.svg" },
   { name: "DonatePay", handle: "TheAndreyZakharov", url: "https://new.donatepay.ru/@TheAndreyZakharov", icon: "/icons/DontePay.png" },
