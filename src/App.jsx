@@ -14,6 +14,7 @@ const links = [
   { name: "LinkedIn", handle: "TheAndreyZakharov", url: "https://www.linkedin.com/in/TheAndreyZakharov", icon: "/icons/icons8-linkedin-96.png", primary: true },
   { name: "ORCID", handle: "0009-0005-4280-8352", url: "https://orcid.org/0009-0005-4280-8352", icon: "/icons/orcid.svg" },
   { name: "Hugging Face", handle: "TheAndreyZakharov", url: "https://huggingface.co/TheAndreyZakharov", icon: "/icons/icons8-hf-96.png" },
+  { name: "Telegram Channel", handle: "@The_Andrey_Zakharov", url: "https://t.me/The_Andrey_Zakharov", icon: "/icons/icons8-telegram-96.png" },
   { name: "Twitch", handle: "TheAndreyZakharov", url: "https://www.twitch.tv/TheAndreyZakharov", icon: "/icons/icons8-twitch-96.png" },
   { name: "YouTube", handle: "TheAndreyZakharov", url: "https://www.youtube.com/@TheAndreyZakharov", icon: "/icons/icons8-youtube-96.png" },
   { name: "Discord", handle: "TheAndreyZakharov", url: "https://discord.gg/CVtA4QDPXN", icon: "/icons/icons8-discord-96.png" },
