@@ -30,6 +30,7 @@ const links = [
   { name: { en: "VK Community", ru: "ВК сообщество" }, handle: "The_Andrey_Zakharov", url: "https://vk.ru/The_Andrey_Zakharov", icon: "/icons/icons8-vk-96.png" },
   { name: { en: "VK Video", ru: "VK Видео" }, handle: "@The_Andrey_Zakharov", url: "https://vkvideo.ru/@the_andrey_zakharov", icon: "/icons/vk-video.png" },
   { name: { en: "VK Live", ru: "VK Live" }, handle: "TheAndreyZakharov", url: "https://live.vkvideo.ru/theandreyzakharov", icon: "/icons/vk-live.png" },
+  { name: "RUTUBE", handle: "81932176", url: "https://rutube.ru/channel/81932176/", icon: "/icons/rutube_logo.png" },
   { name: "LeetCode", handle: "TheAndreyZakharov", url: "https://leetcode.com/u/TheAndreyZakharov", icon: "/icons/icons8-leetcode-96.png" },
   { name: "Chess", handle: "TheAndreyZakharov", url: "https://www.chess.com/member/TheAndreyZakharov", icon: "/icons/icons8-chess-96.png" },
   { name: "Boosty", handle: "TheAndreyZakharov", url: "https://boosty.to/theandreyzakharov", icon: "/icons/boosty_logo.png" },
@@ -295,7 +296,7 @@ function SocialCard({ link, language, style }) {
   return (
     <a className="social-link social-link--icon" href={link.url} target={link.url.startsWith("mailto:") ? undefined : "_blank"} rel={link.url.startsWith("mailto:") ? undefined : "noreferrer"} style={style}>
       <span className="social-link__content">
-        <span className="social-link__icon"><img className={link.icon === "/icons/vk-video.png" || link.icon === "/icons/vk-live.png" ? "social-link__icon-image--compact" : undefined} src={link.icon} alt="" /></span>
+        <span className="social-link__icon"><img className={link.icon === "/icons/vk-video.png" || link.icon === "/icons/vk-live.png" || link.icon === "/icons/kick.png" ? "social-link__icon-image--compact" : undefined} src={link.icon} alt="" /></span>
         <span className="social-link__name">{name}</span>
         <span className="social-link__handle"><LanguageText>{handle}</LanguageText></span>
       </span>
