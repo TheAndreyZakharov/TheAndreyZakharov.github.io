@@ -28,7 +28,7 @@ const links = [
   { name: "Spotify", handle: { en: "My profile", ru: "Мой профиль" }, url: "https://open.spotify.com/user/31xnbwxotc2ixa65z42u5obuwwxi", icon: "/icons/icons8-spotify-96.png" },
   { name: { en: "VK Page", ru: "ВК страница" }, handle: "TheAndreyZakharov", url: "https://vk.com/TheAndreyZakharov", icon: "/icons/icons8-vk-96.png" },
   { name: { en: "VK Community", ru: "ВК сообщество" }, handle: "The_Andrey_Zakharov", url: "https://vk.ru/The_Andrey_Zakharov", icon: "/icons/icons8-vk-96.png" },
-  { name: { en: "VK Video", ru: "VK Видео" }, handle: "@The_Andrey_Zakharov", url: "https://vkvideo.ru/@the_andrey_zakharov", icon: "/icons/vk-video.png" },
+  { name: { en: "VK Video", ru: "VK Видео" }, handle: "The_Andrey_Zakharov", url: "https://vkvideo.ru/@the_andrey_zakharov", icon: "/icons/vk-video.png" },
   { name: { en: "VK Live", ru: "VK Live" }, handle: "TheAndreyZakharov", url: "https://live.vkvideo.ru/theandreyzakharov", icon: "/icons/vk-live.png" },
   { name: "RUTUBE", handle: "TheAndreyZakharov", url: "https://rutube.ru/channel/81932176/", icon: "/icons/rutube_logo.png" },
   { name: "LeetCode", handle: "TheAndreyZakharov", url: "https://leetcode.com/u/TheAndreyZakharov", icon: "/icons/icons8-leetcode-96.png" },
@@ -51,6 +51,34 @@ const resumes = [
   { key: "ml", title: "ML Engineer", file: "/resumes/Andrey_Zakharov_ML_Engineer.pdf", downloadName: "Andrey_Zakharov_ML_Engineer.pdf" },
   { key: "ai", title: "AI Developer", file: "/resumes/Andrey_Zakharov_AI_Developer.pdf", downloadName: "Andrey_Zakharov_AI_Developer.pdf" },
   { key: "geo", title: "Geospatial Software Engineer", file: "/resumes/Andrey_Zakharov_Geospatial_Software_Engineer.pdf", downloadName: "Andrey_Zakharov_Geospatial_Software_Engineer.pdf" },
+];
+
+const researchPublications = [
+  {
+    title: {
+      en: "Implementing AI Tools in Management Processes: Opportunities and Limitations",
+      ru: "Внедрение ИИ-инструментов в управленческие процессы: возможности и ограничения",
+    },
+    type: { en: "Conference paper", ru: "Статья в сборнике конференции" },
+    author: {
+      en: "A. S. Zakharov · Student, Department of Business Informatics and Management",
+      ru: "А. С. Захаров · студент кафедры бизнес-информатики и менеджмента",
+    },
+    supervisor: {
+      en: "M. L. Krichevsky · Doctor of Technical Sciences, Professor",
+      ru: "М. Л. Кричевский · доктор технических наук, профессор",
+    },
+    publishedIn: {
+      en: "79th International Student Scientific Conference of SUAI (14–17 April 2026); Proceedings, Part 4: Humanities; Saint Petersburg: SUAI, 2026; pp. 45–46",
+      ru: "Семьдесят девятая Международная студенческая научная конференция ГУАП (14–17 апреля 2026 г.); сборник докладов, ч. 4: Гуманитарные науки; СПб.: ГУАП, 2026; с. 45–46",
+    },
+    proceedingsDate: { en: "30 September 2026", ru: "30 сентября 2026 г." },
+    isbn: {
+      en: "ISBN 978-5-8088-2175-0 (Part 4); ISBN 978-5-8088-2171-2 (complete proceedings)",
+      ru: "ISBN 978-5-8088-2175-0 (ч. 4); ISBN 978-5-8088-2171-2 (весь сборник)",
+    },
+    udc: "004.8",
+  },
 ];
 
 const educationHistory = [
@@ -86,7 +114,12 @@ const copy = {
     educationArchiveButton: "View diplomas & certificates",
     research: "Research & Science",
     researchIntro: "Patents, registrations, articles & research",
-    researchPageIntro: "My articles, patents, and other research work will be collected here soon.",
+    researchSupervisor: "Academic supervisor",
+    researchAuthor: "Author",
+    researchPublishedIn: "Published in",
+    researchProceedingsDate: "Proceedings publication date",
+    researchIsbn: "ISBN",
+    researchUdc: "UDC",
     sections: "Main sections",
     professionalSummary: "Software engineer working on a wide range of software products, applied research and challenges across different subject areas. I combine a broad technical perspective with a practical understanding of product goals and the problems a solution needs to solve. I can independently build a fast MVP or contribute to a larger product developed by a team over time.",
     professionalSummaryMore: [
@@ -143,7 +176,12 @@ const copy = {
     educationArchiveButton: "Дипломы и сертификаты",
     research: "Научная Деятельность",
     researchIntro: "Патенты, регистрации, статьи и исследования",
-    researchPageIntro: "Здесь скоро появятся мои статьи, патенты и другие материалы о научной деятельности.",
+    researchSupervisor: "Научный руководитель",
+    researchAuthor: "Автор",
+    researchPublishedIn: "Опубликовано в",
+    researchProceedingsDate: "Дата выхода сборника",
+    researchIsbn: "ISBN",
+    researchUdc: "УДК",
     sections: "Основные разделы",
     professionalSummary: "Инженер-программист, работающий над разнообразными программными продуктами, прикладными исследованиями и задачами в разных предметных областях. Соединяю широкий технический кругозор с практическим пониманием целей продукта и задач, которые он должен решать. Могу самостоятельно быстро собрать MVP или последовательно развивать большой продукт в команде.",
     professionalSummaryMore: [
@@ -928,7 +966,24 @@ function App() {
         <section className="profile-card section-page">
           <div className="resume-page-top"><button className="back-button" type="button" onClick={closeEducation}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
           <header className="resume-page-header"><h1><LanguageText>{text.research}</LanguageText></h1></header>
-          <p className="section-page__intro"><LanguageText>{text.researchPageIntro}</LanguageText></p>
+          <div className="research-publications">
+            {researchPublications.map((publication) => (
+              <article className="research-publication" key={publication.title.en}>
+                <header className="research-publication__header">
+                  <span className="research-publication__type"><LanguageText>{publication.type[language]}</LanguageText></span>
+                  <h2><LanguageText>{publication.title[language]}</LanguageText></h2>
+                </header>
+                <dl className="research-publication__details">
+                  <div><dt>{text.researchAuthor}</dt><dd><LanguageText>{publication.author[language]}</LanguageText></dd></div>
+                  <div><dt>{text.researchSupervisor}</dt><dd><LanguageText>{publication.supervisor[language]}</LanguageText></dd></div>
+                  <div><dt>{text.researchPublishedIn}</dt><dd><LanguageText>{publication.publishedIn[language]}</LanguageText></dd></div>
+                  <div><dt>{text.researchProceedingsDate}</dt><dd><LanguageText>{publication.proceedingsDate[language]}</LanguageText></dd></div>
+                  <div><dt>{text.researchIsbn}</dt><dd><LanguageText>{publication.isbn[language]}</LanguageText></dd></div>
+                  <div><dt>{text.researchUdc}</dt><dd>{publication.udc}</dd></div>
+                </dl>
+              </article>
+            ))}
+          </div>
         </section>
       </main>
     );
