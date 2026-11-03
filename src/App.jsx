@@ -117,7 +117,6 @@ const copy = {
     researchSupervisor: "Academic supervisor",
     researchAuthor: "Author",
     researchPublishedIn: "Published in",
-    researchProceedingsDate: "Proceedings publication date",
     researchIsbn: "ISBN",
     researchUdc: "UDC",
     sections: "Main sections",
@@ -179,7 +178,6 @@ const copy = {
     researchSupervisor: "Научный руководитель",
     researchAuthor: "Автор",
     researchPublishedIn: "Опубликовано в",
-    researchProceedingsDate: "Дата выхода сборника",
     researchIsbn: "ISBN",
     researchUdc: "УДК",
     sections: "Основные разделы",
@@ -971,13 +969,13 @@ function App() {
               <article className="research-publication" key={publication.title.en}>
                 <header className="research-publication__header">
                   <span className="research-publication__type"><LanguageText>{publication.type[language]}</LanguageText></span>
+                  <time className="research-publication__date"><LanguageText>{publication.proceedingsDate[language]}</LanguageText></time>
                   <h2><LanguageText>{publication.title[language]}</LanguageText></h2>
                 </header>
                 <dl className="research-publication__details">
                   <div><dt>{text.researchAuthor}</dt><dd><LanguageText>{publication.author[language]}</LanguageText></dd></div>
                   <div><dt>{text.researchSupervisor}</dt><dd><LanguageText>{publication.supervisor[language]}</LanguageText></dd></div>
                   <div><dt>{text.researchPublishedIn}</dt><dd><LanguageText>{publication.publishedIn[language]}</LanguageText></dd></div>
-                  <div><dt>{text.researchProceedingsDate}</dt><dd><LanguageText>{publication.proceedingsDate[language]}</LanguageText></dd></div>
                   <div><dt>{text.researchIsbn}</dt><dd><LanguageText>{publication.isbn[language]}</LanguageText></dd></div>
                   <div><dt>{text.researchUdc}</dt><dd>{publication.udc}</dd></div>
                 </dl>
