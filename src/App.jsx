@@ -86,23 +86,32 @@ const educationHistory = [
     year: "2031",
     progress: "future",
     status: { en: "Planned defense", ru: "Планируемая защита" },
-    title: { en: "PhD", ru: "Кандидат технических наук" },
-    detail: { en: "Technical Sciences — Systems Analysis, Control and Information Processing", ru: "Системный анализ, управление и обработка информации" },
+    title: { en: "PhD", ru: "Аспирантура" },
+    detail: {
+      en: "Technical Sciences · Systems Analysis, Control and Information Processing",
+      ru: "Кандидат технических наук · Системный анализ, управление и обработка информации",
+    },
     institution: { en: "Saint Petersburg State University of Industrial Technologies and Design (SPbSUITD)", ru: "Санкт-Петербургский государственный университет промышленных технологий и дизайна (СПбГУПТД)" },
   },
   {
     year: "2027",
     progress: "future",
     status: { en: "In progress", ru: "В процессе" },
-    title: { en: "Master’s Degree in Management", ru: "Магистратура по направлению «Менеджмент»" },
-    detail: { en: "Strategic Human Resource Management", ru: "Стратегическое управление человеческими ресурсами" },
+    title: { en: "Master’s Degree", ru: "Магистратура" },
+    detail: {
+      en: "Management · Strategic Human Resource Management",
+      ru: "Менеджмент · Стратегическое управление человеческими ресурсами",
+    },
     institution: { en: "Saint-Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
   },
   {
     year: "2025",
     progress: "complete",
-    title: { en: "Bachelor’s Degree in Software Engineering", ru: "Бакалавриат по программной инженерии" },
-    detail: { en: "Software Systems Design", ru: "Проектирование программных систем" },
+    title: { en: "Bachelor’s Degree", ru: "Бакалавриат" },
+    detail: {
+      en: "Software Engineering · Software Systems Design",
+      ru: "Программная инженерия · Проектирование программных систем",
+    },
     institution: { en: "Saint-Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
   },
 ];
