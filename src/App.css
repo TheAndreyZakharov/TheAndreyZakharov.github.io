@@ -478,6 +478,7 @@ html[data-theme="dark"]::view-transition, html[data-theme="dark"]::view-transiti
   /* Clipping horizontal overflow must not create a second scrolling container. */
   html, body { overflow-x: clip; }
   .site-header { position: relative; top: auto; }
+  .ambient-layer { display: none; }
   /* Keep the long archive in normal tiled painting on mobile WebKit.
      Named transitions, animated filters and translucent compositing groups can
      otherwise leave unpainted areas while scrolling this 60,000px+ document. */
@@ -485,13 +486,7 @@ html[data-theme="dark"]::view-transition, html[data-theme="dark"]::view-transiti
     isolation: auto;
     view-transition-name: none;
     animation: none;
-    background-image:
-      radial-gradient(ellipse at 30% 25%, rgba(159, 160, 255, .25), transparent 65%),
-      radial-gradient(ellipse at 70% 75%, rgba(116, 191, 255, .25), transparent 65%);
-    background-size: 100% 100svh;
-    background-repeat: repeat-y;
   }
-  .page-shell--certificates > .ambient-layer { display: none; }
   .page-shell.page-shell--certificates .certificate-page {
     display: flow-root;
     height: auto;

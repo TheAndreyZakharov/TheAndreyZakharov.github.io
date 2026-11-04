@@ -320,9 +320,11 @@ function useMediaQuery(query) {
 }
 
 function AmbientLayer({ variant }) {
+  const isMobile = useMediaQuery(mobileRenderingQuery);
   const [geometry, setGeometry] = useState(null);
 
   useLayoutEffect(() => {
+    if (isMobile) return undefined;
     const card = document.querySelector(".profile-card");
     if (!card) return undefined;
 
@@ -366,9 +368,9 @@ function AmbientLayer({ variant }) {
       if (frameId !== null) window.cancelAnimationFrame(frameId);
       observer?.disconnect();
     };
-  }, []);
+  }, [isMobile]);
 
-  if (!geometry) return null;
+  if (isMobile || !geometry) return null;
   return (
     <div className={`ambient-layer ambient-layer--${variant}`} style={geometry} aria-hidden="true">
       <div className="ambient-glow ambient-glow--one" />
