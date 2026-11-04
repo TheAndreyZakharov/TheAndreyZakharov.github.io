@@ -320,14 +320,9 @@ h2 { margin: 0; color: var(--text); font-family: "Manrope", Arial, sans-serif; f
 .certificate-page-header h1 { margin-bottom: 0; text-align: center; }
 .certificate-page { position: relative; }
 .certificate-page { -webkit-backdrop-filter: none; backdrop-filter: none; }
-.certificate-page--loading { display: grid; place-items: center; min-height: min(70vh, 620px); }
 .certificate-page__content { opacity: 1; animation: certificate-content-in .52s cubic-bezier(.22, 1, .36, 1) both; }
-.certificate-page--loading .certificate-page__content { opacity: 0; visibility: hidden; pointer-events: none; }
 .certificate-preload { position: absolute; top: 0; left: -10000px; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
 .certificate-preload img { display: block; width: 1px; height: 1px; }
-.certificate-loading { position: absolute; inset: 0; z-index: 10; display: grid; align-content: center; justify-items: center; gap: 13px; border-radius: inherit; color: var(--muted); background: var(--card-bg); font-size: 11px; opacity: 1; transition: opacity .42s ease; }
-.certificate-loading--hidden { opacity: 0; pointer-events: none; }
-.certificate-loading__spinner { width: 34px; height: 34px; border: 2px solid var(--line); border-top-color: var(--text); border-radius: 50%; animation: spin .75s linear infinite; }
 .certificate-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 28px; text-align: center; }
 .certificate-summary div { display: grid; justify-items: center; padding: 20px 16px; border: 1px solid var(--line); border-radius: 15px; background: var(--soft); }
 .certificate-summary strong, .certificate-summary span { display: block; }

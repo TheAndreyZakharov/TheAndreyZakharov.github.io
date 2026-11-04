@@ -432,8 +432,6 @@ function CertificatesView({ theme, text, language }) {
   const [viewerClosing, setViewerClosing] = useState(false);
   const viewerCloseTimer = useRef(null);
   const pageFlipRequest = useRef(0);
-  const certificatesReady = true;
-  const showCertificateLoader = false;
   const normalizedQuery = query.trim().toLowerCase();
   const visibleProviders = certificateManifest.providers.map((provider, originalIndex) => ({
     ...provider,
@@ -593,8 +591,7 @@ function CertificatesView({ theme, text, language }) {
     <>
       <main className={`page-shell ${activeCertificate && !viewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
       <AmbientLayer variant="certificates" />
-      <section className={`profile-card certificate-page ${certificatesReady ? "" : "certificate-page--loading"}`} aria-busy={!certificatesReady}>
-        {certificatesReady ? (
+      <section className="profile-card certificate-page">
         <div className="certificate-page__content">
         <header className="certificate-page-header"><h1><LanguageText>{text.certificatePageTitle}</LanguageText></h1></header>
         <div className="certificate-summary">
@@ -628,7 +625,7 @@ function CertificatesView({ theme, text, language }) {
                     const dimensions = certificate.pageDimensions?.[0] ?? { width: 1400, height: 1000 };
                     return (
                     <button className="certificate-card" type="button" onClick={() => openCertificate(provider.name, certificate)} key={`${provider.name}-${certificate.title}`}>
-                      <img loading={viewport.width <= 680 ? "eager" : "lazy"} decoding="async" fetchPriority="low" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
+                      <img loading={viewport.width <= 680 ? "eager" : "lazy"} decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
                       <span>{certificate.title}</span>
                       <small><LanguageText>{pageCountLabel(certificate.pages.length, language)}</LanguageText></small>
                     </button>
@@ -639,11 +636,6 @@ function CertificatesView({ theme, text, language }) {
             ))}
           </div>
         ) : <p className="certificate-empty"><LanguageText>{text.certificatePageEmpty}</LanguageText></p>}
-        </div>
-        ) : null}
-        <div className={`certificate-loading ${showCertificateLoader ? "" : "certificate-loading--hidden"}`} role="status" aria-live="polite" aria-hidden={!showCertificateLoader}>
-          <span className="certificate-loading__spinner" aria-hidden="true" />
-          <span><LanguageText>{text.loadingCertificates}</LanguageText></span>
         </div>
       </section>
       
