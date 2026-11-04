@@ -3,6 +3,7 @@ import "./App.css";
 import certificateManifest from "./certificates.json";
 
 const emailAddress = "Andrey.Zakharov.Contact@gmail.com";
+const mobileRenderingQuery = "(max-width: 680px), (hover: none) and (pointer: coarse)";
 
 function resumePreviewSource(file) {
   return file.replace("/resumes/", "/resume-previews/").replace(/\.pdf$/i, ".png");
@@ -306,6 +307,18 @@ function LanguageText({ children }) {
   return <span className="language-text">{children}</span>;
 }
 
+function useMediaQuery(query) {
+  const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const update = () => setMatches(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, [query]);
+  return matches;
+}
+
 function AmbientLayer({ variant }) {
   const [geometry, setGeometry] = useState(null);
 
@@ -417,6 +430,7 @@ function viewerPanelSize(imageRatio, pageCount, viewport) {
 }
 
 function CertificatesView({ theme, text, language }) {
+  const isMobileArchive = useMediaQuery(mobileRenderingQuery);
   const [query, setQuery] = useState("");
   const [showContents, setShowContents] = useState(false);
   const [contentsMotion, setContentsMotion] = useState("");
@@ -564,7 +578,9 @@ function CertificatesView({ theme, text, language }) {
       const measure = () => {
         const currentTarget = document.getElementById(`certificate-provider-${index}`);
         if (!currentTarget) return;
-        const currentTop = Math.round(currentTarget.getBoundingClientRect().top + window.scrollY - 20);
+        const headerBottom = document.querySelector(".site-header")?.getBoundingClientRect().bottom ?? 0;
+        const topOffset = Math.max(20, headerBottom + 16);
+        const currentTop = Math.round(currentTarget.getBoundingClientRect().top + window.scrollY - topOffset);
         stableFrames = currentTop === previousTop ? stableFrames + 1 : 0;
         previousTop = currentTop;
         frameCount += 1;
@@ -589,8 +605,8 @@ function CertificatesView({ theme, text, language }) {
 
   return (
     <>
-      <main className={`page-shell ${activeCertificate && !viewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
-      <AmbientLayer variant="certificates" />
+      <main className={`page-shell page-shell--certificates ${activeCertificate && !viewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
+      {!isMobileArchive && <AmbientLayer variant="certificates" />}
       <section className="profile-card certificate-page">
         <div className="certificate-page__content">
         <header className="certificate-page-header"><h1><LanguageText>{text.certificatePageTitle}</LanguageText></h1></header>
@@ -625,7 +641,7 @@ function CertificatesView({ theme, text, language }) {
                     const dimensions = certificate.pageDimensions?.[0] ?? { width: 1400, height: 1000 };
                     return (
                     <button className="certificate-card" type="button" onClick={() => openCertificate(provider.name, certificate)} key={`${provider.name}-${certificate.title}`}>
-                      <img loading={viewport.width <= 680 ? "eager" : "lazy"} decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
+                      <img loading={isMobileArchive ? "eager" : "lazy"} decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
                       <span>{certificate.title}</span>
                       <small><LanguageText>{pageCountLabel(certificate.pages.length, language)}</LanguageText></small>
                     </button>
@@ -881,14 +897,14 @@ function App() {
       setView(nextView);
     };
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const isSmallScreen = window.matchMedia("(max-width: 680px)").matches;
+    const isMobileDevice = window.matchMedia(mobileRenderingQuery).matches;
     // The certificate archive contains many cards and thumbnails. Capturing it
     // for a View Transition makes leaving the archive noticeably slower.
     if (view === "certificates") {
       update();
       return;
     }
-    if (nextView === view || reducedMotion || isSmallScreen || typeof document.startViewTransition !== "function") {
+    if (nextView === view || reducedMotion || isMobileDevice || typeof document.startViewTransition !== "function") {
       update();
       return;
     }
