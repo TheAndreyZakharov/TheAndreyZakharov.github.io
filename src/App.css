@@ -499,8 +499,8 @@ html[data-theme="dark"]::view-transition, html[data-theme="dark"]::view-transiti
   .site-header__controls .control-group--theme .control-group__indicator { width: 26px; }
   .site-header__controls .control-group--theme.control-group--dark .control-group__indicator { left: 32px; }
   .site-header__controls .control-group--theme.control-group--system .control-group__indicator { left: 61px; }
-  .site-nav { gap: 1px; }
-  .site-nav__link { min-height: 34px; padding: 0 10px; font-size: 10px; }
+  .site-nav { flex-wrap: wrap; justify-content: center; gap: 2px 1px; }
+  .site-nav__link { flex: 0 0 auto; min-height: 34px; padding: 0 10px; font-size: 10px; }
   .site-nav__label-full { display: none; }
   .site-nav__label-compact { display: inline; }
   .profile-header { padding-top: 34px; }
