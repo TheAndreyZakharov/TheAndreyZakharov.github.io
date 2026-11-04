@@ -84,6 +84,7 @@ const researchPublications = [
 const educationHistory = [
   {
     year: "2031",
+    emphasis: "primary",
     progress: "future",
     status: { en: "Planned defense", ru: "Планируемая защита" },
     title: { en: "PhD", ru: "Аспирантура" },
@@ -95,6 +96,7 @@ const educationHistory = [
   },
   {
     year: "2027",
+    emphasis: "primary",
     progress: "future",
     status: { en: "In progress", ru: "В процессе" },
     title: { en: "Master’s Degree", ru: "Магистратура" },
@@ -102,27 +104,55 @@ const educationHistory = [
       en: "Management · Strategic Human Resource Management",
       ru: "Менеджмент · Стратегическое управление человеческими ресурсами",
     },
-    institution: { en: "Saint-Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
+    institution: { en: "Saint Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
+  },
+  {
+    year: "2026",
+    progress: "in-progress",
+    progressEndpoint: true,
+    status: { en: "In progress", ru: "В процессе" },
+    title: { en: "Professional Development", ru: "Повышение квалификации" },
+    detail: {
+      en: "Digital Industry Technologies",
+      ru: "Технологии цифровой промышленности",
+    },
+    institution: { en: "Peter the Great Saint Petersburg Polytechnic University (SPbPU)", ru: "Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)" },
   },
   {
     year: "2025",
+    emphasis: "primary",
     progress: "complete",
     title: { en: "Bachelor’s Degree", ru: "Бакалавриат" },
     detail: {
       en: "Software Engineering · Software Systems Design",
       ru: "Программная инженерия · Проектирование программных систем",
     },
-    institution: { en: "Saint-Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
+    institution: { en: "Saint Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
+  },
+  {
+    year: "2024",
+    progress: "complete",
+    title: { en: "Professional Retraining", ru: "Профессиональная переподготовка" },
+    detail: {
+      en: "Fundamentals of Frontend Development · Web and Multimedia Applications Developer",
+      ru: "Основы фронтенд-разработки · Разработчик веб- и мультимедийных приложений",
+    },
+    institution: { en: "Saint Petersburg State University of Aerospace Instrumentation (SUAI)", ru: "Санкт-Петербургский государственный университет аэрокосмического приборостроения (ГУАП)" },
   },
 ];
 
 const copy = {
   en: {
     education: "Education",
+    projectsTitle: "Projects & Experience",
+    projectsPlaceholder: "Projects and experience will appear here.",
+    publicationsTitle: "Publications",
+    patentsTitle: "Patents",
+    patentsPlaceholder: "Patents will appear here.",
+    certificatesNav: "Diplomas & Certificates",
+    homeHeroTitle: "Software Engineer",
     educationIntro: "My education path, diplomas & certificates",
     educationArchiveButton: "View diplomas & certificates",
-    research: "Research & Science",
-    researchIntro: "Patents, registrations, articles & research",
     researchSupervisor: "Academic supervisor",
     researchAuthor: "Author",
     researchPublishedIn: "Published in",
@@ -166,7 +196,6 @@ const copy = {
     certificatePageEmpty: "No certificates found.",
     loadingCertificates: "Loading documents…",
     loadingCertificate: "Loading certificate…",
-    home: "Home",
     toTop: "Top",
     close: "Close",
     previous: "Previous page",
@@ -180,10 +209,15 @@ const copy = {
   },
   ru: {
     education: "Образование",
+    projectsTitle: "Проекты и опыт",
+    projectsPlaceholder: "Здесь появятся проекты и профессиональный опыт.",
+    publicationsTitle: "Публикации",
+    patentsTitle: "Патенты",
+    patentsPlaceholder: "Патенты появятся здесь.",
+    certificatesNav: "Дипломы и сертификаты",
+    homeHeroTitle: "Инженер-программист",
     educationIntro: "Мой образовательный путь, дипломы и сертификаты",
     educationArchiveButton: "Дипломы и сертификаты",
-    research: "Научная Деятельность",
-    researchIntro: "Патенты, регистрации, статьи и исследования",
     researchSupervisor: "Научный руководитель",
     researchAuthor: "Автор",
     researchPublishedIn: "Опубликовано в",
@@ -227,7 +261,6 @@ const copy = {
     certificatePageEmpty: "Сертификаты не найдены.",
     loadingCertificates: "Загрузка документов…",
     loadingCertificate: "Загрузка сертификата…",
-    home: "Главная",
     toTop: "Наверх",
     close: "Закрыть",
     previous: "Предыдущая страница",
@@ -240,10 +273,6 @@ const copy = {
     dark: "Тёмная",
   },
 };
-
-function HomeIcon() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 10.5 8.5-7 8.5 7" /><path d="M5.5 9.5v10h13v-10M9.5 19.5v-5h5v5" /></svg>;
-}
 
 function ArrowUpIcon() {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5" /><path d="m6.5 11.5 5.5-6 5.5 6" /></svg>;
@@ -342,7 +371,7 @@ function SocialCard({ link, language, style }) {
     <a className="social-link social-link--icon" href={link.url} target={link.url.startsWith("mailto:") ? undefined : "_blank"} rel={link.url.startsWith("mailto:") ? undefined : "noreferrer"} style={style}>
       <span className="social-link__content">
         <span className="social-link__icon"><img className={link.icon === "/icons/vk-video.png" || link.icon === "/icons/vk-live.png" || link.icon === "/icons/kick.png" ? "social-link__icon-image--compact" : undefined} src={link.icon} alt="" /></span>
-        <span className="social-link__name">{name}</span>
+        <span className="social-link__name"><LanguageText>{name}</LanguageText></span>
         <span className="social-link__handle"><LanguageText>{handle}</LanguageText></span>
       </span>
     </a>
@@ -352,7 +381,9 @@ function SocialCard({ link, language, style }) {
 function viewFromLocation() {
   if (window.location.hash === "#resumes") return "resumes";
   if (window.location.hash === "#socials") return "socials";
-  if (window.location.hash === "#research") return "research";
+  if (window.location.hash === "#projects") return "projects";
+  if (window.location.hash === "#publications" || window.location.hash === "#research") return "publications";
+  if (window.location.hash === "#patents") return "patents";
   if (window.location.hash === "#education") return "education";
   if (window.location.hash === "#certificates" || window.location.hash.startsWith("#certificate-provider-")) return "certificates";
   return "home";
@@ -385,7 +416,7 @@ function viewerPanelSize(imageRatio, pageCount, viewport) {
   };
 }
 
-function CertificatesView({ theme, text, language, onBack, leaving = false }) {
+function CertificatesView({ theme, text, language }) {
   const [query, setQuery] = useState("");
   const [showContents, setShowContents] = useState(false);
   const [contentsMotion, setContentsMotion] = useState("");
@@ -560,23 +591,22 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
 
   return (
     <>
-      <main className={`page-shell ${leaving ? "page-shell--leaving" : ""} ${activeCertificate && !viewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
+      <main className={`page-shell ${activeCertificate && !viewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
       <AmbientLayer variant="certificates" />
       <section className={`profile-card certificate-page ${certificatesReady ? "" : "certificate-page--loading"}`} aria-busy={!certificatesReady}>
         {certificatesReady ? (
         <div className="certificate-page__content">
-          <div className="resume-page-top"><button className="back-button" type="button" onClick={onBack}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
-        <header className="certificate-page-header"><h1>{text.certificatePageTitle}</h1></header>
+        <header className="certificate-page-header"><h1><LanguageText>{text.certificatePageTitle}</LanguageText></h1></header>
         <div className="certificate-summary">
-          <div><strong>{certificateManifest.totalDocuments}</strong><span>{text.totalDocuments}</span><small>{text.collectionLabel}</small></div>
-          <div><strong>{certificateManifest.providers.length}</strong><span>{text.totalPlatforms}</span><small>{text.platformLabel}</small></div>
-          <div><strong>{certificateManifest.totalPages}</strong><span>{text.totalPages}</span><small>{text.pageLabel}</small></div>
+          <div><strong>{certificateManifest.totalDocuments}</strong><span><LanguageText>{text.totalDocuments}</LanguageText></span><small><LanguageText>{text.collectionLabel}</LanguageText></small></div>
+          <div><strong>{certificateManifest.providers.length}</strong><span><LanguageText>{text.totalPlatforms}</LanguageText></span><small><LanguageText>{text.platformLabel}</LanguageText></small></div>
+          <div><strong>{certificateManifest.totalPages}</strong><span><LanguageText>{text.totalPages}</LanguageText></span><small><LanguageText>{text.pageLabel}</LanguageText></small></div>
         </div>
-        <div className="certificate-toolbar"><label className="certificate-search"><SearchIcon /><input value={query} onChange={(event) => setQuery(event.target.value)} type="search" placeholder={text.certificateSearch} aria-label={text.certificateSearch} /></label></div>
+        <div className="certificate-toolbar"><label className="certificate-search"><SearchIcon /><input className="language-text-control" value={query} onChange={(event) => setQuery(event.target.value)} type="search" placeholder={text.certificateSearch} aria-label={text.certificateSearch} /></label></div>
         <nav className={`certificate-toc ${showContents ? "certificate-toc--open" : ""}`} aria-label={text.certificateContents}>
           <div className="certificate-toc__control">
             <div className="certificate-toc__center" onClick={toggleContents}>
-              <h2><button className="certificate-toc-title" type="button" aria-expanded={showContents} aria-controls="certificate-toc-panel">{text.certificateContents}</button></h2>
+              <h2><button className="certificate-toc-title" type="button" aria-expanded={showContents} aria-controls="certificate-toc-panel"><LanguageText>{text.certificateContents}</LanguageText></button></h2>
               <button className="certificate-toc-toggle" type="button" aria-expanded={showContents} aria-controls="certificate-toc-panel" aria-label={text.certificateContents}>
                 <span className={`disclosure-icon ${contentsMotion}`} aria-hidden="true"><ChevronIcon /></span>
               </button>
@@ -600,7 +630,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
                     <button className="certificate-card" type="button" onClick={() => openCertificate(provider.name, certificate)} key={`${provider.name}-${certificate.title}`}>
                       <img loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
                       <span>{certificate.title}</span>
-                      <small>{pageCountLabel(certificate.pages.length, language)}</small>
+                      <small><LanguageText>{pageCountLabel(certificate.pages.length, language)}</LanguageText></small>
                     </button>
                     );
                   })}
@@ -608,25 +638,24 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
               </section>
             ))}
           </div>
-        ) : <p className="certificate-empty">{text.certificatePageEmpty}</p>}
+        ) : <p className="certificate-empty"><LanguageText>{text.certificatePageEmpty}</LanguageText></p>}
         </div>
         ) : null}
         <div className={`certificate-loading ${showCertificateLoader ? "" : "certificate-loading--hidden"}`} role="status" aria-live="polite" aria-hidden={!showCertificateLoader}>
           <span className="certificate-loading__spinner" aria-hidden="true" />
-          <span>{text.loadingCertificates}</span>
+          <span><LanguageText>{text.loadingCertificates}</LanguageText></span>
         </div>
       </section>
       
       </main>
       <div className={`certificate-sticky-actions ${showScrollActions ? "certificate-sticky-actions--visible" : ""} ${activeCertificate && !viewerClosing ? "certificate-sticky-actions--viewer-open" : ""}`} data-theme={theme}>
-        <button type="button" onClick={onBack} aria-label={text.home} title={text.home}><HomeIcon /></button>
         <button type="button" onClick={scrollToTop} aria-label={text.toTop} title={text.toTop}><ArrowUpIcon /></button>
       </div>
       {activeCertificate && (
         <div className={`certificate-viewer ${viewerClosing ? "certificate-viewer--closing" : ""}`} data-theme={theme} role="dialog" aria-modal="true" aria-label={activeCertificate.title}>
           <button className="certificate-viewer__backdrop" type="button" onClick={closeViewer} aria-label={text.close} />
           <div className={`certificate-viewer__panel certificate-viewer__panel--${activeOrientation}`} style={viewerPanelSize(activeImageRatio, activeCertificate.pages.length, viewport)}>
-            <div className="certificate-viewer__header"><div><strong>{activeCertificate.title}</strong><small>{activeCertificate.providerName}</small></div><button type="button" onClick={closeViewer}>{text.close}</button></div>
+            <div className="certificate-viewer__header"><div><strong>{activeCertificate.title}</strong><small>{activeCertificate.providerName}</small></div><button type="button" onClick={closeViewer}><LanguageText>{text.close}</LanguageText></button></div>
             <div className={`certificate-viewer__media ${activeCertificate.pages.length === 1 ? "certificate-viewer__media--single" : ""}`}>
               {activeCertificate.pages.length > 1 && <button type="button" onClick={() => changeViewerPage(-1)} aria-label={text.previous}>‹</button>}
               <div className="certificate-viewer__page-stack">
@@ -636,7 +665,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
               </div>
               {activeCertificate.pages.length > 1 && <button type="button" onClick={() => changeViewerPage(1)} aria-label={text.next}>›</button>}
             </div>
-            <div className="certificate-viewer__footer"><span>{activePage + 1} / {activeCertificate.pages.length}</span><span>{pageCountLabel(activeCertificate.pages.length, language)}</span></div>
+            <div className="certificate-viewer__footer"><span>{activePage + 1} / {activeCertificate.pages.length}</span><span><LanguageText>{pageCountLabel(activeCertificate.pages.length, language)}</LanguageText></span></div>
           </div>
         </div>
       )}
@@ -644,7 +673,7 @@ function CertificatesView({ theme, text, language, onBack, leaving = false }) {
   );
 }
 
-function SocialsView({ theme, text, language, onBack, leaving = false }) {
+function SocialsView({ theme, text, language }) {
   const [showOtherLinks, setShowOtherLinks] = useState(false);
   const [disclosureMotion, setDisclosureMotion] = useState("");
   const [socialColumns, setSocialColumns] = useState(() => (window.innerWidth <= 680 ? 3 : 4));
@@ -674,11 +703,10 @@ function SocialsView({ theme, text, language, onBack, leaving = false }) {
   };
 
   return (
-    <main className={`page-shell ${leaving ? "page-shell--leaving" : ""}`} data-theme={theme}>
+    <main className="page-shell" data-theme={theme}>
       <AmbientLayer variant="socials" />
       <section className="profile-card socials-page">
-        <div className="resume-page-top"><button className="back-button" type="button" onClick={onBack}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
-        <header className="socials-page-header"><h1>{text.socialsPageTitle}</h1></header>
+        <header className="socials-page-header"><h1><LanguageText>{text.socialsPageTitle}</LanguageText></h1></header>
 
         <section className="social-section" aria-labelledby="main-contacts-title">
           <div className="section-divider"><span id="main-contacts-title"><LanguageText>{text.mainContacts}</LanguageText></span></div>
@@ -741,10 +769,10 @@ function ResumeViewer({ resume, theme, text, onClose, onStartClose }) {
       <button className="certificate-viewer__backdrop" type="button" onClick={close} aria-label={text.close} />
       <div className="certificate-viewer__panel resume-viewer__panel">
         <div className="certificate-viewer__header">
-          <div><strong>{resume.title}</strong><small>{text.resumeViewerAuthor}</small></div>
+          <div><strong>{resume.title}</strong><small><LanguageText>{text.resumeViewerAuthor}</LanguageText></small></div>
           <div className="resume-viewer__actions">
-            <a href={resume.file} download={resume.downloadName}>{text.download}</a>
-            <button type="button" onClick={close}>{text.close}</button>
+            <a href={resume.file} download={resume.downloadName}><LanguageText>{text.download}</LanguageText></a>
+            <button type="button" onClick={close}><LanguageText>{text.close}</LanguageText></button>
           </div>
         </div>
         <div className="resume-viewer__document">
@@ -756,13 +784,62 @@ function ResumeViewer({ resume, theme, text, onClose, onStartClose }) {
   );
 }
 
+function SiteHeader({ language, theme, themeMode, setThemeMode, changeLanguage, view, text, onNavigate }) {
+  const activeView = view;
+  const navigation = [
+    ["socials", text.socialsPageTitle, language === "ru" ? "Соцсети" : "Socials"],
+    ["projects", text.projectsTitle, language === "ru" ? "Проекты" : "Projects"],
+    ["resumes", text.resumeTitle],
+    ["education", text.education],
+    ["certificates", text.certificatesNav, language === "ru" ? "Сертификаты" : "Certificates"],
+    ["publications", text.publicationsTitle],
+    ["patents", text.patentsTitle],
+  ];
+  const givenName = language === "ru" ? "Андрей" : "Andrey";
+  const surname = language === "ru" ? "Захаров" : "Zakharov";
+
+  return (
+    <header className="site-header" data-theme={theme}>
+      <div className="site-header__inner">
+        <button className={`site-brand ${activeView === "home" ? "site-brand--active" : ""}`} type="button" onClick={() => onNavigate("home")} aria-label={language === "ru" ? "На главную — Андрей Захаров" : "Home — Andrey Zakharov"} aria-current={activeView === "home" ? "page" : undefined}>
+          <span className="site-brand__logo" aria-hidden="true">
+            <img className="site-brand__logo-light" src="/logo.png" alt="" />
+            <img className="site-brand__logo-dark" src="/logo_d.png" alt="" />
+          </span>
+          <span className="site-brand__name"><LanguageText>{givenName}</LanguageText><LanguageText>{surname}</LanguageText></span>
+        </button>
+
+        <nav className="site-nav" aria-label={language === "ru" ? "Основная навигация" : "Main navigation"}>
+          {navigation.map(([key, label, compactLabel]) => (
+            <button className={`site-nav__link ${activeView === key ? "site-nav__link--active" : ""}`} type="button" key={key} onClick={() => onNavigate(key)} aria-current={activeView === key ? "page" : undefined}>
+              {compactLabel ? <><span className="site-nav__label-full"><LanguageText>{label}</LanguageText></span><span className="site-nav__label-compact"><LanguageText>{compactLabel}</LanguageText></span></> : <LanguageText>{label}</LanguageText>}
+            </button>
+          ))}
+        </nav>
+
+        <div className="site-header__controls">
+          <div className={`control-group control-group--language control-group--${language}`} aria-label={text.language}>
+            <span className="control-group__indicator" aria-hidden="true" />
+            <button className={language === "en" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => changeLanguage("en")}><LanguageText>EN</LanguageText></button>
+            <button className={language === "ru" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => changeLanguage("ru")}><LanguageText>RU</LanguageText></button>
+          </div>
+          <div className={`control-group control-group--theme control-group--${themeMode}`} aria-label={text.theme}>
+            <span className="control-group__indicator" aria-hidden="true" />
+            <button className={themeMode === "light" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("light")} title={text.light} aria-label={text.light}>☼</button>
+            <button className={themeMode === "dark" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("dark")} title={text.dark} aria-label={text.dark}>☾</button>
+            <button className={themeMode === "system" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("system")} title={text.system} aria-label={text.system}>◐</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
+
 function App() {
   const [language, setLanguage] = useState("en");
   const [languageTransitioning, setLanguageTransitioning] = useState(false);
-  const [summaryExpanded, setSummaryExpanded] = useState(false);
   const languageTransitionTimer = useRef(null);
-  const [pageLeaving, setPageLeaving] = useState(false);
-  const pageTransitionTimer = useRef(null);
+  const educationTimelineRef = useRef(null);
   const [view, setView] = useState(viewFromLocation);
   const [activeResume, setActiveResume] = useState(null);
   const [resumeViewerClosing, setResumeViewerClosing] = useState(false);
@@ -776,6 +853,36 @@ function App() {
   const text = copy[language];
   const theme = themeMode === "system" ? systemTheme : themeMode;
 
+  useLayoutEffect(() => {
+    const timeline = educationTimelineRef.current;
+    if (view !== "education" || !timeline) return undefined;
+
+    const updateLine = () => {
+      const timelineTop = timeline.getBoundingClientRect().top;
+      const dots = timeline.querySelectorAll(".education-timeline__dot");
+      const endDot = timeline.querySelector('[data-progress-end="true"] .education-timeline__dot');
+      if (!dots.length || !endDot) return;
+      const centerOffset = (dot) => {
+        const rect = dot.getBoundingClientRect();
+        return `${rect.top - timelineTop + rect.height / 2}px`;
+      };
+      timeline.style.setProperty("--education-timeline-start", centerOffset(dots[0]));
+      timeline.style.setProperty("--education-timeline-end", centerOffset(dots[dots.length - 1]));
+      timeline.style.setProperty("--education-progress-end", centerOffset(endDot));
+    };
+
+    updateLine();
+    const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(updateLine);
+    observer?.observe(timeline);
+    timeline.querySelectorAll(".education-timeline__item").forEach((item) => observer?.observe(item));
+    window.addEventListener("resize", updateLine);
+    document.fonts?.ready?.then(updateLine);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("resize", updateLine);
+    };
+  }, [view, language]);
+
   const transitionView = useCallback((nextView, updateHistory) => {
     const update = () => {
       if (updateHistory) updateHistory();
@@ -784,14 +891,10 @@ function App() {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const enteringCertificatesOnSmallScreen = nextView === "certificates"
       && window.matchMedia("(max-width: 680px)").matches;
-    if (nextView === "home" && view === "certificates" && !reducedMotion) {
-      if (pageTransitionTimer.current) window.clearTimeout(pageTransitionTimer.current);
-      setPageLeaving(true);
-      pageTransitionTimer.current = window.setTimeout(() => {
-        update();
-        setPageLeaving(false);
-        pageTransitionTimer.current = null;
-      }, 220);
+    // The certificate archive contains many cards and thumbnails. Capturing it
+    // for a View Transition makes leaving the archive noticeably slower.
+    if (view === "certificates") {
+      update();
       return;
     }
     if (nextView === view || reducedMotion || enteringCertificatesOnSmallScreen || typeof document.startViewTransition !== "function") {
@@ -800,10 +903,6 @@ function App() {
     }
     document.startViewTransition(update);
   }, [view]);
-
-  useEffect(() => () => {
-    if (pageTransitionTimer.current) window.clearTimeout(pageTransitionTimer.current);
-  }, []);
 
   useEffect(() => {
     const handleHistoryChange = () => transitionView(viewFromLocation());
@@ -857,53 +956,29 @@ function App() {
     document.fonts.load('650 48px "Manrope"', "Andrey Zakharov Андрей Захаров").catch(() => {});
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.documentElement.dataset.theme = theme;
+    document.documentElement.removeAttribute("data-initial-theme");
     document.documentElement.style.backgroundColor = theme === "dark" ? "#161716" : "#ecece9";
   }, [theme]);
 
-  const openResumes = () => {
-    transitionView("resumes", () => window.history.pushState({ view: "resumes" }, "", "#resumes"));
+  const navigateView = (nextView) => {
+    const hash = nextView === "home" ? "" : `#${nextView}`;
+    transitionView(nextView, () => window.history.pushState({ view: nextView }, "", `${window.location.pathname}${hash}`));
   };
 
-  const openSocials = () => {
-    transitionView("socials", () => window.history.pushState({ view: "socials" }, "", "#socials"));
-  };
-
-  const openCertificates = () => {
-    transitionView("certificates", () => window.history.pushState({ view: "certificates" }, "", "#certificates"));
-  };
-
-  const openEducation = () => {
-    transitionView("education", () => window.history.pushState({ view: "education" }, "", "#education"));
-  };
-
-  const openResearch = () => {
-    transitionView("research", () => window.history.pushState({ view: "research" }, "", "#research"));
-  };
-
-  const closeResumes = () => {
-    transitionView("home", () => window.history.pushState({ view: "home" }, "", window.location.pathname));
-  };
-
-  const closeSocials = () => {
-    transitionView("home", () => window.history.pushState({ view: "home" }, "", window.location.pathname));
-  };
-
-  const closeCertificates = () => {
-    transitionView("home", () => window.history.pushState({ view: "home" }, "", window.location.pathname));
-  };
-
-  const closeEducation = () => {
-    transitionView("home", () => window.history.pushState({ view: "home" }, "", window.location.pathname));
-  };
+  const openCertificates = () => navigateView("certificates");
 
   const changeLanguage = (nextLanguage) => {
     if (nextLanguage === language) return;
     if (languageTransitionTimer.current) window.clearTimeout(languageTransitionTimer.current);
     setLanguageTransitioning(true);
+    document.documentElement.classList.add("language-transitioning");
     setLanguage(nextLanguage);
-    languageTransitionTimer.current = window.setTimeout(() => setLanguageTransitioning(false), 480);
+    languageTransitionTimer.current = window.setTimeout(() => {
+      setLanguageTransitioning(false);
+      document.documentElement.classList.remove("language-transitioning");
+    }, 480);
   };
 
   const openResumeViewer = (resume) => {
@@ -913,39 +988,42 @@ function App() {
 
   if (view === "resumes") {
     return (
-      <main className={`page-shell ${pageLeaving ? "page-shell--leaving" : ""} ${activeResume && !resumeViewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
+      <>
+        <SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} />
+        <main className={`page-shell ${activeResume && !resumeViewerClosing ? "page-shell--viewer-open" : ""}`} data-theme={theme}>
         <AmbientLayer variant="resumes" />
         <section className="profile-card resume-page">
-          <div className="resume-page-top"><button className="back-button" type="button" onClick={closeResumes}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
-          <header className="resume-page-header"><h1>{text.resumePageTitle}</h1></header>
+          <header className="resume-page-header"><h1><LanguageText>{text.resumePageTitle}</LanguageText></h1></header>
           <div className="resume-list">
             {resumes.map((resume) => (
               <div className="resume-page-item" key={resume.key} role="button" tabIndex="0" onClick={() => openResumeViewer(resume)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); openResumeViewer(resume); } }}>
                 <span className="resume-page-item__title">{resume.title}</span>
-                <a className="resume-page-item__action" href={resume.file} download={resume.downloadName} onClick={(event) => event.stopPropagation()}>{text.download}</a>
+                <a className="resume-page-item__action" href={resume.file} download={resume.downloadName} onClick={(event) => event.stopPropagation()}><LanguageText>{text.download}</LanguageText></a>
               </div>
             ))}
           </div>
         </section>
         {activeResume && <ResumeViewer resume={activeResume} theme={theme} text={text} onStartClose={() => setResumeViewerClosing(true)} onClose={() => { setActiveResume(null); setResumeViewerClosing(false); }} />}
-      </main>
+        </main>
+      </>
     );
   }
 
   if (view === "certificates") {
-    return <CertificatesView theme={theme} text={text} language={language} onBack={closeCertificates} leaving={pageLeaving} />;
+    return <><SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} /><CertificatesView theme={theme} text={text} language={language} /></>;
   }
 
   if (view === "education") {
     return (
-      <main className={`page-shell ${pageLeaving ? "page-shell--leaving" : ""}`} data-theme={theme}>
+      <>
+        <SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} />
+        <main className="page-shell" data-theme={theme}>
         <AmbientLayer variant="certificates" />
         <section className="profile-card education-page">
-          <div className="resume-page-top"><button className="back-button" type="button" onClick={closeEducation}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
           <header className="resume-page-header"><h1><LanguageText>{text.education}</LanguageText></h1></header>
-          <div className="education-timeline">
+          <div className="education-timeline" ref={educationTimelineRef}>
             {educationHistory.map((item) => (
-              <article className={`education-timeline__item education-timeline__item--${item.progress}`} key={item.year}>
+              <article className={`education-timeline__item education-timeline__item--${item.progress} education-timeline__item--${item.emphasis ?? "additional"}`} data-progress-end={item.progressEndpoint ? "true" : undefined} key={item.year}>
                 <span className="education-timeline__year">{item.year}{item.status && <small><LanguageText>{item.status[language]}</LanguageText></small>}</span>
                 <span className="education-timeline__dot" aria-hidden="true" />
                 <div className="education-timeline__details">
@@ -958,21 +1036,38 @@ function App() {
           </div>
           <button className="education-archive-button" type="button" onClick={openCertificates}><LanguageText>{text.educationArchiveButton}</LanguageText></button>
         </section>
-      </main>
+        </main>
+      </>
     );
   }
 
   if (view === "socials") {
-    return <SocialsView theme={theme} text={text} language={language} onBack={closeSocials} leaving={pageLeaving} />;
+    return <><SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} /><SocialsView theme={theme} text={text} language={language} /></>;
   }
 
-  if (view === "research") {
+  if (view === "projects") {
     return (
-      <main className={`page-shell ${pageLeaving ? "page-shell--leaving" : ""}`} data-theme={theme}>
-        <AmbientLayer variant="home" />
-        <section className="profile-card section-page">
-          <div className="resume-page-top"><button className="back-button" type="button" onClick={closeEducation}><HomeIcon /><LanguageText>{text.home}</LanguageText></button></div>
-          <header className="resume-page-header"><h1><LanguageText>{text.research}</LanguageText></h1></header>
+      <>
+        <SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} />
+        <main className="page-shell" data-theme={theme}>
+          <AmbientLayer variant="home" />
+          <section className="profile-card section-page projects-page">
+            <header className="resume-page-header"><h1><LanguageText>{text.projectsTitle}</LanguageText></h1></header>
+            <div className="projects-placeholder"><span className="projects-placeholder__mark" aria-hidden="true">+</span><p><LanguageText>{text.projectsPlaceholder}</LanguageText></p></div>
+          </section>
+        </main>
+      </>
+    );
+  }
+
+  if (view === "publications") {
+    return (
+      <>
+        <SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} />
+        <main className="page-shell" data-theme={theme}>
+          <AmbientLayer variant="home" />
+          <section className="profile-card section-page">
+          <header className="resume-page-header"><h1><LanguageText>{text.publicationsTitle}</LanguageText></h1></header>
           <div className="research-publications">
             {researchPublications.map((publication) => (
               <article className="research-publication" key={publication.title.en}>
@@ -982,88 +1077,58 @@ function App() {
                   <h2><LanguageText>{publication.title[language]}</LanguageText></h2>
                 </header>
                 <dl className="research-publication__details">
-                  <div><dt>{text.researchAuthor}</dt><dd><LanguageText>{publication.author[language]}</LanguageText></dd></div>
-                  <div><dt>{text.researchSupervisor}</dt><dd><LanguageText>{publication.supervisor[language]}</LanguageText></dd></div>
-                  <div><dt>{text.researchPublishedIn}</dt><dd><LanguageText>{publication.publishedIn[language]}</LanguageText></dd></div>
-                  <div><dt>{text.researchIsbn}</dt><dd><LanguageText>{publication.isbn[language]}</LanguageText></dd></div>
-                  <div><dt>{text.researchUdc}</dt><dd>{publication.udc}</dd></div>
+                  <div><dt><LanguageText>{text.researchAuthor}</LanguageText></dt><dd><LanguageText>{publication.author[language]}</LanguageText></dd></div>
+                  <div><dt><LanguageText>{text.researchSupervisor}</LanguageText></dt><dd><LanguageText>{publication.supervisor[language]}</LanguageText></dd></div>
+                  <div><dt><LanguageText>{text.researchPublishedIn}</LanguageText></dt><dd><LanguageText>{publication.publishedIn[language]}</LanguageText></dd></div>
+                  <div><dt><LanguageText>{text.researchIsbn}</LanguageText></dt><dd><LanguageText>{publication.isbn[language]}</LanguageText></dd></div>
+                  <div><dt><LanguageText>{text.researchUdc}</LanguageText></dt><dd><LanguageText>{publication.udc}</LanguageText></dd></div>
                 </dl>
               </article>
             ))}
           </div>
-        </section>
-      </main>
+          </section>
+        </main>
+      </>
+    );
+  }
+
+  if (view === "patents") {
+    return (
+      <>
+        <SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} />
+        <main className="page-shell" data-theme={theme}>
+          <AmbientLayer variant="home" />
+          <section className="profile-card section-page patents-page">
+            <header className="resume-page-header"><h1><LanguageText>{text.patentsTitle}</LanguageText></h1></header>
+            <div className="projects-placeholder"><span className="projects-placeholder__mark" aria-hidden="true">+</span><p><LanguageText>{text.patentsPlaceholder}</LanguageText></p></div>
+          </section>
+        </main>
+      </>
     );
   }
 
   return (
-    <main className={`page-shell ${languageTransitioning ? "language-transitioning" : ""}`} data-theme={theme}>
-      <AmbientLayer variant="home" />
-      <section className="profile-card home-page">
-        <div className="top-controls">
-          <div className={`control-group control-group--language control-group--${language}`} aria-label={text.language}>
-            <span className="control-group__indicator" aria-hidden="true" />
-            <button className={language === "en" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => changeLanguage("en")}><LanguageText>EN</LanguageText></button>
-            <button className={language === "ru" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => changeLanguage("ru")}><LanguageText>RU</LanguageText></button>
-          </div>
-          <div className={`control-group control-group--theme control-group--${themeMode}`} aria-label={text.theme}>
-            <span className="control-group__indicator" aria-hidden="true" />
-            <button className={themeMode === "light" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("light")} title={text.light} aria-label={text.light}>☼</button>
-            <button className={themeMode === "dark" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("dark")} title={text.dark} aria-label={text.dark}>☾</button>
-            <button className={themeMode === "system" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("system")} title={text.system} aria-label={text.system}>◐</button>
-          </div>
-        </div>
-
-        <header className="profile-header">
-          <div className="profile-logo-wrap" aria-hidden="true">
-            <span className="profile-logo-ring" />
-            <img className="profile-logo profile-logo--light" src="/logo.png" alt="" />
-            <img className="profile-logo profile-logo--dark" src="/logo_d.png" alt="" />
-          </div>
-          <h1><LanguageText>{language === "ru" ? "Андрей Захаров" : "Andrey Zakharov"}</LanguageText></h1>
-        </header>
-
-        <section className={`professional-summary ${summaryExpanded ? "professional-summary--open" : ""}`} aria-labelledby="professional-summary-title">
-          <div className="professional-summary__content">
-            <p id="professional-summary-title"><LanguageText>{text.professionalSummary}</LanguageText></p>
-            <div className="professional-summary__details" id="professional-summary-details" aria-hidden={!summaryExpanded}>
-              <div className="professional-summary__details-inner">
-                {text.professionalSummaryMore.map((paragraph) => <p key={paragraph}><LanguageText>{paragraph}</LanguageText></p>)}
-              </div>
+    <>
+      <SiteHeader language={language} theme={theme} themeMode={themeMode} setThemeMode={setThemeMode} changeLanguage={changeLanguage} view={view} text={text} onNavigate={navigateView} />
+      <main className={`page-shell ${languageTransitioning ? "language-transitioning" : ""}`} data-theme={theme}>
+        <AmbientLayer variant="home" />
+        <section className="profile-card home-page">
+          <div className="home-hero">
+            <div className="home-hero__copy">
+              <section className="professional-summary" aria-label={language === "ru" ? "Обо мне" : "About me"}>
+                <div className="professional-summary__content">
+                  <p><LanguageText>{text.professionalSummary}</LanguageText></p>
+                  {text.professionalSummaryMore.map((paragraph) => <p key={paragraph}><LanguageText>{paragraph}</LanguageText></p>)}
+                </div>
+              </section>
             </div>
-            <button className="professional-summary__toggle" type="button" onClick={() => setSummaryExpanded((isOpen) => !isOpen)} aria-expanded={summaryExpanded} aria-controls="professional-summary-details">
-              <LanguageText>{summaryExpanded ? text.professionalSummaryReadLess : text.professionalSummaryReadMore}</LanguageText>
-              <span className={`professional-summary__toggle-icon ${summaryExpanded ? "professional-summary__toggle-icon--open" : ""}`} aria-hidden="true"><ChevronIcon /></span>
-            </button>
+            <div className="home-photo-placeholder" aria-label={language === "ru" ? "Место для фотографии" : "Photo placeholder"}>
+              <span><LanguageText>{language === "ru" ? "Фото" : "Photo"}</LanguageText></span>
+            </div>
           </div>
         </section>
-
-        <div className="section-divider profile-section-divider"><span><LanguageText>{text.sections}</LanguageText></span></div>
-
-        <div className="home-sections">
-          <button className="home-tile" type="button" onClick={openSocials}>
-            <span className="education-mark"><MessageIcon /></span>
-            <strong><LanguageText>{text.socialsTitle}</LanguageText></strong>
-            <span className="home-tile__description"><LanguageText>{text.socialsIntro}</LanguageText></span>
-          </button>
-          <button className="home-tile" type="button" onClick={openResumes}>
-            <span className="education-mark"><ResumeIcon /></span>
-            <strong><LanguageText>{text.resumeTitle}</LanguageText></strong>
-            <span className="home-tile__description"><LanguageText>{text.resumeIntro}</LanguageText></span>
-          </button>
-          <button className="home-tile" type="button" onClick={openEducation}>
-            <span className="education-mark"><GraduationCapIcon /></span>
-            <strong><LanguageText>{text.education}</LanguageText></strong>
-            <span className="home-tile__description"><LanguageText>{text.educationIntro}</LanguageText></span>
-          </button>
-          <button className="home-tile" type="button" onClick={openResearch}>
-            <span className="education-mark"><ResearchIcon /></span>
-            <strong><LanguageText>{text.research}</LanguageText></strong>
-            <span className="home-tile__description"><LanguageText>{text.researchIntro}</LanguageText></span>
-          </button>
-        </div>
-      </section>
-    </main>
+      </main>
+    </>
   );
 }
 
