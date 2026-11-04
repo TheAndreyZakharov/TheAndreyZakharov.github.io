@@ -628,7 +628,7 @@ function CertificatesView({ theme, text, language }) {
                     const dimensions = certificate.pageDimensions?.[0] ?? { width: 1400, height: 1000 };
                     return (
                     <button className="certificate-card" type="button" onClick={() => openCertificate(provider.name, certificate)} key={`${provider.name}-${certificate.title}`}>
-                      <img loading="lazy" decoding="async" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
+                      <img loading={viewport.width <= 680 ? "eager" : "lazy"} decoding="async" fetchPriority="low" width={dimensions.width} height={dimensions.height} src={certificate.thumbnails?.[0] ?? certificate.pages[0]} alt={certificate.title} />
                       <span>{certificate.title}</span>
                       <small><LanguageText>{pageCountLabel(certificate.pages.length, language)}</LanguageText></small>
                     </button>
@@ -889,15 +889,14 @@ function App() {
       setView(nextView);
     };
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const enteringCertificatesOnSmallScreen = nextView === "certificates"
-      && window.matchMedia("(max-width: 680px)").matches;
+    const isSmallScreen = window.matchMedia("(max-width: 680px)").matches;
     // The certificate archive contains many cards and thumbnails. Capturing it
     // for a View Transition makes leaving the archive noticeably slower.
     if (view === "certificates") {
       update();
       return;
     }
-    if (nextView === view || reducedMotion || enteringCertificatesOnSmallScreen || typeof document.startViewTransition !== "function") {
+    if (nextView === view || reducedMotion || isSmallScreen || typeof document.startViewTransition !== "function") {
       update();
       return;
     }
