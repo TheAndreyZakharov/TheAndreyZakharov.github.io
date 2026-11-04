@@ -484,8 +484,10 @@ html[data-theme="dark"]::view-transition, html[data-theme="dark"]::view-transiti
   .page-shell { padding: 12px 12px 24px; }
   .page-shell { min-height: calc(100vh - 90px); }
   .page-shell:has(.certificate-page) { animation: none; }
-  .certificate-page { transform: none; -webkit-backface-visibility: visible; backface-visibility: visible; animation: none; }
-  .certificate-page__content { animation: none; }
+  .certificate-page { height: auto; min-height: 0; overflow: visible; transform: none !important; -webkit-transform: none !important; -webkit-backface-visibility: visible; backface-visibility: visible; animation: none; box-shadow: none; contain: none; }
+  .certificate-page__content, .certificate-groups, .certificate-group { height: auto; min-height: 0; overflow: visible; transform: none; contain: none; content-visibility: visible; }
+  .certificate-groups { display: block; }
+  .certificate-group + .certificate-group { margin-top: 28px; }
   .profile-card { padding: 14px 14px 24px; border-radius: 25px; }
   .profile-card.home-page { padding: 14px 14px 24px; }
   .site-header__inner { padding-right: 12px; padding-left: 12px; }
