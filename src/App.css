@@ -477,6 +477,7 @@ html[data-theme="dark"]::view-transition, html[data-theme="dark"]::view-transiti
 @media (max-width: 680px), (hover: none) and (pointer: coarse) {
   /* Clipping horizontal overflow must not create a second scrolling container. */
   html, body { overflow-x: clip; }
+  .site-header { position: relative; top: auto; }
   /* Keep the long archive in normal tiled painting on mobile WebKit.
      Named transitions, animated filters and translucent compositing groups can
      otherwise leave unpainted areas while scrolling this 60,000px+ document. */
