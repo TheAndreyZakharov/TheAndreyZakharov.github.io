@@ -160,11 +160,13 @@ const copy = {
     researchIsbn: "ISBN",
     researchUdc: "UDC",
     sections: "Main sections",
-    professionalSummary: "Software engineer working on a wide range of software products, applied research and challenges across different subject areas. I combine a broad technical perspective with a practical understanding of product goals and the problems a solution needs to solve. I can independently build a fast MVP or contribute to a larger product developed by a team over time.",
+    professionalSummaryTitle: "About me",
+    professionalSummary: "I am a software engineer who creates software products and leads projects from idea to implementation. I combine hands-on development with research and continuous learning, exploring how technology helps solve problems across different fields.",
     professionalSummaryMore: [
-      "My experience covers product development as a whole, from backend and frontend work, including integrations with external services and systems, to data-driven systems and intelligent solutions, including machine learning and artificial intelligence. This lets me look beyond an isolated part of a project and understand how architecture, data, interface and product goals fit together. I quickly get up to speed with new requirements and project contexts, turn a broad idea into a clear structure and bring it to a working implementation. I also consider how a solution will be maintained and developed further, not only how it works at the moment.",
-      "Professional development is an important part of my work. I regularly study new areas, complete certifications and take part in educational and scientific programs, professional events and conferences held at an international level. Most of my ongoing development is connected with IT, but I also study other fields and disciplines. This broadens my perspective, helps me see connections across different areas and adapt more quickly to new contexts.",
-      "Open to professional collaboration, research and product work where ideas can be turned into useful, well-executed results.",
+      { lead: "Experience", body: "My professional experience includes independently developing full-cycle projects, from the initial idea and architecture through implementation, launch and continued development, as well as working in different teams. In team settings, I value open discussion of different solutions, mutual support and a shared commitment to results, along with the opportunity to learn from colleagues and share my own experience. I try to look beyond the specific technical task: to understand how a solution affects the product and business processes, what value it brings to users, and what contribution it can make to solving research problems and advancing the relevant field. This systems perspective helps me see the product as a whole and align individual solutions with its goals and continued development.", technical: "My technical experience includes web development; cross-platform and native development of desktop and mobile applications; integrating solutions into existing products; and deploying services on servers. My experience is primarily in backend development; in full-stack projects, I also work on the frontend. For applied tasks, I prepare and analyze data, train machine-learning models and integrate them into applications. I enjoy learning new technologies, quickly getting up to speed in unfamiliar areas and finding solutions to a wide range of tasks." },
+      { lead: "Learning", body: "I consider continuous development an important part of professional practice. Alongside pursuing higher education, I continually study new technologies and diverse areas of knowledge, keep up with emerging approaches, and pursue continuing education, professional development and certification programs. I actively participate in research, which helps me explore new topics in depth and develop my own ideas. I strive to understand the subject area of each project: this helps me connect with experts more quickly, account for important details at the design stage, and broaden my professional perspective." },
+      { lead: "Research interests", body: "I am interested both in advancing information technology and in applying it at the intersection of IT and other disciplines. I explore how digital tools and an engineering approach can help solve problems in various fields, optimize processes, improve the quality of outcomes, and much more. The specifics of each subject area call for its own approach, and finding that approach makes this work especially interesting. Work at the intersection of different fields always opens up new opportunities for research and the development of ideas, and its outcomes can have significant practical value." },
+      { lead: "Open to opportunities", body: "I am interested in job opportunities and professional collaboration. I am also interested in taking part in research through joint studies, paper writing and interdisciplinary projects. I would be glad to discuss tasks, projects and ideas where my knowledge and experience could be useful." },
     ],
     professionalSummaryReadMore: "Read more",
     professionalSummaryReadLess: "Show less",
@@ -216,7 +218,7 @@ const copy = {
     patentsTitle: "Патенты",
     patentsPlaceholder: "Патенты появятся здесь.",
     certificatesNav: "Дипломы и сертификаты",
-    homeHeroTitle: "Инженер-программист",
+    homeHeroTitle: "Инженер-разработчик",
     educationIntro: "Мой образовательный путь, дипломы и сертификаты",
     educationArchiveButton: "Дипломы и сертификаты",
     researchSupervisor: "Научный руководитель",
@@ -225,11 +227,13 @@ const copy = {
     researchIsbn: "ISBN",
     researchUdc: "УДК",
     sections: "Основные разделы",
-    professionalSummary: "Инженер-программист, работающий над разнообразными программными продуктами, прикладными исследованиями и задачами в разных предметных областях. Соединяю широкий технический кругозор с практическим пониманием целей продукта и задач, которые он должен решать. Могу самостоятельно быстро собрать MVP или последовательно развивать большой продукт в команде.",
+    professionalSummaryTitle: "Обо мне",
+    professionalSummary: "Я инженер-разработчик, создаю программные продукты и веду проекты от идеи до внедрения. Сочетаю практическую разработку с научной деятельностью и постоянным обучением, исследуя, как технологии помогают решать задачи в разных сферах.",
     professionalSummaryMore: [
-      "Мой опыт связан с разработкой продукта целиком: от серверной логики и клиентской части, включая интеграции с внешними сервисами и системами, до работы с данными и создания интеллектуальных решений, включая задачи машинного обучения и искусственного интеллекта. Поэтому я могу смотреть на задачу не только со стороны отдельного участка, но и понимать, как между собой связаны архитектура, данные, интерфейс и цели продукта. Быстро погружаюсь в новые требования и контекст конкретной задачи, умею переводить общую идею в понятную структуру и рабочую реализацию. При этом учитываю не только то, как решение работает сейчас, но и насколько удобно его развивать дальше.",
-      "Постоянное развитие – важная часть моей работы. Регулярно изучаю новые направления, прохожу сертификации, участвую в образовательных и научных программах, профессиональных мероприятиях и конференциях, в том числе международного уровня. Основная часть моего развития связана с IT, однако я также изучаю другие области и дисциплины. Это расширяет кругозор, помогает видеть связи между разными направлениями и быстрее ориентироваться в новых сферах.",
-      "Открыт к профессиональному сотрудничеству, исследовательским задачам и разработке продуктов, где идеи можно превращать в полезные и качественно выполненные решения.",
+      { lead: "Опыт", body: "Профессиональный опыт включает самостоятельную разработку проектов полного цикла: от идеи и архитектуры до реализации, запуска и дальнейшего развития, а также работу в разных командах. В командной работе ценю открытое обсуждение разных решений, взаимную поддержку и общую нацеленность на результат, а также возможность учиться у коллег и делиться собственным опытом. Стараюсь смотреть шире конкретной технической задачи: понимать, как решение влияет на продукт и бизнес-процессы, какую пользу приносит пользователям и какой вклад может внести в решение исследовательских задач и развитие соответствующей предметной области. Такой системный взгляд помогает видеть продукт целиком и соотносить отдельные решения с его целями и развитием.", technical: "Технический опыт включает веб-разработку, кроссплатформенную и нативную разработку десктопных и мобильных приложений, интеграцию решений в готовые продукты и развёртывание сервисов на серверах. Основное направление моего опыта связано с бэкенд-разработкой; в рамках фулстек-проектов также работаю с фронтендом. Для прикладных задач подготавливаю и анализирую данные, обучаю модели машинного обучения и интегрирую их в приложения. С интересом осваиваю новые технологии, быстро разбираюсь в незнакомых областях и нахожу решения для задач разного профиля." },
+      { lead: "Обучение", body: "Постоянное развитие считаю важной частью профессиональной деятельности. Сочетаю получение высшего образования с постоянным изучением новых технологий и разных областей знаний, слежу за появлением новых подходов, прохожу программы дополнительного образования, повышения квалификации и сертификации. Активно участвую в научной деятельности: она помогает глубже разбираться в новых темах и развивать собственные идеи. Стремлюсь понимать предметную область каждого проекта: это помогает быстрее находить общий язык с экспертами, учитывать важные детали ещё на этапе проектирования и расширяет профессиональный кругозор." },
+      { lead: "Научные интересы", body: "Меня привлекают как развитие информационных технологий, так и их применение на стыке с другими дисциплинами. Изучаю, как цифровые инструменты и инженерный подход помогают решать задачи в различных сферах, включая оптимизацию процессов, повышение качества результатов и многое другое. Специфика каждой предметной области требует своего подхода, и его поиск делает такую работу особенно интересной. Работа на пересечении разных сфер всегда открывает новые возможности для исследований и развития идей, а её результаты могут иметь значительную практическую ценность." },
+      { lead: "Открыт к предложениям", body: "Заинтересован в работе и профессиональном сотрудничестве. В научной деятельности готов к совместным исследованиям, подготовке статей и междисциплинарным проектам. Буду рад обсудить задачи, проекты и идеи, в которых мои знания и опыт могут быть полезны." },
     ],
     professionalSummaryReadMore: "Подробнее",
     professionalSummaryReadLess: "Свернуть",
@@ -1126,8 +1130,16 @@ function App() {
             <div className="home-hero__copy">
               <section className="professional-summary" aria-label={language === "ru" ? "Обо мне" : "About me"}>
                 <div className="professional-summary__content">
-                  <p><LanguageText>{text.professionalSummary}</LanguageText></p>
-                  {text.professionalSummaryMore.map((paragraph) => <p key={paragraph}><LanguageText>{paragraph}</LanguageText></p>)}
+                  <div className="professional-summary__section">
+                    <h2 className="professional-summary__lead"><LanguageText>{text.professionalSummaryTitle}</LanguageText></h2>
+                    <p><LanguageText>{text.professionalSummary}</LanguageText></p>
+                  </div>
+                  {text.professionalSummaryMore.map(({ lead, body, technical }, index) => (
+                    <div className="professional-summary__section" key={index}>
+                      <h2 className="professional-summary__lead"><LanguageText>{lead}</LanguageText></h2>
+                      <p><LanguageText>{body}{technical && <><br />{technical}</>}</LanguageText></p>
+                    </div>
+                  ))}
                 </div>
               </section>
             </div>
