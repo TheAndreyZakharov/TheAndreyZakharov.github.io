@@ -158,7 +158,6 @@ const copy = {
     certificatesNav: "Diplomas & Certificates",
     homeHeroTitle: "Software Engineer",
     educationIntro: "My education path, diplomas & certificates",
-    educationArchiveButton: "View diplomas & certificates",
     researchSupervisor: "Academic supervisor",
     researchAuthor: "Author",
     researchPublishedIn: "Published in",
@@ -229,7 +228,6 @@ const copy = {
     certificatesNav: "Дипломы и сертификаты",
     homeHeroTitle: "Инженер-разработчик",
     educationIntro: "Мой образовательный путь, дипломы и сертификаты",
-    educationArchiveButton: "Дипломы и сертификаты",
     researchSupervisor: "Научный руководитель",
     researchAuthor: "Автор",
     researchPublishedIn: "Опубликовано в",
@@ -997,8 +995,6 @@ function App() {
     transitionView(nextView, () => window.history.pushState({ view: nextView }, "", `${window.location.pathname}${hash}`));
   };
 
-  const openCertificates = () => navigateView("certificates");
-
   const changeLanguage = (nextLanguage) => {
     if (nextLanguage === language) return;
     if (languageTransitionTimer.current) window.clearTimeout(languageTransitionTimer.current);
@@ -1064,7 +1060,6 @@ function App() {
               </article>
             ))}
           </div>
-          <button className="education-archive-button" type="button" onClick={openCertificates}><LanguageText>{text.educationArchiveButton}</LanguageText></button>
         </section>
         </main>
       </>
