@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./App.css";
 import certificateManifest from "./certificates.json";
+import projects, { projectRepositories } from "./projects.js";
 
 const emailAddress = "Andrey.Zakharov.Contact@gmail.com";
 const mobileRenderingQuery = "(max-width: 680px), (hover: none) and (pointer: coarse)";
@@ -146,7 +147,11 @@ const copy = {
   en: {
     education: "Education",
     projectsTitle: "Projects & Experience",
-    projectsPlaceholder: "Projects and experience will appear here.",
+    projectsStack: "Technologies and tools",
+    projectRoles: "Project roles",
+    projectDetailsOpen: "Show project details",
+    projectDetailsClose: "Hide project details",
+    projectRepository: "GitHub repository",
     publicationsTitle: "Publications",
     patentsTitle: "Patents",
     patentsPlaceholder: "Patents will appear here.",
@@ -213,7 +218,11 @@ const copy = {
   ru: {
     education: "Образование",
     projectsTitle: "Проекты и опыт",
-    projectsPlaceholder: "Здесь появятся проекты и профессиональный опыт.",
+    projectsStack: "Технологии и инструменты",
+    projectRoles: "Роли в проекте",
+    projectDetailsOpen: "Раскрыть подробнее",
+    projectDetailsClose: "Скрыть подробности",
+    projectRepository: "Репозиторий на GitHub",
     publicationsTitle: "Публикации",
     patentsTitle: "Патенты",
     patentsPlaceholder: "Патенты появятся здесь.",
@@ -855,6 +864,8 @@ function App() {
   const languageTransitionTimer = useRef(null);
   const educationTimelineRef = useRef(null);
   const [view, setView] = useState(viewFromLocation);
+  const [projectDetailsOpen, setProjectDetailsOpen] = useState({});
+  const [projectDetailsMotion, setProjectDetailsMotion] = useState({});
   const [activeResume, setActiveResume] = useState(null);
   const [resumeViewerClosing, setResumeViewerClosing] = useState(false);
   const [themeMode, setThemeMode] = useState(() => {
@@ -866,6 +877,12 @@ function App() {
   ));
   const text = copy[language];
   const theme = themeMode === "system" ? systemTheme : themeMode;
+
+  const toggleProjectDetails = (projectId) => {
+    const nextIsOpen = !projectDetailsOpen[projectId];
+    setProjectDetailsOpen((current) => ({ ...current, [projectId]: nextIsOpen }));
+    setProjectDetailsMotion((current) => ({ ...current, [projectId]: nextIsOpen ? "disclosure-icon--opening" : "disclosure-icon--closing" }));
+  };
 
   useLayoutEffect(() => {
     const timeline = educationTimelineRef.current;
@@ -904,9 +921,9 @@ function App() {
     };
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const isMobileDevice = window.matchMedia(mobileRenderingQuery).matches;
-    // The certificate archive contains many cards and thumbnails. Capturing it
-    // for a View Transition makes leaving the archive noticeably slower.
-    if (view === "certificates") {
+    // Capturing a long page for a View Transition delays navigation while the
+    // browser rasterizes it. Switch directly when either side is project-heavy.
+    if (view === "certificates" || view === "projects" || nextView === "projects") {
       update();
       return;
     }
@@ -1066,7 +1083,51 @@ function App() {
           <AmbientLayer variant="home" />
           <section className="profile-card section-page projects-page">
             <header className="resume-page-header"><h1><LanguageText>{text.projectsTitle}</LanguageText></h1></header>
-            <div className="projects-placeholder"><span className="projects-placeholder__mark" aria-hidden="true">+</span><p><LanguageText>{text.projectsPlaceholder}</LanguageText></p></div>
+            <div className="project-list">
+              {projects.map((project) => (
+                <article className="project-card" key={project.id}>
+                  <div className="project-card__head">
+                    <div className="project-card__identity">
+                      <span className="project-card__year">{project.years}</span>
+                      <h2>{project.name}</h2>
+                    </div>
+                    <div className="project-card__actions">
+                      {project.status && <span className={`project-card__status${project.id === "prism-ai" ? " project-card__status--in-progress" : ""}`}><LanguageText>{project.status[language]}</LanguageText></span>}
+                      {(Array.isArray(projectRepositories[project.id]) ? projectRepositories[project.id] : [{ url: projectRepositories[project.id] }]).map((repo) => (
+                        <a className="project-card__repo" href={repo.url} target="_blank" rel="noopener noreferrer" key={repo.url}>
+                          <LanguageText>{repo.label ? repo.label[language] : text.projectRepository}</LanguageText><span aria-hidden="true">↗</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="project-card__summary"><LanguageText>{project.summary[language]}</LanguageText></p>
+                  <div className="project-card__roles">
+                    <span className="project-card__roles-label"><LanguageText>{text.projectRoles}</LanguageText></span>
+                    <div className="project-card__role-tags">{project.roles[language].map((role) => <span key={role}>{role}</span>)}</div>
+                  </div>
+                  <div className={`project-card__details ${projectDetailsOpen[project.id] ? "project-card__details--open" : ""}`}>
+                    <div className="other-toggle project-card__details-toggle">
+                      <button className="other-toggle__control project-card__details-button" type="button" aria-expanded={Boolean(projectDetailsOpen[project.id])} aria-controls={`project-details-${project.id}`} onClick={() => toggleProjectDetails(project.id)}>
+                        <span className="other-toggle__label project-card__details-open"><LanguageText>{text.projectDetailsOpen}</LanguageText></span>
+                        <span className="other-toggle__label project-card__details-close"><LanguageText>{text.projectDetailsClose}</LanguageText></span>
+                        <span className="disclosure-button" aria-hidden="true"><span className={`disclosure-icon ${projectDetailsMotion[project.id] ?? ""}`}><ChevronIcon /></span></span>
+                      </button>
+                    </div>
+                    <div className="project-card__details-panel" id={`project-details-${project.id}`} aria-hidden={!projectDetailsOpen[project.id]} inert={!projectDetailsOpen[project.id]}>
+                      <div className="project-card__details-content">
+                      <div className="project-card__stack">
+                        <h3><LanguageText>{text.projectsStack}</LanguageText></h3>
+                        <div className="project-card__tags">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
+                      </div>
+                      <div className="project-card__body">
+                        <ul>{project.work[language].map((item, index) => <li key={index}><LanguageText>{item}</LanguageText></li>)}</ul>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </section>
         </main>
       </>
