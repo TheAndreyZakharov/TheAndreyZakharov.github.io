@@ -1,0 +1,30 @@
+# Andrey Zakharov / Андрей Захаров
+
+Personal bilingual website of a software engineer. The linked pages contain the public, human-readable source information. English and Russian versions have separate URLs.
+
+## English
+
+- [About Andrey Zakharov](https://theandreyzakharov.com/): professional background, experience, learning, research interests and collaboration.
+- [Projects and experience](https://theandreyzakharov.com/projects/): project descriptions, roles, technologies, work and repository links.
+- [Resumes](https://theandreyzakharov.com/resumes/): role-specific resumes and PDF downloads.
+- [Education](https://theandreyzakharov.com/education/): degrees, retraining and professional development.
+- [Diplomas and certificates](https://theandreyzakharov.com/certificates/): searchable document archive.
+- [Publications](https://theandreyzakharov.com/publications/): articles and bibliographic details.
+- [Implementing AI Tools in Management Processes](https://theandreyzakharov.com/publications/ai-tools-in-management-processes/): conference paper and publication details.
+- [Patents](https://theandreyzakharov.com/patents/): patent records section.
+- [Socials and contact](https://theandreyzakharov.com/socials/): official profiles and ways to reach Andrey.
+
+## Русский
+
+- [Обо мне](https://theandreyzakharov.com/ru/): профессиональный профиль, опыт, обучение, научные интересы и сотрудничество.
+- [Проекты и опыт](https://theandreyzakharov.com/ru/projects/): описания проектов, роли, технологии, выполненная работа и ссылки на репозитории.
+- [Резюме](https://theandreyzakharov.com/ru/resumes/): резюме для разных ролей и PDF-файлы.
+- [Образование](https://theandreyzakharov.com/ru/education/): высшее и дополнительное образование.
+- [Дипломы и сертификаты](https://theandreyzakharov.com/ru/certificates/): архив документов с поиском.
+- [Публикации](https://theandreyzakharov.com/ru/publications/): статьи и библиографические сведения.
+- [Внедрение ИИ-инструментов в управленческие процессы](https://theandreyzakharov.com/ru/publications/ai-tools-in-management-processes/): статья и сведения о публикации.
+- [Патенты](https://theandreyzakharov.com/ru/patents/): раздел патентных записей.
+- [Соцсети и контакты](https://theandreyzakharov.com/ru/socials/): официальные профили и способы связи.
+
+Canonical domain: https://theandreyzakharov.com/
+Sitemap: https://theandreyzakharov.com/sitemap.xml

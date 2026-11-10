@@ -18,15 +18,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 24
           cache: 'npm'
       - run: npm ci
+      - run: npm run lint
       - run: npm run build
+      - run: npm run verify:build
       - run: cp CNAME dist/CNAME
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
@@ -38,4 +40,4 @@ jobs:
       url: https://theandreyzakharov.com/
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
