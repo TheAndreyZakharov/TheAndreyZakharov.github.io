@@ -162,6 +162,22 @@ function ChevronIcon() {
   return <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>;
 }
 
+function ExternalLinkIcon() {
+  return <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 9 3M5 3h4v4" /></svg>;
+}
+
+function SunIcon() {
+  return <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.2" /><path d="M10 1.8v2m0 12.4v2M1.8 10h2m12.4 0h2M4.2 4.2l1.4 1.4m8.8 8.8 1.4 1.4m0-11.6-1.4 1.4m-8.8 8.8-1.4 1.4" /></svg>;
+}
+
+function MoonIcon() {
+  return <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.7 12.5A7.2 7.2 0 0 1 7.5 3.3a7.3 7.3 0 1 0 9.2 9.2Z" /></svg>;
+}
+
+function SystemThemeIcon() {
+  return <svg viewBox="0 0 20 20" aria-hidden="true"><path className="theme-system-icon__half" d="M10 2.4a7.6 7.6 0 0 0 0 15.2Z" /><circle cx="10" cy="10" r="7.6" /><path d="M10 2.4v15.2" /></svg>;
+}
+
 function LanguageText({ children }) {
   return <span className="language-text">{children}</span>;
 }
@@ -414,9 +430,9 @@ function SiteHeader({ language, theme, themeMode, setThemeMode, changeLanguage, 
           </div>
           <div className={`control-group control-group--theme control-group--${themeMode}`} aria-label={text.theme}>
             <span className="control-group__indicator" aria-hidden="true" />
-            <button className={themeMode === "light" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("light")} title={text.light} aria-label={text.light}>☼</button>
-            <button className={themeMode === "dark" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("dark")} title={text.dark} aria-label={text.dark}>☾</button>
-            <button className={themeMode === "system" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("system")} title={text.system} aria-label={text.system}>◐</button>
+            <button className={themeMode === "light" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("light")} title={text.light} aria-label={text.light}><SunIcon /></button>
+            <button className={themeMode === "dark" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("dark")} title={text.dark} aria-label={text.dark}><MoonIcon /></button>
+            <button className={themeMode === "system" ? "control-button control-button--active" : "control-button"} type="button" onClick={() => setThemeMode("system")} title={text.system} aria-label={text.system}><SystemThemeIcon /></button>
           </div>
         </div>
       </div>
@@ -759,7 +775,7 @@ function App({ initialView, initialLanguage, initialProjectId, initialPublicatio
                       {project.status && <span className={`project-card__status${project.id === "prism-ai" ? " project-card__status--in-progress" : ""}`}><LanguageText>{project.status[language]}</LanguageText></span>}
                       {(Array.isArray(projectRepositories[project.id]) ? projectRepositories[project.id] : [{ url: projectRepositories[project.id] }]).map((repo) => (
                         <a className="project-card__repo" href={repo.url} target="_blank" rel="noopener noreferrer" key={repo.url}>
-                          <LanguageText>{repo.label ? repo.label[language] : text.projectRepository}</LanguageText><span aria-hidden="true">↗</span>
+                          <LanguageText>{repo.label ? repo.label[language] : text.projectRepository}</LanguageText><ExternalLinkIcon />
                         </a>
                       ))}
                     </div>

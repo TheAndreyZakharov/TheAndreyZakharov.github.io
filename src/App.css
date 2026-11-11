@@ -124,6 +124,8 @@ button { border: 0; }
 .site-header__controls .control-group:first-child .control-button { flex: 1 1 0; min-width: 0; }
 .site-header__controls .control-button { color: var(--muted); transition: color .45s ease; }
 .site-header__controls .control-button--active { color: var(--text); }
+.site-header__controls .control-button svg { display: block; width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.site-header__controls .control-button .theme-system-icon__half { fill: currentColor; stroke: none; }
 
 .page-shell {
   --page-bg: #ecece9;
@@ -267,6 +269,7 @@ h1 { margin-bottom: 10px; color: var(--text); font-family: "Manrope", Arial, san
 :is(.page-shell[data-theme="dark"], html[data-initial-theme="dark"] .page-shell) .project-card__status--in-progress { border-color: rgba(139, 221, 165, .52); color: #8bdda5; }
 .project-card__repo { display: inline-flex; min-height: 30px; align-items: center; justify-content: center; gap: 6px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--text); background: var(--card-bg); font-size: 10px; font-weight: 650; line-height: 1.3; transition: background .2s ease, transform .2s ease; }
 .project-card__repo:hover, .project-card__repo:focus-visible { background: var(--soft-hover); transform: translateY(-1px); }
+.project-card__repo > svg { display: block; flex: 0 0 12px; width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
 .project-card__summary { width: 100%; margin: 12px 0 18px; color: var(--text); font-size: 14px; font-weight: 500; line-height: 1.6; text-align: justify; text-align-last: left; hyphens: none; -webkit-hyphens: none; }
 .project-card__body { padding-top: 17px; border-top: 1px solid var(--line); }
 .project-card h3 { margin: 0 0 10px; color: var(--muted); font-size: 10px; font-weight: 750; letter-spacing: .08em; line-height: 1.4; text-transform: uppercase; }
