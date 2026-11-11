@@ -83,7 +83,12 @@ button { border: 0; }
   box-shadow: 0 28px 90px rgba(0, 0, 0, .09), inset 0 1px rgba(255, 255, 255, .56);
   backdrop-filter: blur(26px);
   -webkit-backdrop-filter: blur(26px);
-  transition: color .45s ease, background .45s ease, border-color .45s ease, box-shadow .45s ease;
+  transition: color .45s ease, background .45s ease, border-color .45s ease, box-shadow .45s ease, filter .3s ease;
+}
+:is(body:has(.certificate-viewer:not(.certificate-viewer--closing)) .site-header) {
+  filter: blur(10px);
+  transition-duration: .38s;
+  transition-timing-function: cubic-bezier(.22, 1, .36, 1);
 }
 :is(.site-header[data-theme="dark"], html[data-initial-theme="dark"] .site-header) {
   --page-bg: #161716;
@@ -174,7 +179,7 @@ html:not([data-initial-theme="dark"]) .page-shell:not([data-theme="dark"]) .ambi
   background: var(--card-bg);
   box-shadow: 0 28px 90px rgba(0, 0, 0, .09), inset 0 1px rgba(255, 255, 255, .56);
   backdrop-filter: blur(26px);
-  transition: background .45s ease, border-color .45s ease, box-shadow .45s ease, filter .38s ease;
+  transition: background .45s ease, border-color .45s ease, box-shadow .45s ease, filter .3s ease;
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -194,7 +199,7 @@ html:not([data-initial-theme="dark"]) .page-shell:not([data-theme="dark"]) .ambi
 
 :is(.page-shell[data-theme="dark"], html[data-initial-theme="dark"] .page-shell) .profile-card { box-shadow: 0 28px 90px rgba(0, 0, 0, .28), inset 0 1px rgba(255, 255, 255, .06); }
 :is(.page-shell[data-theme="dark"], html[data-initial-theme="dark"] .page-shell) .social-link__icon img { filter: grayscale(1) invert(1) contrast(.82); }
-.page-shell--viewer-open .profile-card { filter: blur(10px); }
+.page-shell--viewer-open .profile-card { filter: blur(10px); transition-duration: .38s; transition-timing-function: cubic-bezier(.22, 1, .36, 1); }
 .top-controls { display: flex; justify-content: space-between; align-items: center; }
 .top-controls .control-group { width: 101px; height: 35px; flex: 0 0 101px; justify-content: center; }
 .top-controls .control-group:first-child { gap: 0; }
