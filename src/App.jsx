@@ -71,8 +71,8 @@ const educationHistory = [
     status: { en: "Planned defense", ru: "Планируемая защита" },
     title: { en: "PhD", ru: "Аспирантура" },
     detail: {
-      en: "Technical Sciences · Systems Analysis, Control and Information Processing",
-      ru: "Кандидат технических наук · Системный анализ, управление и обработка информации",
+      en: "Technical Sciences",
+      ru: "Кандидат технических наук",
     },
     institution: { en: "Saint Petersburg State University of Industrial Technologies and Design (SPbSUITD)", ru: "Санкт-Петербургский государственный университет промышленных технологий и дизайна (СПбГУПТД)" },
   },
