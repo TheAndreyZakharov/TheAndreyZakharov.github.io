@@ -35,22 +35,17 @@ for (const provider of manifest.providers) {
   }
 }
 
-const { stdout: dimensionOutput } = await execFileAsync("sips", [
-  "-g", "pixelWidth", "-g", "pixelHeight",
-  ...jobs.map(({ sourcePath }) => sourcePath),
-], { encoding: "utf8", maxBuffer: 16 * 1024 * 1024 });
-const dimensionsByPath = new Map();
-for (const match of dimensionOutput.matchAll(/^(.+):\n\s+pixelWidth: (\d+)\n\s+pixelHeight: (\d+)/gm)) {
-  dimensionsByPath.set(match[1], { width: Number(match[2]), height: Number(match[3]) });
-}
-
 let nextJob = 0;
 const worker = async () => {
   while (nextJob < jobs.length) {
     const job = jobs[nextJob++];
-    const dimensions = dimensionsByPath.get(job.sourcePath);
-    if (!dimensions) throw new Error(`Could not read image dimensions: ${job.sourcePath}`);
-    job.pageDimensions[job.pageIndex] = dimensions;
+    const { stdout } = await execFileAsync("sips", [
+      "-g", "pixelWidth", "-g", "pixelHeight", job.sourcePath,
+    ], { encoding: "utf8", maxBuffer: 1024 * 1024 });
+    const width = Number(stdout.match(/^\s*pixelWidth:\s*(\d+)\s*$/m)?.[1]);
+    const height = Number(stdout.match(/^\s*pixelHeight:\s*(\d+)\s*$/m)?.[1]);
+    if (!width || !height) throw new Error(`Could not read image dimensions: ${job.sourcePath}\n${stdout}`);
+    job.pageDimensions[job.pageIndex] = { width, height };
     await execFileAsync("sips", [
       "-s", "format", "jpeg",
       "-s", "formatOptions", "48",
