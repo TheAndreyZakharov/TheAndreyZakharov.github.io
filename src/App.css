@@ -361,6 +361,7 @@ h2 { margin: 0; color: var(--text); font-family: "Manrope", Arial, sans-serif; f
 .social-link__icon img.social-link__icon-image--compact { width: 22px; height: 22px; }
 .social-link:hover .social-link__icon, .social-link:focus-visible .social-link__icon { border-color: var(--line); background: var(--card-bg); }
 .social-link:hover .social-link__icon img, .social-link:focus-visible .social-link__icon img { filter: none; }
+:is(.page-shell[data-theme="dark"], html[data-initial-theme="dark"] .page-shell) .social-link:is(:hover, :focus-visible) .social-link__icon img { filter: none; }
 .social-link__name { overflow: hidden; font-size: 13px; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
 .social-link__handle { width: 100%; max-height: 0; overflow: hidden; color: var(--muted); font-size: 9px; line-height: 1.2; opacity: 0; text-align: center; overflow-wrap: anywhere; transform: translateY(-3px); transition: color .25s ease, max-height .25s ease, opacity .25s ease, transform .25s ease; }
 .social-link:hover .social-link__handle, .social-link:focus-visible .social-link__handle { max-height: 30px; opacity: 1; transform: translateY(0); }
